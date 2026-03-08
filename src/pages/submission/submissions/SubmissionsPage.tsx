@@ -49,7 +49,7 @@ function normalizeQuery(query: Record<string, string>): SubmissionsQuery {
     problemDisplayId:
       Number(query.problemDisplayId) && !Number(query.problemId) ? Number(query.problemDisplayId) : null,
     submitter: isValidIdentifier(query.submitter) ? query.submitter : null,
-    leanVersion: appState.serverPreference.misc.leanVersions.includes(query.leanVersion) ? query.leanVersion : null,
+    leanVersion: query.leanVersion in appState.serverPreference.misc.leanVersions ? query.leanVersion : null,
     status: query.status in SubmissionStatus ? (query.status as SubmissionStatus) : null,
     minId: Number.isSafeInteger(Number(query.minId)) ? Number(query.minId) : null,
     maxId: Number.isSafeInteger(Number(query.maxId)) ? Number(query.maxId) : null
@@ -190,6 +190,33 @@ let SubmissionsPage: React.FC<SubmissionsPageProps> = props => {
   const isWideScreen = useScreenWidthWithin(1024, Infinity);
   const isMobile = useScreenWidthWithin(0, 768);
 
+  const versionOptions = [
+    {
+      key: "",
+      value: "ALL",
+      text: (
+        <>
+          <Icon name="chartline" />
+          <span className={style.notInMenu}>{_(".query.lean_version")}</span>
+          <span className={style.inMenu}>{_(".query.lean_version_all")}</span>
+        </>
+      )
+    },
+  ];
+
+  for (const version in appState.serverPreference.misc.leanVersions) {
+    versionOptions.push({
+      key: version,
+      value: version,
+      text: (
+        <>
+          <Icon name="chartline" />
+          {appState.serverPreference.misc.leanVersions[version]}
+        </>
+      )
+    });
+  }
+
   return (
     <>
       <Form className={style.queryForm}>
@@ -220,29 +247,7 @@ let SubmissionsPage: React.FC<SubmissionsPageProps> = props => {
             }
             value={queryCodeLanguage || "ALL"}
             onChange={(e, { value }) => setQueryCodeLanguage(value === "ALL" ? null : (value as CodeLanguage))}
-            options={[
-              {
-                key: "",
-                value: "ALL",
-                text: (
-                  <>
-                    <Icon name="chartline" />
-                    <span className={style.notInMenu}>{_(".query.lean_version")}</span>
-                    <span className={style.inMenu}>{_(".query.lean_version_all")}</span>
-                  </>
-                )
-              },
-              ...appState.serverPreference.misc.leanVersions.map(version => ({
-                key: version,
-                value: version,
-                text: (
-                  <>
-                    <Icon name="chartline" />
-                    {version}
-                  </>
-                )
-              }))
-            ]}
+            options={versionOptions}
           />
           <Form.Select
             className={style.queryInputStatus + " " + style.select + (!queryStatus ? " " + style.selectedAll : "")}
