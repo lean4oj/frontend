@@ -26,8 +26,8 @@ const icons: Record<SubmissionStatus, SemanticICONS> = {
   Running: "spinner",
   Skipped: "fast forward",
 
-  Depositing: "shipping fast",
-  Deposited: "warehouse",
+  Delivering: "shipping fast",
+  Delivered: "warehouse",
   JudgerReceived: "handshake",
   TypeChecking: "cogs",
   AxiomChecking: "disk",

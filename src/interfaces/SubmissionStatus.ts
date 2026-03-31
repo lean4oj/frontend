@@ -2,8 +2,8 @@
 export enum SubmissionStatus {
   Pending = "Pending",
 
-  Depositing = "Depositing",
-  Deposited = "Deposited",
+  Delivering = "Delivering",
+  Delivered = "Delivered",
   JudgerReceived = "JudgerReceived",
   TypeChecking = "TypeChecking",
   AxiomChecking = "AxiomChecking",
@@ -19,8 +19,8 @@ export enum SubmissionStatus {
 export enum SubmissionStatusDisplay {
   Pending = "Pending",
 
-  Depositing = "Delivering",
-  Deposited = "Delivered",
+  Delivering = "Delivering",
+  Delivered = "Delivered",
   JudgerReceived = "Judger Received",
   TypeChecking = "Type Checking",
   AxiomChecking = "Axiom Checking",
