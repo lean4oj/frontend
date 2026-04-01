@@ -569,7 +569,6 @@ declare namespace ApiTypes {
     export type Wildcard = "Start" | "End" | "Both";
   }
   export interface PreferenceConfig {
-    siteName: string;
     security: ApiTypes.PreferenceConfigSecurity;
     pagination: ApiTypes.PreferenceConfigPagination;
     misc: ApiTypes.PreferenceConfigMisc;
@@ -915,7 +914,7 @@ declare namespace ApiTypes {
   }
   export interface ResetPasswordRequestDto {
     email: string;
-    emailVerificationCode?: string;
+    emailVerificationCode: number;
     newPassword: string;
   }
   export interface ResetPasswordResponseDto {

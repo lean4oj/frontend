@@ -173,7 +173,7 @@ let AppLayout: React.FC = props => {
           </div>
         )}
         <EmojiRenderer>
-          <div className={style.siteName}>{appState.serverPreference.siteName}</div>
+          <div className={style.siteName}>{window.siteName}</div>
         </EmojiRenderer>
       </div>
     </Menu.Item>
@@ -184,7 +184,7 @@ let AppLayout: React.FC = props => {
       <Segment vertical className={className}>
         <Container textAlign="center">
           <EmojiRenderer>
-            <div>{appState.serverPreference.siteName} Powered by Lyrio</div>
+            <div>{window.siteName} Powered by Lyrio</div>
           </EmojiRenderer>
           <div id={style.footerVersion} className="monospace">
             <a href="https://github.com/lean4oj/frontend">
@@ -285,7 +285,7 @@ let AppLayout: React.FC = props => {
             visible
           >
             <Menu.Item className={style.siteName} as={Link} href="/">
-              {appState.serverPreference.siteName}
+              {window.siteName}
             </Menu.Item>
             {!appState.currentUser && (
               <Menu.Item>

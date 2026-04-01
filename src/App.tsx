@@ -29,7 +29,7 @@ const App: React.FC = () => {
           />
           <title>
             {appState.title && `${appState.title} - `}
-            {appState.serverPreference.siteName}
+            {window.siteName}
           </title>
         </Helmet>
       </HelmetProvider>

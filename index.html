@@ -58,6 +58,10 @@ function safeStringify(object) {
       var title = localStorage.getItem("title") ?? "Lyrio";
       document.title = title;
 
+      // Specify the site name (Lean4OJ for default) in the same way.
+      var siteName = localStorage.getItem("siteName") ?? "Lean4OJ";
+      window.siteName = siteName;
+
       // Specify the API endpoint in the same way.
       var apiEndpoint = localStorage.getItem("apiEndpoint") ?? location.origin;
       window.apiEndpoint = normalizePath(apiEndpoint);

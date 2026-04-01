@@ -5,6 +5,7 @@
 
 interface Window {
   publicPath: string;
+  siteName: string;
   apiEndpoint: string;
   appLogo: string;
   gravatarCdn: string;

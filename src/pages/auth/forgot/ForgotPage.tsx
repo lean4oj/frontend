@@ -98,9 +98,9 @@ let ForgetPage: React.FC = () => {
     } else {
       const { requestError, response } = await api.auth.resetPassword(
         {
-          email: email,
-          emailVerificationCode: emailVerificationCode,
-          newPassword: password
+          email,
+          emailVerificationCode: Number(emailVerificationCode),
+          newPassword: new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(password))).toBase64({ omitPadding: true })
         },
         recaptcha("ResetPassword")
       );
@@ -169,7 +169,7 @@ let ForgetPage: React.FC = () => {
       else if (response.error) toast.error(_(`.errors.${response.error}`, { errorMessage: response.errorMessage }));
       else {
         toast.success(_(".email_verification_code_sent"));
-        setSendEmailVerificationCodeTimeout(61);
+        setSendEmailVerificationCodeTimeout(181);
       }
     }
 
@@ -242,7 +242,7 @@ let ForgetPage: React.FC = () => {
                     loading={sendEmailVerificationCodePending}
                     content={
                       sendEmailVerificationCodeTimeout
-                        ? `${sendEmailVerificationCodeTimeout > 60 ? 60 : sendEmailVerificationCodeTimeout}s`
+                        ? `${sendEmailVerificationCodeTimeout > 180 ? 180 : sendEmailVerificationCodeTimeout}s`
                         : _(".send_email_verification_code")
                     }
                     onClick={onSendEmailVerificationCode}
