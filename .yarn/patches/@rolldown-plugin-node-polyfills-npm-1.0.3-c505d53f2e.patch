@@ -1,0 +1,53 @@
+diff --git a/dist/index.cjs b/dist/index.cjs
+index a868d496816312f1e13613094b675466ce35a988..4a33d75a5c5a98bbc978984ef2d0e8e2dd9ecc95 100644
+--- a/dist/index.cjs
++++ b/dist/index.cjs
+@@ -102,7 +102,7 @@ mods.set("perf_hooks", EMPTY_PATH);
+ //#endregion
+ //#region src/index.ts
+ const { dirname, relative, join } = node_path.posix;
+-const PREFIX = `\0polyfill-node.`;
++const PREFIX = `polyfill-node.`;
+ const PREFIX_LENGTH = PREFIX.length;
+ const DIRNAME_PATH = "\0node-polyfills:dirname";
+ const FILENAME_PATH = "\0node-polyfills:filename";
+@@ -119,7 +119,7 @@ function src_default(opts = {}) {
+ 					inject: {
+ 						process: PREFIX + "process",
+ 						Buffer: [PREFIX + "buffer", "Buffer"],
+-						global: PREFIX + "global",
++						// global: PREFIX + "global",
+ 						__filename: FILENAME_PATH,
+ 						__dirname: DIRNAME_PATH,
+ 						...options.transform?.inject
+@@ -127,7 +127,9 @@ function src_default(opts = {}) {
+ 				}
+ 			};
+ 		},
+-		resolveId(importee, importer) {
++		resolveId: {
++			order: "pre", handler(importee, importer) {
++			if (opts.ignore?.(importee, importer)) return null;
+ 			if (importee[0] == "\0" && /\?commonjs-\w+$/.test(importee)) importee = importee.slice(1).replace(/\?commonjs-\w+$/, "");
+ 			if (importee === DIRNAME_PATH) {
+ 				const id = getRandomId();
+@@ -153,7 +155,7 @@ function src_default(opts = {}) {
+ 				moduleSideEffects: false
+ 			};
+ 			return null;
+-		},
++		}},
+ 		load(id) {
+ 			if (dirs.has(id)) return `export default '${dirs.get(id)}'`;
+ 			if (id.startsWith(PREFIX)) {
+diff --git a/dist/index.d.ts b/dist/index.d.ts
+index a434c82fa7eb2e34786efc61ffe4cb2c0e495cf5..0e4f8a025a976548e0e746f7ca539698142b6486 100644
+--- a/dist/index.d.ts
++++ b/dist/index.d.ts
+@@ -1,5 +1,6 @@
+ import type { Plugin } from "rolldown";
+ export interface NodePolyfillsOptions {
+     baseDir?: string;
++    ignore?(importee: string, importer: string): boolean;
+ }
+ export default function (opts?: NodePolyfillsOptions): Plugin;

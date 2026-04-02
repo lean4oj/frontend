@@ -1,8 +1,16 @@
 diff --git a/lib/index.js b/lib/index.js
-index 1181d45730c0660351392a8024075a5540f8d264..a9cfcc4b0e7096aec063502929bc9e94c7d429cc 100644
+index 1181d45730c0660351392a8024075a5540f8d264..39e97f4c3a243c9fb64de8a4498c1af75320af6e 100644
 --- a/lib/index.js
 +++ b/lib/index.js
-@@ -38,11 +38,7 @@ function Plugin(regexp, replacer) {
+@@ -8,7 +8,6 @@
+  * Module dependencies.
+  */
+ 
+-var util  = require('util')
+ var stuff = require('./utils')
+ 
+ /**
+@@ -38,11 +37,7 @@ function Plugin(regexp, replacer) {
    self.__proto__ = Plugin.prototype
  
    // clone regexp with all the flags
@@ -15,3 +23,29 @@ index 1181d45730c0660351392a8024075a5540f8d264..a9cfcc4b0e7096aec063502929bc9e94
  
    // copy init options
    self.replacer = replacer
+@@ -55,7 +50,7 @@ function Plugin(regexp, replacer) {
+   return self
+ }
+ 
+-util.inherits(Plugin, Function)
++Object.setPrototypeOf(Plugin.prototype, Function.prototype)
+ 
+ // function that registers plugin with markdown-it
+ Plugin.prototype.init = function (md) {
+diff --git a/lib/utils.js b/lib/utils.js
+index fdb82798796d6df7f69bcf30e8b9ada28e65b422..3e988c7a2340abc586004a66f971c97eb4b4f8b2 100644
+--- a/lib/utils.js
++++ b/lib/utils.js
+@@ -4,12 +4,6 @@
+  * MIT Licensed
+  */
+ 
+-/**
+- * Module dependencies.
+- */
+-
+-var util = require('util')
+-
+ /**
+  * Escape special characters in the given string of html.
+  *

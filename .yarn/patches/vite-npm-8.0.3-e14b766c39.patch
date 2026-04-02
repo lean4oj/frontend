@@ -1,0 +1,31 @@
+diff --git a/dist/node/chunks/node.js b/dist/node/chunks/node.js
+index 4224827db230758dfc32ff0f6d587a0f32c32925..5c23d552c5b6cd7d735d69129366dddd1e1595cf 100644
+--- a/dist/node/chunks/node.js
++++ b/dist/node/chunks/node.js
+@@ -21961,7 +21961,7 @@ function resolveLibCssFilename(libOptions, root, packageCache) {
+ //#endregion
+ //#region src/node/plugins/modulePreloadPolyfill.ts
+ const modulePreloadPolyfillId = "vite/modulepreload-polyfill";
+-const resolvedModulePreloadPolyfillId = "\0" + modulePreloadPolyfillId + ".js";
++const resolvedModulePreloadPolyfillId = modulePreloadPolyfillId + ".js";
+ function modulePreloadPolyfillPlugin(config) {
+ 	if (config.isBundled) return perEnvironmentPlugin("native:modulepreload-polyfill", (environment) => {
+ 		return viteModulePreloadPolyfillPlugin({ isServer: environment.config.consumer !== "client" });
+@@ -28043,7 +28043,7 @@ function workerImportMetaUrlPlugin(config) {
+ const isModernFlag = `__VITE_IS_MODERN__`;
+ const preloadMethod = `__vitePreload`;
+ const preloadMarker = `__VITE_PRELOAD__`;
+-const preloadHelperId = "\0vite/preload-helper.js";
++const preloadHelperId = "vite/preload-helper.js";
+ const preloadMarkerRE = new RegExp(preloadMarker, "g");
+ function toRelativePath(filename, importer) {
+ 	const relPath = path.posix.relative(path.posix.dirname(importer), filename);
+@@ -28116,7 +28116,7 @@ function preload(baseModule, deps, importerUrl) {
+ }
+ function getPreloadCode(environment, renderBuiltUrlBoolean, isRelativeBase) {
+ 	const { modulePreload } = environment.config.build;
+-	return `const scriptRel = ${modulePreload && modulePreload.polyfill ? `'modulepreload'` : `/* @__PURE__ */ (${detectScriptRel.toString()})()`};const assetsURL = ${renderBuiltUrlBoolean || isRelativeBase ? `function(dep, importerUrl) { return new URL(dep, importerUrl).href }` : `function(dep) { return ${JSON.stringify(environment.config.base)}+dep }`};const seen = {};export const ${preloadMethod} = ${preload.toString()}`;
++	return `const scriptRel = ${modulePreload && modulePreload.polyfill ? `'modulepreload'` : `/* @__PURE__ */ (${detectScriptRel.toString()})()`};const assetsURL = ${renderBuiltUrlBoolean || isRelativeBase ? `function(dep, importerUrl) { return new URL(dep, importerUrl).href }` : `function(dep) { return window.publicPath + dep }`};const seen = {};export const ${preloadMethod} = ${preload.toString()}`;
+ }
+ /**
+ * Build only. During serve this is performed as part of ./importAnalysis.

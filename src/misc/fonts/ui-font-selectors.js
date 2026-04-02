@@ -15,8 +15,5 @@ export default () => {
     )
     .map(({ selectors }) => selectors);
 
-  return {
-    cachable: true,
-    data: selectors.flat()
-  };
+  return selectors.flat();
 };

@@ -100,7 +100,7 @@ let ForgetPage: React.FC = () => {
         {
           email,
           emailVerificationCode: Number(emailVerificationCode),
-          newPassword: new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(password))).toBase64({ omitPadding: true })
+          newPassword: new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(password))).toBase64({ omitPadding: true }),
         },
         recaptcha("ResetPassword")
       );

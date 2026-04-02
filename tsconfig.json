@@ -12,7 +12,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -21,12 +21,11 @@
     "module": "esnext",
     "strictBindCallApply": true,
     "noFallthroughCasesInSwitch": false,
-    "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"],
-      "semantic-ui-css": ["node_modules/fomantic-ui-css"],
-      "mobx-react": ["node_modules/mobx-react-lite"],
-      "markdown-it": ["node_modules/@esm-bundle/markdown-it"]
+      "@/*": ["./src/*"],
+      "semantic-ui-css": ["./node_modules/fomantic-ui-css"],
+      "mobx-react": ["./node_modules/mobx-react-lite"],
+      "markdown-it": ["./node_modules/@esm-bundle/markdown-it"]
     }
   },
   "include": [

@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Placeholder, Segment, SegmentProps } from "semantic-ui-react";
-import AnsiUp from "ansi_up";
+import { AnsiUp } from "ansi_up";
 
 import style from "./CodeBox.module.less";
 import { useLocalizer, useMaybeAsyncFunctionResult } from "@/utils/hooks";

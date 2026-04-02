@@ -1,3 +1,4 @@
+import assert from "assert";
 import fs from "fs";
 import path from "path";
 import url from "url";
@@ -54,7 +55,8 @@ const readMessageFile = async (filename: string) => {
  */
 export default async (fromUrl: string) => {
   const currentFile = url.fileURLToPath(fromUrl);
-  const currentDirectory = path.dirname(currentFile);
+  assert(currentFile.endsWith(".ts"));
+  const currentDirectory = currentFile.substring(0, currentFile.length - 3);
 
   const watchFiles: string[] = [];
   watchFiles.push(currentFile);
@@ -71,9 +73,5 @@ export default async (fromUrl: string) => {
     result[objectPath.split("/").join(".")] = escapeLocalizedMessages(await readMessageFile(absolutePath));
   }
 
-  return {
-    cachable: true,
-    code: `import flat from "flat";export default flat(${JSON.stringify(result)});`,
-    watchFiles: watchFiles
-  };
+  return result;
 };

@@ -85,7 +85,7 @@ const SecurityView: React.FC<SecurityViewProps> = props => {
       const { requestError, response } = await api.user.updateUserPassword({
         userId: props.meta.id,
         oldPassword: oldPassword ? new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(oldPassword))).toBase64({ omitPadding: true }) : null,
-        password: new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(newPassword))).toBase64({ omitPadding: true })
+        password: new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(newPassword))).toBase64({ omitPadding: true }),
       });
       if (requestError) toast.error(requestError(_));
       else if (response.error === "WRONG_OLD_PASSWORD") {

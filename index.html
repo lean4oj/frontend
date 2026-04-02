@@ -23,7 +23,7 @@
 /////////////////////////////////////////////
 -->
 <%
-// Esacpe </script> in JSON.stringify's result
+// Escape </script> in JSON.stringify's result
 function safeStringify(object) {
   return JSON.stringify(object).split("<").join("\\u003C");
 }

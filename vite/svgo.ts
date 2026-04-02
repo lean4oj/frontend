@@ -3,9 +3,9 @@ import path from "path";
 import crypto from "crypto";
 
 import type { Plugin } from "vite";
-import SVGO from "svgo";
+import { type Config, optimize } from "svgo";
 
-export default function svgo(options: SVGO.OptimizeOptions): Plugin {
+export default function svgo(options: Config): Plugin {
   let base: string;
   let assetsDir: string;
   let isProd: boolean;
@@ -28,8 +28,8 @@ export default function svgo(options: SVGO.OptimizeOptions): Plugin {
     async load(id) {
       if (id.toLowerCase().endsWith(".svg")) {
         const source = await fs.promises.readFile(id, "utf-8");
-        const result = SVGO.optimize(source, options);
-        if ("data" in result) {
+        const result = optimize(source, options);
+        {
           const content = result.data;
           let url: string;
 
@@ -52,8 +52,6 @@ export default function svgo(options: SVGO.OptimizeOptions): Plugin {
             code: `export default ${url}`
           };
         }
-
-        throw result.modernError;
       }
     }
   };

@@ -10,16 +10,15 @@ import svgo from "./vite/svgo";
 import publicPath from "vite-plugin-public-path";
 import { viteExternalsPlugin as externals } from "vite-plugin-externals";
 import { visualizer } from "rollup-plugin-visualizer";
+import { replacePlugin } from "rolldown/plugins";
 
 // Node polyfill
 import { NodeModulesPolyfillPlugin } from "@esbuild-plugins/node-modules-polyfill";
-import rollupNodePolyFill from "rollup-plugin-node-polyfills";
+import nodePolyfills from "@rolldown/plugin-node-polyfills";
 
 // Others
 import getGitCommitInfo from "git-commit-info";
 import { Options as HtmlMinifierOptions } from "html-minifier-terser";
-import { browsersWithSupportForFeatures, normalizeBrowserslist } from "browserslist-generator";
-import { resolveToEsbuildTarget } from "esbuild-plugin-browserslist";
 
 import tsconfig from "./tsconfig.json";
 
@@ -43,18 +42,6 @@ const tsconfigPathAliases = Object.fromEntries(
     return [key, value];
   })
 );
-
-const modernTargets = browsersWithSupportForFeatures(
-  "es6-module-dynamic-import",
-  "javascript.statements.import_meta",
-  "javascript.operators.await.top_level"
-).filter(browser => !(browser.includes("safari") || browser.includes("ios_saf")));
-
-const enabledNodePolyfills = {
-  util: "rollup-plugin-node-polyfills/polyfills/util",
-  path: "rollup-plugin-node-polyfills/polyfills/path",
-  buffer: "rollup-plugin-node-polyfills/polyfills/buffer-es6"
-};
 
 const semanticUiCssComponents = [
   "accordion",
@@ -144,11 +131,6 @@ export default defineConfig({
     port: 3000
   },
   plugins: [
-    react({
-      babel: {
-        plugins: [["@babel/plugin-proposal-decorators", { legacy: true }], ["@babel/plugin-proposal-class-properties"]]
-      }
-    }),
     compileTime(),
     ejs({
       gitCommitInfo: getGitCommitInfo(),
@@ -232,21 +214,34 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      ...enabledNodePolyfills,
       ...tsconfigPathAliases
     }
   },
   build: {
     minify: "terser",
     sourcemap: true,
-    target: resolveToEsbuildTarget(normalizeBrowserslist(modernTargets), { printUnknownTargets: false }),
-    rollupOptions: {
-      plugins: [rollupNodePolyFill()]
-    }
-  },
-  esbuild: {
-    supported: {
-      "top-level-await": true
+    target: "esnext",
+    rolldownOptions: {
+      transform: {
+        inject: {
+          process: 'process',
+        }
+      },
+      plugins: [
+        nodePolyfills({
+          ignore(importee, importer) {
+            return importee !== 'path';
+          }
+        }),
+        replacePlugin(
+          { 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV ?? 'production') },
+          {
+            objectGuards: true,
+            preventAssignment: true,
+            sourcemap: true,
+          }
+        )
+      ]
     }
   },
   define: {
@@ -254,12 +249,7 @@ export default defineConfig({
   },
   optimizeDeps: {
     exclude: ["mobx-utils/mobx-utils.module.js"],
-    esbuildOptions: {
-      // Node.js global to browser globalThis
-      define: {
-        global: "globalThis",
-        process: '{ "env": {} }'
-      },
+    rolldownOptions: {
       plugins: [
         // Enable esbuild polyfill plugins
         NodeModulesPolyfillPlugin()

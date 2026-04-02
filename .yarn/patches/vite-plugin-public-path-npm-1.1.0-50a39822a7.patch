@@ -15,10 +15,10 @@ index 041533a3d81451604c3d7f2754a0c9f971f599a8..f33b129c3e660b8f96e63b916f8c9cbb
                          chunk.source = (0, html_1.processHtml)(viteConfig, options, chunk.fileName, chunk.source);
                      }
 diff --git a/dist/processing/html.js b/dist/processing/html.js
-index 66c437ccbd420f00426517174a981c79c0527b17..d3b9a13d81b9f9e435fbca540d966d28f52dbc7d 100644
+index eaa95f3ffb0ab4160b4556d6b64bb77d5054fd5c..b2a51c7b2865b2771d21701b1ab2d1578e98b10e 100644
 --- a/dist/processing/html.js
 +++ b/dist/processing/html.js
-@@ -88,6 +88,11 @@ function processHtml(config, options, _fileName, html) {
+@@ -90,6 +90,11 @@ function processHtml(config, options, _fileName, html) {
      const patchAttributes = ["src", "data-src"];
      const excludeScriptsFilter = options.excludeScripts ? (0, pluginutils_1.createFilter)(options.excludeScripts) : () => false;
      const scriptTags = document.querySelectorAll("script[src], script[nomodule]").filter(tag => {
