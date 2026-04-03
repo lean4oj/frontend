@@ -222,6 +222,9 @@ export default defineConfig({
     sourcemap: true,
     target: "esnext",
     rolldownOptions: {
+      output: {
+        sourcemapDebugIds: true,
+      },
       transform: {
         inject: {
           process: 'process',
