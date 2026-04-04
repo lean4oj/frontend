@@ -67,7 +67,7 @@ function safeStringify(object) {
       window.apiEndpoint = normalizePath(apiEndpoint);
 
       // Specify the favicon URL in the same way.
-      var faviconUrl = localStorage.getItem("faviconUrl") ?? "favicon.ico";
+      var faviconUrl = localStorage.getItem("faviconUrl") ?? `${publicPath}favicon.ico`;
 
       // Specify the app logo in the same way.
       var appLogo = localStorage.getItem("appLogo");
