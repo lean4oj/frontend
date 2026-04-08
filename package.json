@@ -51,7 +51,6 @@
     "autotrack": "^2.4.1",
     "blueimp-md5": "^2.19.0",
     "chart.js": "^4.5.1",
-    "class-validator": "^0.15.1",
     "css": "^3.0.0",
     "css-element-queries": "^1.2.3",
     "dayjs": "^1.11.20",
@@ -106,7 +105,7 @@
     "use-debounce": "^10.1.1",
     "uuid": "^13.0.0",
     "validator": "^13.15.35",
-    "vite": "patch:vite@npm%3A^8.0.3#~/.yarn/patches/vite-npm-8.0.3-e14b766c39.patch",
+    "vite": "patch:vite@npm%3A^8.0.7#~/.yarn/patches/vite-npm-8.0.7-17f7fa4275.patch",
     "vite-plugin-compile-time": "patch:vite-plugin-compile-time@npm%3A^0.4.6#~/.yarn/patches/vite-plugin-compile-time-npm-0.4.6-e94713ab44.patch",
     "vite-plugin-ejs": "^1.7.0",
     "vite-plugin-externals": "^0.6.2",
@@ -125,7 +124,7 @@
   },
   "resolutions": {
     "markdown-it-regexp@npm:^0.4.0": "patch:markdown-it-regexp@npm%3A^0.4.0#~/.yarn/patches/markdown-it-regexp-npm-0.4.0-316ff27a18.patch",
-    "history@npm:^4.9.0": "patch:history@npm%3A^4.9.0#~/.yarn/patches/history-npm-4.10.1-ee217563ae.patch",
+    "history@npm:^4.9.0": "patch:history@npm%3A^4.9.0#~/.yarn/patches/history-npm-4.10.1-ee217563ae.patch"
   },
   "eslintConfig": {
     "extends": "react-app"

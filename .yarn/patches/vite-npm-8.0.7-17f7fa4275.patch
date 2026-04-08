@@ -1,8 +1,8 @@
 diff --git a/dist/node/chunks/node.js b/dist/node/chunks/node.js
-index 4224827db230758dfc32ff0f6d587a0f32c32925..5c23d552c5b6cd7d735d69129366dddd1e1595cf 100644
+index 225bbd54db799354bd60346230c2ba83745327c0..9dc41b127a77d1d53df522ef5498de40e4b29037 100644
 --- a/dist/node/chunks/node.js
 +++ b/dist/node/chunks/node.js
-@@ -21961,7 +21961,7 @@ function resolveLibCssFilename(libOptions, root, packageCache) {
+@@ -22023,7 +22023,7 @@ function resolveLibCssFilename(libOptions, root, packageCache) {
  //#endregion
  //#region src/node/plugins/modulePreloadPolyfill.ts
  const modulePreloadPolyfillId = "vite/modulepreload-polyfill";
@@ -11,7 +11,7 @@ index 4224827db230758dfc32ff0f6d587a0f32c32925..5c23d552c5b6cd7d735d69129366dddd
  function modulePreloadPolyfillPlugin(config) {
  	if (config.isBundled) return perEnvironmentPlugin("native:modulepreload-polyfill", (environment) => {
  		return viteModulePreloadPolyfillPlugin({ isServer: environment.config.consumer !== "client" });
-@@ -28043,7 +28043,7 @@ function workerImportMetaUrlPlugin(config) {
+@@ -28138,7 +28138,7 @@ function workerImportMetaUrlPlugin(config) {
  const isModernFlag = `__VITE_IS_MODERN__`;
  const preloadMethod = `__vitePreload`;
  const preloadMarker = `__VITE_PRELOAD__`;
@@ -20,7 +20,7 @@ index 4224827db230758dfc32ff0f6d587a0f32c32925..5c23d552c5b6cd7d735d69129366dddd
  const preloadMarkerRE = new RegExp(preloadMarker, "g");
  function toRelativePath(filename, importer) {
  	const relPath = path.posix.relative(path.posix.dirname(importer), filename);
-@@ -28116,7 +28116,7 @@ function preload(baseModule, deps, importerUrl) {
+@@ -28211,7 +28211,7 @@ function preload(baseModule, deps, importerUrl) {
  }
  function getPreloadCode(environment, renderBuiltUrlBoolean, isRelativeBase) {
  	const { modulePreload } = environment.config.build;

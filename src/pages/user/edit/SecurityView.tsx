@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Header, Button, Input, Segment, Icon, SegmentGroup, Label, Popup } from "semantic-ui-react";
 import { observer } from "mobx-react";
-import { isEmail } from "class-validator";
 import { UAParser } from "ua-parser-js";
 import * as timeago from "timeago.js";
 
@@ -11,7 +10,7 @@ import api from "@/api";
 import { appState } from "@/appState";
 import toast from "@/utils/toast";
 import { useLocalizer, useFieldCheckSimple, useAsyncCallbackPending, useRecaptcha } from "@/utils/hooks";
-import { isValidPassword, stripInvalidCharactersInEmailVerificationCode } from "@/utils/validators";
+import { isValidEmail as isEmail, isValidPassword, stripInvalidCharactersInEmailVerificationCode } from "@/utils/validators";
 import { RouteError } from "@/AppRouter";
 import formatDateTime from "@/utils/formatDateTime";
 import { makeToBeLocalizedText } from "@/locales";

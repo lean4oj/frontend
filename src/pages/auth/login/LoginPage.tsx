@@ -17,12 +17,11 @@ import {
   useRecaptcha,
   useNavigationChecked
 } from "@/utils/hooks";
-import { isValidUsername } from "@/utils/validators";
+import { isValidEmail as isEmail, isValidUsername } from "@/utils/validators";
 import toast from "@/utils/toast";
 import { refreshSession } from "@/initApp";
 import PseudoLink from "@/components/PseudoLink";
 import { onEnterPress } from "@/utils/onEnterPress";
-import { isEmail } from "class-validator";
 
 let LoginPage: React.FC = () => {
   const _ = useLocalizer("login");

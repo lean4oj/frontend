@@ -82,10 +82,8 @@ interface LeanDependencyLinkProps {
 }
 
 const LeanDependencyLink: React.FC<LeanDependencyLinkProps> = ({ dependency, leanVersion }) => {
-  const
-    dpath = dependency.replaceAll('.', '/'),
-    isOjLib = dependency.toLowerCase() === 'lean4oj' || dependency.toLowerCase().startsWith('lean4oj.');
-  let url = `/lean/${isOjLib ? `Lean4OJ/${leanVersion}/` : ''}${dpath}`;
+  const dpath = dependency.replaceAll('.', '/');
+  let url = `/lean/${dpath}`;
   url = url.substring(0, url.lastIndexOf('/') + 1);
 
   for (const std of ['aesop', 'archive', 'batteries', 'counterexamples', 'importgraph', 'init', 'lake', 'lean', 'leansearchclient', 'mathlib', 'plausible', 'proofwidgets', 'std', 'docs', 'references']) {
@@ -93,6 +91,10 @@ const LeanDependencyLink: React.FC<LeanDependencyLinkProps> = ({ dependency, lea
       url = `https://leanprover-community.github.io/mathlib4_docs/${dpath}.html`;
       break;
     }
+  }
+
+  if (dependency.toLowerCase() === 'lean4oj' || dependency.toLowerCase().startsWith('lean4oj.')) {
+    url = `/lean/Lean4OJ/doc/${dpath}.html`;
   }
 
   return (

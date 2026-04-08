@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Icon, Form, Header, Input, Checkbox, TextArea, Button, List, Radio } from "semantic-ui-react";
 import { observer } from "mobx-react";
-import { isURL } from "class-validator";
+import isURL from "validator/lib/isURL";
 
 import style from "./UserEdit.module.less";
 
