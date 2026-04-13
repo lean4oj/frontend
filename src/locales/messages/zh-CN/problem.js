@@ -79,6 +79,7 @@ return {
     lean_version: "Lean版本",
     no_addable_consts: "没有可用的定理。",
     dependency_list: "(直接) 依赖列表",
+    semver_mismatch: "该版本不满足此题版本要求：{version}",
     submit: "提交"
   },
   permission_level: {

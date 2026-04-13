@@ -80,6 +80,7 @@ return {
     lean_version: "Lean version",
     no_addable_consts: "No theorems to add.",
     dependency_list: "(Direct) Dependency list",
+    semver_mismatch: "This version does not satisfy the problem version requirement: {version}",
     submit: "Submit"
   },
   permission_level: {

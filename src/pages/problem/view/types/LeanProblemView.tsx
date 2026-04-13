@@ -113,6 +113,7 @@ let LeanProblemSubmitView: React.FC<LeanProblemSubmitViewProps> = props => {
   const [allConsts, setAllConsts] = useState([]);
   const [dependencies, setDependencies] = useState([]);
   const [leanVersion, setLeanVersion] = useState('');
+  const [compatible, setCompatible] = useState(false);
 
   useEffect(() => {
     if (props.submissionContent.moduleName)
@@ -130,12 +131,16 @@ let LeanProblemSubmitView: React.FC<LeanProblemSubmitViewProps> = props => {
       setAllConsts([]);
       setDependencies([]);
       setLeanVersion('');
+      setCompatible(false);
       props.onUpdateSubmissionContent('constName', '');
       setPending(false);
       return;
     }
 
-    const { requestError, response } = await api.submission.getOleanMeta({ moduleName: input });
+    const { requestError, response } = await api.submission.getOleanMeta({
+      moduleName: input,
+      versionReq: props.judgeInfo.version,
+    });
 
     if (refInput.current !== input) {
       // Still pending
@@ -147,6 +152,7 @@ let LeanProblemSubmitView: React.FC<LeanProblemSubmitViewProps> = props => {
       setAllConsts([]);
       setDependencies([]);
       setLeanVersion('');
+      setCompatible(false);
       props.onUpdateSubmissionContent('constName', '');
     } else {
       setAllConsts(response.consts);
@@ -154,9 +160,12 @@ let LeanProblemSubmitView: React.FC<LeanProblemSubmitViewProps> = props => {
         props.onUpdateSubmissionContent('constName', '');
       setDependencies(response.dependencies);
       setLeanVersion(response.leanVersion);
+      setCompatible(response.compatible !== false);
     }
     setPending(false);
   };
+
+  const warn = leanVersion !== '' && !compatible;
 
   return (
     <SubmitViewFrame
@@ -193,9 +202,13 @@ let LeanProblemSubmitView: React.FC<LeanProblemSubmitViewProps> = props => {
               <Message
                 icon={pending ? 'circle notched loading' : null}
                 attached="top"
-                info visible
-                content={`${_('.submit.lean_version')}: ${leanVersion}`}
-              />
+                warning={warn}
+                info={!warn}
+                visible
+              >
+                <p>{_('.submit.lean_version')}: {leanVersion}</p>
+                {warn && <p style={{ fontWeight: 500 }}>{_('.submit.semver_mismatch', { version: props.judgeInfo.version })}</p>}
+              </Message>
               <Message
                 icon={pending ? 'circle notched loading' : null}
                 attached="bottom"
@@ -213,7 +226,8 @@ let LeanProblemSubmitView: React.FC<LeanProblemSubmitViewProps> = props => {
       sidebarContent={null}
       submitDisabled={!(
         isValidLeanName(props.submissionContent.moduleName) &&
-        isValidLeanName(props.submissionContent.constName)
+        isValidLeanName(props.submissionContent.constName) &&
+        compatible
       )}
     />
   );

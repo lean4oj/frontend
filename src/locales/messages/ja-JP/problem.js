@@ -81,6 +81,7 @@ return {
     lean_version: "Leanバージョン",
     no_addable_consts: "利用可能な定理がありません。",
     dependency_list: "(直接) 依存関係リスト",
+    semver_mismatch: "このバージョンは問題のバージョン要件を満たしていません：{version}",
     submit: "提出"
   },
   permission_level: {
