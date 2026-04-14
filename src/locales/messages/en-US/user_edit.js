@@ -16,7 +16,8 @@ return {
     DUPLICATE_EMAIL: "Email already used.",
     FAILED: "Unknown error.",
     FAILED_TO_SEND: "Failed to send mail: {errorMessage}",
-    RATE_LIMITED: "Your operations are too frequent. Please try again later."
+    RATE_LIMITED: "Your operations are too frequent. Please try again later.",
+    TOO_MANY_TOKENS: "You have reached the maximum number of API tokens."
   },
   profile: {
     title: "Profile",
@@ -179,6 +180,28 @@ return {
       unknown_os_browser: "Unknown browser and OS",
       notes_current_user:
         'All logged-in sessions of your account are above. If you see a session used by others, logout it and change your password immediately.\nChanging your password in "Reset your password" page will logout ALL your sessions automatically.'
+    },
+    api_tokens: {
+      header: "API Tokens",
+      create: "Create",
+      name: "Name",
+      name_placeholder: "Enter token name (e.g., 'My CI/CD Pipeline')",
+      cancel: "Cancel",
+      create_submit: "Create",
+      success_create: "API Token created successfully.",
+      success_delete: "API Token deleted successfully.",
+      delete: "Delete",
+      confirm_delete: "Confirm delete",
+      created_title: "API Token Created",
+      created_warning: "Please copy and save this token immediately. You won't be able to see it again.",
+      copied: "Copied to clipboard",
+      close: "Close",
+      created_at: "Created {time}",
+      last_used_at: "Last used {time}",
+      never_used: "Never used",
+      no_tokens: "No API tokens",
+      notes_current_user:
+        "API tokens are used to access your account via API. Please keep your tokens secure and do not share them with others."
     }
   },
   privilege: {

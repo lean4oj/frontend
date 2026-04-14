@@ -32,6 +32,12 @@ declare namespace ApiTypes {
   export interface AddUserToGroupResponseDto {
     error?: "PERMISSION_DENIED" | "NO_SUCH_USER" | "NO_SUCH_GROUP" | "USER_ALREADY_IN_GROUP";
   }
+  export interface ApiTokenInfoDto {
+    id: string;
+    name: string;
+    createdAt: number;
+    lastUsedAt: number | null;
+  }
   export interface CancelSubmissionRequestDto {
     submissionId: number;
   }
@@ -49,6 +55,23 @@ declare namespace ApiTypes {
     usernameAvailable?: boolean;
     identifierAvailable?: boolean;
     emailAvailable?: boolean;
+  }
+  export interface CreateApiTokenRequestDto {
+    /** A name to identify this API token (e.g., 'My CI/CD Pipeline') */
+    name: string;
+    /** Username of the user to create token for. Regular users can only specify their own username. */
+    username: string;
+  }
+  export interface CreateApiTokenResponseDto {
+    error?: "PERMISSION_DENIED" | "TOO_MANY_TOKENS";
+    /** The API token. This will only be shown once. Store it securely. */
+    token: string;
+    /** The token UUID for management purposes */
+    tokenUUID: string;
+    /** The name of the token */
+    name: string;
+    /** When the token was created */
+    createdAt: number;
   }
   export interface CreateDiscussionReplyRequestDto {
     discussionId: number;
@@ -91,6 +114,15 @@ declare namespace ApiTypes {
   export interface CreateProblemTagResponseDto {
     error?: "PERMISSION_DENIED";
     id?: number;
+  }
+  export interface DeleteApiTokenRequestDto {
+    /** The UUID of the API token to delete */
+    tokenUUID: string;
+    /** Username of the user who owns the token. Regular users can only specify their own username. */
+    username: string;
+  }
+  export interface DeleteApiTokenResponseDto {
+      error?: "NO_SUCH_TOKEN" | "PERMISSION_DENIED";
   }
   export interface DeleteDiscussionReplyRequestDto {
     discussionReplyId: number;
@@ -382,6 +414,7 @@ declare namespace ApiTypes {
     userPreference?: ApiTypes.UserPreferenceDto;
     serverPreference: ApiTypes.PreferenceConfig;
     serverVersion: ApiTypes.ServerVersionDto;
+    extraError?: string;
   }
   export interface GetSubmissionDetailRequestDto {
     submissionId: string;
@@ -511,6 +544,14 @@ declare namespace ApiTypes {
     online: boolean;
     systemInfo?: {};
   }
+  export interface ListApiTokensRequestDto {
+    /** Username of the user to list tokens for. Regular users can only specify their own username. */
+    username: string;
+  }
+  export interface ListApiTokensResponseDto {
+    error?: "PERMISSION_DENIED";
+    tokens: ApiTypes.ApiTokenInfoDto[];
+  }
   export interface ListJudgeClientsResponseDto {
     judgeClients: ApiTypes.JudgeClientInfoDto[];
     hasManagePermission: boolean;
@@ -616,6 +657,7 @@ declare namespace ApiTypes {
     discussionDefaultPublic: boolean;
     discussionReplyDefaultPublic: boolean;
     allowEveryoneCreateDiscussion: boolean;
+    maxApiTokens: number;
   }
   export interface ProblemContentSectionDto {
     sectionTitle: string;

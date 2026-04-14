@@ -16,7 +16,8 @@ return {
     DUPLICATE_EMAIL: "邮箱已被使用。",
     FAILED: "未知错误。",
     FAILED_TO_SEND: "发送邮件失败：{errorMessage}",
-    RATE_LIMITED: "您的操作过于频繁，请稍后再试。"
+    RATE_LIMITED: "您的操作过于频繁，请稍后再试。",
+    TOO_MANY_TOKENS: "API密钥数量已达到上限。"
   },
   profile: {
     title: "个人资料",
@@ -176,6 +177,28 @@ return {
       unknown_os_browser: "未知浏览器/操作系统",
       notes_current_user:
         "以上为您的用户已登录的所有会话，如发现异常登录，请将其下线并立刻修改密码。\n通过「重置密码」页面修改密码后将自动下线全部会话。"
+    },
+    api_tokens: {
+      header: "API密钥",
+      create: "新建",
+      name: "名称",
+      name_placeholder: "输入密钥名称（例如：我的CI/CD流水线）",
+      cancel: "取消",
+      create_submit: "创建",
+      success_create: "API密钥创建成功。",
+      success_delete: "API密钥已删除。",
+      delete: "删除",
+      confirm_delete: "确认删除",
+      created_title: "API密钥已创建",
+      created_warning: "请立即复制并保存此密钥，您将无法再次查看它。",
+      copied: "已复制到剪贴板",
+      close: "关闭",
+      created_at: "创建于{time}",
+      last_used_at: "最后使用于{time}",
+      never_used: "从未使用",
+      no_tokens: "暂无API密钥",
+      notes_current_user:
+        "API密钥用于通过API访问您的账户。请妥善保管您的密钥，不要将其泄露给他人。"
     }
   },
   privilege: {

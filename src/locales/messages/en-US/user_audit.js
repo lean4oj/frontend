@@ -12,6 +12,8 @@ return {
   "auth.change_others_password": "Change password of user [firstObject]",
   "auth.change_email": "Change email",
   "auth.request_reset_password": "Request resetting password",
+  "auth.api_token.create": "Create API token for user [firstObject]",
+  "auth.api_token.delete": "Delete API token of user [firstObject]",
 
   "group.create": "Create group [firstObject]",
   "group.delete": "Delete group [firstObject]",

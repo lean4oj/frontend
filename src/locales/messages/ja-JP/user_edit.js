@@ -16,7 +16,8 @@ return {
     DUPLICATE_EMAIL: "このメールアドレスはすでに使用されています。",
     FAILED: "[TBT] Unknown error.",
     FAILED_TO_SEND: "[TBT] Failed to send mail: {errorMessage}",
-    RATE_LIMITED: "[TBT] Your operations are too frequent. Please try again later."
+    RATE_LIMITED: "[TBT] Your operations are too frequent. Please try again later.",
+    TOO_MANY_TOKENS: "[TBT] You have reached the maximum number of API tokens."
   },
   profile: {
     title: "プロファイル設定",
@@ -178,6 +179,28 @@ return {
       unknown_os_browser: "[TBT] Unknown browser and OS",
       notes_current_user:
         '[TBT] All logged-in sessions of your account are above. If you see a session used by others, logout it and change your password immediately.\nChanging your password in "Reset your password" page will logout ALL your sessions automatically.'
+    },
+    api_tokens: {
+      header: "[TBT] API Tokens",
+      create: "[TBT] Create",
+      name: "[TBT] Name",
+      name_placeholder: "[TBT] Enter token name (e.g., 'My CI/CD Pipeline')",
+      cancel: "[TBT] Cancel",
+      create_submit: "[TBT] Create",
+      success_create: "[TBT] API Token created successfully.",
+      success_delete: "[TBT] API Token deleted successfully.",
+      delete: "[TBT] Delete",
+      confirm_delete: "[TBT] Confirm delete",
+      created_title: "[TBT] API Token Created",
+      created_warning: "[TBT] Please copy and save this token immediately. You won't be able to see it again.",
+      copied: "[TBT] Copied to clipboard",
+      close: "[TBT] Close",
+      created_at: "[TBT] Created {time}",
+      last_used_at: "[TBT] Last used {time}",
+      never_used: "[TBT] Never used",
+      no_tokens: "[TBT] No API tokens",
+      notes_current_user:
+        "[TBT] API tokens are used to access your account via API. Please keep your tokens secure and do not share them with others."
     }
   },
   privilege: {

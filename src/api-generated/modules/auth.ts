@@ -30,3 +30,15 @@ export const revokeUserSession = createPostApi<
   ApiTypes.RevokeUserSessionRequestDto,
   ApiTypes.RevokeUserSessionResponseDto
 >("auth/revokeUserSession", false);
+export const createApiToken = createPostApi<
+  ApiTypes.CreateApiTokenRequestDto,
+  ApiTypes.CreateApiTokenResponseDto
+>("auth/createApiToken", false);
+export const listApiTokens = createPostApi<
+  ApiTypes.ListApiTokensRequestDto,
+  ApiTypes.ListApiTokensResponseDto
+>("auth/listApiTokens", false);
+export const deleteApiToken = createPostApi<
+  ApiTypes.DeleteApiTokenRequestDto,
+  ApiTypes.DeleteApiTokenResponseDto
+>("auth/deleteApiToken", false);

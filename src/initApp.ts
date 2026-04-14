@@ -1,5 +1,10 @@
+import * as timeago from "timeago.js";
+import timeAgoJa from "timeago.js/esm/lang/ja";
+
 import { appState, initAppStateStore } from "@/appState";
+import { unescapeLocalizedMessage } from "@/locales";
 import { loadGoogleAnalytics, loadPlausible } from "@/misc/analytics";
+import toast from "@/utils/toast";
 
 interface SessionSwrInfo {
   version: number;
@@ -19,6 +24,18 @@ function applySessionInfo(sessionInfo: ApiTypes.GetSessionInfoResponseDto) {
   appState.userPreference = sessionInfo.userPreference || {};
   appState.serverPreference = sessionInfo.serverPreference;
   appState.serverVersion = sessionInfo.serverVersion;
+  if (sessionInfo.extraError) {
+    const msg = {
+      TOKEN_DISALLOWED: {
+        en_US: "Token login is not allowed on web.",
+        ja_JP: "ウェブ版ではトークンによるログインは許可されていません。",
+        zh_CN: "不允许使用令牌登录网页端。",
+      },
+    }
+    toast.error(msg[sessionInfo.extraError][appState.locale]);
+    appState.token = null;
+    delete sessionInfo.extraError;
+  }
 }
 
 function saveSessionSwrInfo(sessionInfo: ApiTypes.GetSessionInfoResponseDto) {
@@ -73,6 +90,8 @@ function firstSessionInitialization() {
 }
 
 export default async function initApp() {
+  // zh_CN and en_US are registered by default in timeago.js.
+  timeago.register('ja_JP', timeAgoJa);
   await initAppStateStore();
   await firstSessionInitialization();
   loadGoogleAnalytics(appState.serverPreference.misc.googleAnalyticsId);

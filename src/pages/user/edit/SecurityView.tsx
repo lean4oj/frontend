@@ -14,13 +14,15 @@ import { isValidEmail as isEmail, isValidPassword, stripInvalidCharactersInEmail
 import { RouteError } from "@/AppRouter";
 import formatDateTime from "@/utils/formatDateTime";
 import { makeToBeLocalizedText } from "@/locales";
+import copyToClipboard from "@/utils/copyToClipboard";
 
 export async function fetchData(username: string) {
   const result = {};
 
   for (const { requestError, response } of await Promise.all([
     api.user.getUserSecuritySettings({ uid: username }),
-    api.auth.listUserSessions({ uid: username })
+    api.auth.listUserSessions({ uid: username }),
+    api.auth.listApiTokens({ uid: username }),
   ])) {
     if (requestError) throw new RouteError(requestError, { showRefresh: true, showBack: true });
     else if (response.error) throw new RouteError(makeToBeLocalizedText(`user_edit.errors.${response.error}`));
@@ -34,6 +36,7 @@ interface SecurityViewProps {
   meta?: ApiTypes.UserMetaDto;
   sessions?: ApiTypes.UserSessionDto[];
   currentSessionId?: number;
+  tokens?: ApiTypes.ApiTokenInfoDto[];
 }
 
 const SecurityView: React.FC<SecurityViewProps> = props => {
@@ -208,6 +211,70 @@ const SecurityView: React.FC<SecurityViewProps> = props => {
     setRevokeAllPopupOpen(false);
   });
   // End session management
+
+  // Start API Token management
+  const MAX_API_TOKENS = appState.serverPreference.security.maxApiTokens;
+  const [apiTokens, setApiTokens] = useState(props.tokens || []);
+  const [newTokenName, setNewTokenName] = useState("");
+  const [showNewToken, setShowNewToken] = useState(false);
+  const [createdToken, setCreatedToken] = useState<{
+    token: string;
+    tokenUUID: string;
+    name: string;
+    createdAt: number;
+  } | null>(null);
+  const canCreateToken = apiTokens.length < MAX_API_TOKENS;
+
+  const [pendingCreateToken, onCreateToken] = useAsyncCallbackPending(async () => {
+    if (!newTokenName.trim()) {
+      return;
+    }
+    if (!canCreateToken) {
+      toast.error(_(`user_edit.errors.TOO_MANY_TOKENS`));
+      return;
+    }
+    const { requestError, response } = await api.auth.createApiToken({
+      name: newTokenName.trim(),
+      uid: props.meta.id
+    });
+    if (requestError) toast.error(requestError(_));
+    else if (response.error) toast.error(_(`user_edit.errors.${response.error}`));
+    else {
+      toast.success(_(".api_tokens.success_create"));
+      setTimeAgoRelativeDate(new Date());
+      setCreatedToken({
+        token: response.token,
+        tokenUUID: response.tokenUUID,
+        name: response.name,
+        createdAt: response.createdAt
+      });
+      setApiTokens([...apiTokens, {
+        id: response.tokenUUID,
+        name: response.name,
+        createdAt: response.createdAt,
+        lastUsedAt: null
+      }]);
+      setNewTokenName("");
+      setShowNewToken(false);
+    }
+  });
+
+  const [, onDeleteToken] = useAsyncCallbackPending(async (tokenUUID: string) => {
+    const { requestError, response } = await api.auth.deleteApiToken({
+      tokenUUID,
+      uid: props.meta.id
+    });
+    if (requestError) toast.error(requestError(_));
+    else if (response.error) toast.error(_(`user_edit.errors.${response.error}`));
+    else {
+      toast.success(_(".api_tokens.success_delete"));
+      setApiTokens(apiTokens.filter(token => token.id !== tokenUUID));
+      if (createdToken && createdToken.tokenUUID === tokenUUID) {
+        setCreatedToken(null);
+      }
+    }
+  });
+  // End API Token management
 
   return (
     <>
@@ -464,6 +531,155 @@ const SecurityView: React.FC<SecurityViewProps> = props => {
       )}
       {props.meta.id === appState.currentUser?.id && (
         <div className={style.notes}>{_(".sessions.notes_current_user")}</div>
+      )}
+      <Header
+        className={style.sectionHeader + " " + style.bottomAttached}
+        size="large"
+        content={
+          <>
+            <span className={style.text}>
+              {_(".api_tokens.header")} ({apiTokens.length}/{MAX_API_TOKENS})
+            </span>
+            <Button
+              basic
+              positive
+              className={style.revokeAll}
+              content={_(".api_tokens.create")}
+              onClick={() => setShowNewToken(true)}
+              disabled={!canCreateToken}
+            />
+          </>
+        }
+      />
+      {showNewToken && (
+        <Segment>
+          <Header className={style.header} size="tiny" content={_(".api_tokens.name")} />
+          <Input
+            className={style.notFullWidth}
+            fluid
+            value={newTokenName}
+            onChange={(e, { value }) => !pendingCreateToken && setNewTokenName(value)}
+            placeholder={_(".api_tokens.name_placeholder")}
+            action={
+              <>
+                <Button
+                  content={_(".api_tokens.cancel")}
+                  onClick={() => {
+                    setShowNewToken(false);
+                    setNewTokenName("");
+                  }}
+                />
+                <Button
+                  positive
+                  content={_(".api_tokens.create_submit")}
+                  loading={pendingCreateToken}
+                  onClick={onCreateToken}
+                  disabled={!newTokenName.trim()}
+                />
+              </>
+            }
+          />
+        </Segment>
+      )}
+      {createdToken && (
+        <Segment>
+          <Header size="small" content={_(".api_tokens.created_title")} />
+          <div className={style.notes}>{_(".api_tokens.created_warning")}</div>
+          <Input
+            className={style.notFullWidth}
+            fluid
+            readOnly
+            value={createdToken.token}
+            action={
+              <Button
+                icon="copy"
+                onClick={() => {
+                  copyToClipboard(createdToken.token);
+                  toast.success(_(".api_tokens.copied"));
+                }}
+              />
+            }
+          />
+          <Button
+            className={style.submit}
+            content={_(".api_tokens.close")}
+            onClick={() => setCreatedToken(null)}
+          />
+        </Segment>
+      )}
+      {apiTokens.length ? (
+        <SegmentGroup className={style.sessionList}>
+          {apiTokens
+            .sort((a, b) => b.createdAt - a.createdAt)
+            .map(token => {
+              const createdAt = new Date(token.createdAt);
+              const lastUsedAt = token.lastUsedAt ? new Date(token.lastUsedAt) : null;
+
+              return (
+                <Segment key={token.id} className={style.sessionListItem}>
+                  <div className={style.iconWrapper}>
+                    <Icon name="key" />
+                  </div>
+                  <div className={style.info}>
+                    <div className={style.browserAndOs}>
+                      <span className={style.os}>{token.name}</span>
+                    </div>
+                    <div className={style.lastActive}>
+                      <span className={style.os} style={{ fontFamily: "monospace", fontSize: "0.9em", opacity: 0.7 }}>
+                        {token.id}
+                      </span>
+                    </div>
+                    <div className={style.lastActive}>
+                      <span title={formatDateTime(createdAt.getTime())[1]}>
+                        {_(".api_tokens.created_at", {
+                          time: timeago.format(createdAt.getTime(), appState.locale, {
+                            relativeDate: timeAgoRelativeDate
+                          })
+                        })}
+                      </span>
+                    </div>
+                    <div className={style.loginIpLocationTime}>
+                      <span className={style.time} title={lastUsedAt ? formatDateTime(lastUsedAt.getTime())[1] : undefined}>
+                        {lastUsedAt ? (
+                          _(".api_tokens.last_used_at", {
+                            time: timeago.format(lastUsedAt.getTime(), appState.locale, {
+                              relativeDate: timeAgoRelativeDate
+                            })
+                          })
+                        ) : (
+                          _(".api_tokens.never_used")
+                        )}
+                      </span>
+                    </div>
+                  </div>
+                  <Popup
+                    trigger={<Button content={_(".api_tokens.delete")} />}
+                    content={
+                      <Button
+                        negative
+                        content={_(".api_tokens.confirm_delete")}
+                        onClick={() => onDeleteToken(token.id)}
+                      />
+                    }
+                    on="click"
+                    position="left center"
+                  />
+                </Segment>
+              );
+            })}
+        </SegmentGroup>
+      ) : (
+        <Segment placeholder>
+          <Header icon>
+            <>
+              <Icon name="key" />
+              {_(".api_tokens.no_tokens")}
+            </>
+          </Header>
+        </Segment>
+      )}
+      {props.meta.id === appState.currentUser.id && (
+        <div className={style.notes}>{_(".api_tokens.notes_current_user")}</div>
       )}
     </>
   );
