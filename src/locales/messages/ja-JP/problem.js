@@ -75,7 +75,7 @@ return {
     clear_editor_to_use_upload_right: "してください。",
     fill_in_editor_or_upload_file: "エディタに解答を入力するか、ファイルをアップロードしてください。",
     module_name: "モジュールパス",
-    module_name_example: "AplusB.Mainなど、ユーザー識別子なしで、「.」で区切る",
+    module_name_example: "AplusB.Mainなど、ユーザ識別子なしで、「.」で区切る",
     const_name: "定理名",
     const_name_example: "定理を検索する …",
     lean_version: "Leanバージョン",

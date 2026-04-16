@@ -3,7 +3,7 @@ return {
   error: {
     PERMISSION_DENIED: "権限がありません。",
     NO_SUCH_PROBLEM: "問題が見つかりません。",
-    NO_SUCH_USER: "ユーザーが見つかりません。",
+    NO_SUCH_USER: "ユーザが見つかりません。",
     TAKE_TOO_MANY: "1ページあたりのアイテム数が上限を超えています。"
   },
   breadcrumb: {

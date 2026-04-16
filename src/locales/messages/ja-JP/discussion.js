@@ -17,10 +17,10 @@ return {
     label: {
       nonpublic: "非公開",
       problem_owner: "問題作成者",
-      discussion_publisher: "開始者"
-      admin: "[TBT] Site admin",
-      problem_admin: "[TBT] Problem admin",
-      discussion_admin: "[TBT] Discussion admin"
+      discussion_publisher: "開始者",
+      admin: "サイト管理者",
+      problem_admin: "問題管理者",
+      discussion_admin: "ディスカッション管理者"
     },
     actions: {
       edit: "編集",

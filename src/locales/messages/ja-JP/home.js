@@ -1,6 +1,6 @@
 return {
   title: "ホーム",
-  annnouncements: {
+  announcements: {
     header: "お知らせ",
     title: "タイトル",
     date: "日付",
@@ -30,12 +30,12 @@ return {
   },
   search_problem: "問題を検索",
   top_users: {
-    header: "トップユーザー",
-    username: "ユーザー名",
+    header: "トップユーザ",
+    username: "ユーザ名",
     bio: "自己紹介",
     rating: "レーティング",
-    accepted_problem_count: "AC数",
-    no_users: "ユーザーはいません"
+    accepted_problem_count: "解いた問題数",
+    no_users: "ユーザはいません"
   },
   friend_links: "友情リンク"
 };

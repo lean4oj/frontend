@@ -16,8 +16,8 @@ return {
     DUPLICATE_EMAIL: "このメールアドレスはすでに使用されています。",
     FAILED: "不明なエラーです。",
     FAILED_TO_SEND: "メール送信に失敗しました：{errorMessage}",
-    RATE_LIMITED: "操作が頻繁すぎます。しばらく待ってからもう一度お試しください。"
-    TOO_MANY_TOKENS: "[TBT] You have reached the maximum number of API tokens."
+    RATE_LIMITED: "操作が頻繁すぎます。しばらく待ってからもう一度お試しください。",
+    TOO_MANY_TOKENS: "APIトークンの最大数に達しました。"
   },
   profile: {
     title: "プロファイル設定",
@@ -166,7 +166,7 @@ return {
       header: "セッション",
       revoke_all: "すべてログアウト",
       confirm_revoke_all: "すべてログアウトの確認",
-      success_revoke_all: "このユーザーのすべてのセッションを正常にログアウトしました。",
+      success_revoke_all: "このユーザのすべてのセッションを正常にログアウトしました。",
       success_revoke_all_current_user: "他のすべてのセッションを正常にログアウトしました。",
       current: "現在のセッション",
       last_active: "最終アクセス {time}",
@@ -175,32 +175,32 @@ return {
       success_revoke: "セッションを正常にログアウトしました。",
       login_ip: "{ip} でログイン   ·   ",
       login_ip_location: "{ip} でログイン   ·   ", // Currently we don't support IP location in other languages
-      no_sessions: "このユーザーはセッションがありません",
+      no_sessions: "このユーザはセッションがありません",
       unknown_os_browser: "不明なブラウザとOS",
       notes_current_user:
         'あなたのアカウントのログイン中のセッションはすべて上記の通りです。他人が使用しているセッションを見つけた場合は、すぐにログアウトしてパスワードを変更してください。\n「パスワードをリセット」ページでパスワードを変更すると、すべてのセッションが自動的にログアウトされます。'
     },
     api_tokens: {
-      header: "[TBT] API Tokens",
-      create: "[TBT] Create",
-      name: "[TBT] Name",
-      name_placeholder: "[TBT] Enter token name (e.g., 'My CI/CD Pipeline')",
-      cancel: "[TBT] Cancel",
-      create_submit: "[TBT] Create",
-      success_create: "[TBT] API Token created successfully.",
-      success_delete: "[TBT] API Token deleted successfully.",
-      delete: "[TBT] Delete",
-      confirm_delete: "[TBT] Confirm delete",
-      created_title: "[TBT] API Token Created",
-      created_warning: "[TBT] Please copy and save this token immediately. You won't be able to see it again.",
-      copied: "[TBT] Copied to clipboard",
-      close: "[TBT] Close",
-      created_at: "[TBT] Created {time}",
-      last_used_at: "[TBT] Last used {time}",
-      never_used: "[TBT] Never used",
-      no_tokens: "[TBT] No API tokens",
+      header: "APIトークン",
+      create: "新規作成",
+      name: "名前",
+      name_placeholder: "トークン名を入力（例：'My CI/CD Pipeline'）",
+      cancel: "キャンセル",
+      create_submit: "作成",
+      success_create: "APIトークンの作成に成功しました。",
+      success_delete: "APIトークンが削除されました。",
+      delete: "削除",
+      confirm_delete: "削除を確認",
+      created_title: "APIトークンが作成されました",
+      created_warning: "このトークンをすぐにコピーして保存してください。再度表示することはできません。",
+      copied: "クリップボードにコピーしました",
+      close: "閉じる",
+      created_at: "作成日時 {time}",
+      last_used_at: "最終使用日時 {time}",
+      never_used: "未使用",
+      no_tokens: "APIトークンがありません",
       notes_current_user:
-        "[TBT] API tokens are used to access your account via API. Please keep your tokens secure and do not share them with others."
+        "APIトークンはAPI経由でアカウントにアクセスするために使用されます。トークンは安全に保管し、他人と共有しないでください。"
     }
   },
   privilege: {
@@ -215,12 +215,12 @@ return {
         notes: "ホームページの設定と内容を変更できます。例：お知らせやアナウンス。"
       },
       ManageUser: {
-        name: "ユーザー管理",
-        notes: "他のユーザーのプロフィール、設定、セキュリティ設定を変更できます。"
+        name: "ユーザ管理",
+        notes: "他のユーザのプロフィール、設定、セキュリティ設定を変更できます。"
       },
       ManageUserGroup: {
-        name: "ユーザーグループ管理",
-        notes: "ユーザーグループの作成、編集、削除ができます。グループメンバーを管理できます。"
+        name: "ユーザグループ管理",
+        notes: "ユーザグループの作成、編集、削除ができます。グループメンバーを管理できます。"
       },
       ManageProblem: {
         name: "問題管理",
@@ -241,7 +241,7 @@ return {
           "reCAPTCHA（有効な場合）を検証せずに任意のリクエストを送信できます。ボットや仮想ジャッジに便利です。"
       }
     },
-    admin_only: "管理者のみがユーザーの権限を変更できます。",
+    admin_only: "管理者のみがユーザの権限を変更できます。",
     submit: "送信",
     success: "権限が正常に更新されました"
   },
