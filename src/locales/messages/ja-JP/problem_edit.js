@@ -8,7 +8,7 @@ return {
   submit: "保存",
   no_submit_permission: "権限がありません",
   submit_success: "保存に成功しました。",
-  something_empty: "[TBT] Please fill all titles and section contents.",
+  something_empty: "すべてのタイトルとセクションの内容を入力してください。",
   error: {
     FAILED: "失敗しました。",
     NO_SUCH_PROBLEM: "問題がありません。",
@@ -22,7 +22,7 @@ return {
     title: "タイトル",
     preview_all: "プレビュー",
     default: "デフォルト言語",
-    add_default_sections: "[TBT] Add default sections",
+    add_default_sections: "デフォルトセクションを追加",
     confirm_delete: "削除する",
     section_title: "セクションのタイトル",
     preview: "プレビュー",

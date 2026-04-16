@@ -1,27 +1,27 @@
 return {
-  title: "[TBT] Homepage Settings",
+  title: "ホームページ設定",
   errors: {
-    PERMISSION_DENIED: "[TBT] Permission denied.",
-    NO_SUCH_DISCUSSION: "[TBT] No such discussion with ID {id}."
+    PERMISSION_DENIED: "権限がありません。",
+    NO_SUCH_DISCUSSION: "ID {id} のディスカッションが見つかりません。"
   },
-  header: "[TBT] Homepage Settings",
-  set_default_locale: "[TBT] Set default language",
-  delete_locale: "[TBT] Delete language",
-  confirm_delete_locale: "[TBT] Confirm delete language",
+  header: "ホームページ設定",
+  set_default_locale: "デフォルト言語を設定",
+  delete_locale: "言語を削除",
+  confirm_delete_locale: "言語の削除を確認",
   notice: {
-    header: "[TBT] Notice",
-    placeholder: "[TBT] Notice text ..."
+    header: "お知らせ",
+    placeholder: "お知らせテキスト..."
   },
   announcements: {
-    header: "[TBT] Announcements",
-    title: "[TBT] Title",
-    date: "[TBT] Date",
-    operations: "[TBT] Operations",
-    add: "[TBT] Add announcement"
+    header: "アナウンス",
+    title: "タイトル",
+    date: "日付",
+    operations: "操作",
+    add: "アナウンスを追加"
   },
-  hitokoto: "[TBT] Hitokoto",
-  countdown: "[TBT] Countdown",
-  friend_links: "[TBT] Friend Links",
-  submit: "[TBT] Submit",
-  success: "[TBT] Successfully updated."
+  hitokoto: "Hitokoto",
+  countdown: "カウントダウン",
+  friend_links: "友達リンク",
+  submit: "送信",
+  success: "正常に更新されました。"
 };

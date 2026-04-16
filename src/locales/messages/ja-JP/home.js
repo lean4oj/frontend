@@ -1,41 +1,41 @@
 return {
   title: "ホーム",
-  announcements: {
-    header: "[TBT] Announcement",
-    title: "[TBT] Title",
-    date: "[TBT] Date",
-    no_announcements: "[TBT] No Announcements"
+  annnouncements: {
+    header: "お知らせ",
+    title: "タイトル",
+    date: "日付",
+    no_announcements: "お知らせはありません"
   },
   latest_problems: {
-    header: "[TBT] Latest Problems",
-    status: "[TBT] Status",
-    problem: "[TBT] Problem",
-    updated_time: "[TBT] Updated Time",
-    no_problems: "[TBT] No Problems"
+    header: "最新の問題",
+    status: "状態",
+    problem: "問題",
+    updated_time: "更新日時",
+    no_problems: "問題はありません"
   },
   hitokoto: {
-    header: "[TBT] Hitokoto (ヒトコト)",
-    error: "[TBT] Error loading Hitokoto.",
-    refresh: "[TBT] Refresh"
+    header: "一言",
+    error: "一言の読み込みエラー。",
+    refresh: "更新"
   },
   countdown: {
-    header: "[TBT] Countdown",
-    display_time_first: "[TBT] 1",
-    before_time: "[TBT] ",
-    after_time_before_event: "[TBT]  before ",
-    after_days_before_event: "[TBT]  days before ",
-    after_event: "[TBT] ",
-    completed_before_event: "[TBT] ",
-    completed_after_event: "[TBT]  has started"
+    header: "カウントダウン",
+    display_time_first: "1",
+    before_time: "",
+    after_time_before_event: " まであと ",
+    after_days_before_event: " まであと ",
+    after_event: " 日",
+    completed_before_event: "",
+    completed_after_event: " が開始しました"
   },
-  search_problem: "[TBT] Search Problem",
+  search_problem: "問題を検索",
   top_users: {
-    header: "[TBT] Top Users",
-    username: "[TBT] Username",
-    bio: "[TBT] Bio",
-    rating: "[TBT] Rating",
-    accepted_problem_count: "[TBT] AC. Count",
-    no_users: "[TBT] No Users"
+    header: "トップユーザー",
+    username: "ユーザー名",
+    bio: "自己紹介",
+    rating: "レーティング",
+    accepted_problem_count: "AC数",
+    no_users: "ユーザーはいません"
   },
-  friend_links: "[TBT] Friend Links"
+  friend_links: "友情リンク"
 };

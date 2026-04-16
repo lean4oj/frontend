@@ -1,74 +1,74 @@
 return {
-  title: "[TBT] Discussion",
+  title: "ディスカッション",
   errors: {
-    PERMISSION_DENIED: "[TBT] Permission denied.",
-    NO_SUCH_DISCUSSION: "[TBT] No such discussion.",
-    NO_SUCH_DISCUSSION_REPLY: "[TBT] No such reply.",
-    INVALID_EMOJI: "[TBT] Invalid emoji.",
+    PERMISSION_DENIED: "権限がありません。",
+    NO_SUCH_DISCUSSION: "ディスカッションが見つかりません。",
+    NO_SUCH_DISCUSSION_REPLY: "返信が見つかりません。",
+    INVALID_EMOJI: "無効な絵文字です。",
     NO_FLAGS: "オンライン政治は禁止されています。"
   },
-  reply_count_0: "[TBT] No reply",
-  reply_count: "[TBT] {replyCount} reply",
-  reply_count_s: "[TBT] {replyCount} replies",
-  add_discussion: "[TBT] Add discussion",
+  reply_count_0: "返信なし",
+  reply_count: "{replyCount} 件の返信",
+  reply_count_s: "{replyCount} 件の返信",
+  add_discussion: "ディスカッションを追加",
   item: {
-    commented_on: "[TBT] commented ",
-    edited: "[TBT] Edited",
+    commented_on: "コメント日時 ",
+    edited: "編集済み",
     label: {
-      nonpublic: "[TBT] Nonpublic",
-      problem_owner: "[TBT] Problem owner",
-      discussion_publisher: "[TBT] Initiator",
+      nonpublic: "非公開",
+      problem_owner: "問題作成者",
+      discussion_publisher: "開始者"
       admin: "[TBT] Site admin",
       problem_admin: "[TBT] Problem admin",
       discussion_admin: "[TBT] Discussion admin"
     },
     actions: {
-      edit: "[TBT] Edit",
-      quote: "[TBT] Quote",
-      permission_manage: "[TBT] Manage Permission",
-      set_non_public: "[TBT] Make non-public",
-      set_public: "[TBT] Make public",
-      confirm_set_non_public: "[TBT] Confirm make non-public",
-      confirm_set_public: "[TBT] Confirm make public",
-      delete: "[TBT] Delete",
-      confirm_delete: "[TBT] Confirm delete",
-      confirm_delete_dialog_title: "[TBT] Delete discussion",
-      confirm_delete_dialog_content: "Are you sure to delete the discussion? ALL its replies will also be deleted.",
-      confirm_delete_dialog_confirm: "[TBT] Confirm delete",
-      confirm_delete_dialog_cancel: "[TBT] Cancel"
+      edit: "編集",
+      quote: "引用",
+      permission_manage: "権限管理",
+      set_non_public: "非公開にする",
+      set_public: "公開にする",
+      confirm_set_non_public: "非公開にすることを確認",
+      confirm_set_public: "公開にすることを確認",
+      delete: "削除",
+      confirm_delete: "削除を確認",
+      confirm_delete_dialog_title: "ディスカッションを削除",
+      confirm_delete_dialog_content: "ディスカッションを削除してもよろしいですか？すべての返信も削除されます。",
+      confirm_delete_dialog_confirm: "削除を確認",
+      confirm_delete_dialog_cancel: "キャンセル"
     }
   },
   edit: {
     placeholder: {
-      title: "[TBT] Title",
-      add_reply: "[TBT] Add reply ...",
-      add_discussion: "[TBT] New discussion ...",
-      update_reply: "[TBT] Edit reply ...",
-      update_discussion: "[TBT] Edit discussion …"
+      title: "タイトル",
+      add_reply: "返信を追加 ...",
+      add_discussion: "新しいディスカッション ...",
+      update_reply: "返信を編集 ...",
+      update_discussion: "ディスカッションを編集 …"
     },
     tabs: {
-      edit: "[TBT] Edit",
-      preview: "[TBT] Preview"
+      edit: "編集",
+      preview: "プレビュー"
     },
     actions: {
-      add_reply: "[TBT] Reply",
-      add_discussion: "[TBT] Submit",
-      update_reply: "[TBT] Update reply",
-      update_discussion: "[TBT] Submit",
-      update_discussion_no_submit_permission: "[TBT] No Permission",
-      cancel: "[TBT] Cancel",
-      confirm_cancel: "[TBT] Discard changes"
+      add_reply: "返信",
+      add_discussion: "送信",
+      update_reply: "返信を更新",
+      update_discussion: "送信",
+      update_discussion_no_submit_permission: "権限なし",
+      cancel: "キャンセル",
+      confirm_cancel: "変更を破棄"
     }
   },
   load_more: {
-    hidden_count: "[TBT] {count} hidden reply",
-    hidden_count_s: "[TBT] {count} hidden replies",
-    load_more: "[TBT] Load more ..."
+    hidden_count: "{count} 件の非表示の返信",
+    hidden_count_s: "{count} 件の非表示の返信",
+    load_more: "もっと読み込む ..."
   },
-  custom_emoji: "[TBT] Custom emoji",
-  permission_manager_description: "[TBT] Discussion #{id}",
+  custom_emoji: "カスタム絵文字",
+  permission_manager_description: "ディスカッション #{id}",
   permission_level: {
-    read: "[TBT] Read Only",
-    write: "[TBT] Read/Write"
+    read: "読み取り専用",
+    write: "読み書き可能"
   }
 };

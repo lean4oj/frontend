@@ -1,4 +1,4 @@
 return {
-  omitted: "[TBT] {count} byte omitted",
-  omitted_s: "[TBT] {count} bytes omitted"
+  omitted: "{count} バイトが省略されました",
+  omitted_s: "{count} バイトが省略されました"
 };

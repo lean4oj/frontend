@@ -1,38 +1,38 @@
 return {
-  title: "[TBT] Discussions",
+  title: "ディスカッション",
   error: {
-    PERMISSION_DENIED: "[TBT] Permission denied.",
-    NO_SUCH_PROBLEM: "[TBT] No such problem.",
-    NO_SUCH_USER: "[TBT] No such user.",
-    TAKE_TOO_MANY: "[TBT] Requested number of items per page exceeds the limit."
+    PERMISSION_DENIED: "権限がありません。",
+    NO_SUCH_PROBLEM: "問題が見つかりません。",
+    NO_SUCH_USER: "ユーザーが見つかりません。",
+    TAKE_TOO_MANY: "1ページあたりのアイテム数が上限を超えています。"
   },
   breadcrumb: {
-    discussion: "[TBT] Discussion",
-    general: "[TBT] General",
-    problem: "[TBT] Problem"
+    discussion: "ディスカッション",
+    general: "全般",
+    problem: "問題"
   },
-  add_discussion: "[TBT] Add discussion",
+  add_discussion: "ディスカッションを追加",
   search_discussion: {
-    placeholder: "[TBT] Title ...",
-    no_result: "[TBT] No matching discussions."
+    placeholder: "タイトル...",
+    no_result: "一致するディスカッションがありません。"
   },
   search_icon: {
-    user: "[TBT] Publisher",
-    nonpublic: "[TBT] Nonpublic"
+    user: "投稿者",
+    nonpublic: "非公開"
   },
-  search_filters: "[TBT] Search filters",
+  search_filters: "検索フィルター",
   no_discussions: {
-    message_search: "[TBT] No matching discussions",
-    message_no_search: "[TBT] No discussions",
-    back: "[TBT] Back",
-    clear_filters: "[TBT] Clear Query",
-    create: "[TBT] Add discussion"
+    message_search: "一致するディスカッションがありません",
+    message_no_search: "ディスカッションがありません",
+    back: "戻る",
+    clear_filters: "クエリをクリア",
+    create: "ディスカッションを追加"
   },
-  column_title: "[TBT] Title",
-  column_problem: "[TBT] Problem",
-  column_publisher: "[TBT] Publisher",
-  column_reply_count: "[TBT] Replies",
-  column_sort_time: "[TBT] Last updated",
-  non_public: "[TBT] Nonpublic",
-  no_title: "[TBT] (No title)"
+  column_title: "タイトル",
+  column_problem: "問題",
+  column_publisher: "投稿者",
+  column_reply_count: "返信",
+  column_sort_time: "最終更新",
+  non_public: "非公開",
+  no_title: "（タイトルなし）"
 };

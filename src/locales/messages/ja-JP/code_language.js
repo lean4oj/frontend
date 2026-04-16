@@ -1,101 +1,101 @@
 return {
-  code_language: "[TBT] Language",
+  code_language: "言語",
   cpp: {
-    name: "[TBT] C++",
+    name: "C++",
     options: {
       compiler: {
-        name: "[TBT] Compiler",
+        name: "コンパイラ",
         values: {
-          "g++": "[TBT] G++",
-          "clang++": "[TBT] Clang++"
+          "g++": "G++",
+          "clang++": "Clang++"
         }
       },
       std: {
-        name: "[TBT] C++ Standard",
+        name: "C++ 標準",
         values: {
-          "c++03": "[TBT] ISO C++ 03",
-          "c++11": "[TBT] ISO C++ 11",
-          "c++14": "[TBT] ISO C++ 14",
-          "c++17": "[TBT] ISO C++ 17",
-          "c++20": "[TBT] ISO C++ 20",
-          "gnu++03": "[TBT] GNU C++ 03",
-          "gnu++11": "[TBT] GNU C++ 11",
-          "gnu++14": "[TBT] GNU C++ 14",
-          "gnu++17": "[TBT] GNU C++ 17",
-          "gnu++20": "[TBT] GNU C++ 20"
+          "c++03": "ISO C++ 03",
+          "c++11": "ISO C++ 11",
+          "c++14": "ISO C++ 14",
+          "c++17": "ISO C++ 17",
+          "c++20": "ISO C++ 20",
+          "gnu++03": "GNU C++ 03",
+          "gnu++11": "GNU C++ 11",
+          "gnu++14": "GNU C++ 14",
+          "gnu++17": "GNU C++ 17",
+          "gnu++20": "GNU C++ 20"
         }
       },
       O: {
-        name: "[TBT] Optimization",
+        name: "最適化",
         values: {
-          0: "[TBT] -O0 (disable optimization)",
-          1: "[TBT] -O1",
-          2: "[TBT] -O2",
-          3: "[TBT] -O3",
-          fast: "[TBT] -Ofast (fastest)"
+          0: "-O0 (最適化無効)",
+          1: "-O1",
+          2: "-O2",
+          3: "-O3",
+          fast: "-Ofast (最速)"
         }
       },
       m: {
-        name: "[TBT] Architecture",
+        name: "アーキテクチャ",
         values: {
-          64: "[TBT] 64-bit",
-          32: "[TBT] 32-bit",
-          x32: "[TBT] 64-bit (with 32-bit pointers)"
+          64: "64ビット",
+          32: "32ビット",
+          x32: "64ビット (32ビットポインタ)"
         }
       }
     }
   },
   c: {
-    name: "[TBT] C",
+    name: "C",
     options: {
       compiler: {
-        name: "[TBT] Compiler",
+        name: "コンパイラ",
         values: {
-          gcc: "[TBT] GCC",
-          clang: "[TBT] Clang"
+          gcc: "GCC",
+          clang: "Clang"
         }
       },
       std: {
-        name: "[TBT] C Standard",
+        name: "C 標準",
         values: {
-          c89: "[TBT] ISO C89",
-          c99: "[TBT] ISO C99",
-          c11: "[TBT] ISO C11",
-          c17: "[TBT] ISO C17",
-          gnu89: "[TBT] GNU C89",
-          gnu99: "[TBT] GNU C99",
-          gnu11: "[TBT] GNU C11",
-          gnu17: "[TBT] GNU C17"
+          c89: "ISO C89",
+          c99: "ISO C99",
+          c11: "ISO C11",
+          c17: "ISO C17",
+          gnu89: "GNU C89",
+          gnu99: "GNU C99",
+          gnu11: "GNU C11",
+          gnu17: "GNU C17"
         }
       },
       O: {
-        name: "[TBT] Optimization",
+        name: "最適化",
         values: {
-          0: "[TBT] -O0 (disable optimization)",
-          1: "[TBT] -O1",
-          2: "[TBT] -O2",
-          3: "[TBT] -O3",
-          fast: "[TBT] -Ofast (fastest)"
+          0: "-O0 (最適化無効)",
+          1: "-O1",
+          2: "-O2",
+          3: "-O3",
+          fast: "-Ofast (最速)"
         }
       },
       m: {
-        name: "[TBT] Architecture",
+        name: "アーキテクチャ",
         values: {
-          64: "[TBT] 64-bit",
-          32: "[TBT] 32-bit",
-          x32: "[TBT] 64-bit (with 32-bit pointers)"
+          64: "64ビット",
+          32: "32ビット",
+          x32: "64ビット (32ビットポインタ)"
         }
       }
     }
   },
   java: {
-    name: "[TBT] Java"
+    name: "Java"
   },
   kotlin: {
-    name: "[TBT] Kotlin",
+    name: "Kotlin",
     options: {
       version: {
-        name: "[TBT] Version",
+        name: "バージョン",
         values: {
           1.5: "1.5",
           1.6: "1.6",
@@ -105,33 +105,33 @@ return {
         }
       },
       platform: {
-        name: "[TBT] Platform",
+        name: "プラットフォーム",
         values: {
-          jvm: "[TBT] JVM"
+          jvm: "JVM"
         }
       }
     }
   },
   pascal: {
-    name: "[TBT] Pascal",
+    name: "Pascal",
     options: {
       optimize: {
-        name: "[TBT] Optimization",
+        name: "最適化",
         values: {
-          "-": "[TBT] Disabled",
-          1: "[TBT] -O",
-          2: "[TBT] -O2",
-          3: "[TBT] -O3",
-          4: "[TBT] -O4 (fastest)"
+          "-": "無効",
+          1: "-O",
+          2: "-O2",
+          3: "-O3",
+          4: "-O4 (最速)"
         }
       }
     }
   },
   python: {
-    name: "[TBT] Python",
+    name: "Python",
     options: {
       version: {
-        name: "[TBT] Version",
+        name: "バージョン",
         values: {
           2.7: "2.7",
           3.9: "3.9",
@@ -141,32 +141,32 @@ return {
     }
   },
   rust: {
-    name: "[TBT] Rust",
+    name: "Rust",
     options: {
       version: {
-        name: "[TBT] Version",
+        name: "バージョン",
         values: {
-          2015: "[TBT] 2015",
-          2018: "[TBT] 2018",
-          2021: "[TBT] 2021"
+          2015: "2015",
+          2018: "2018",
+          2021: "2021"
         }
       },
       optimize: {
-        name: "[TBT] Optimization",
+        name: "最適化",
         values: {
-          0: "[TBT] Disabled",
-          1: "[TBT] Level 1",
-          2: "[TBT] Level 2",
-          3: "[TBT] Level 3 (fastest)"
+          0: "無効",
+          1: "レベル 1",
+          2: "レベル 2",
+          3: "レベル 3 (最速)"
         }
       }
     }
   },
   swift: {
-    name: "[TBT] Swift",
+    name: "Swift",
     options: {
       version: {
-        name: "[TBT] Version",
+        name: "バージョン",
         values: {
           4.2: "4.2",
           5: "5",
@@ -174,43 +174,43 @@ return {
         }
       },
       optimize: {
-        name: "[TBT] Optimize",
+        name: "最適化",
         values: {
-          Onone: "[TBT] Disabled",
-          O: "[TBT] Enabled",
-          Ounchecked: "[TBT] Enabled (no safety checks)"
+          Onone: "無効",
+          O: "有効",
+          Ounchecked: "有効 (安全性チェックなし)"
         }
       }
     }
   },
   go: {
-    name: "[TBT] Go",
+    name: "Go",
     options: {
       version: {
-        name: "[TBT] Version",
+        name: "バージョン",
         values: {
-          "1.x": "[TBT] 1.x"
+          "1.x": "1.x"
         }
       }
     }
   },
   haskell: {
-    name: "[TBT] Haskell",
+    name: "Haskell",
     options: {
       version: {
-        name: "[TBT] Version",
+        name: "バージョン",
         values: {
-          98: "[TBT] Haskell 98",
-          2010: "[TBT] Haskell 2010"
+          98: "Haskell 98",
+          2010: "Haskell 2010"
         }
       }
     }
   },
   csharp: {
-    name: "[TBT] C#",
+    name: "C#",
     options: {
       version: {
-        name: "[TBT] Version",
+        name: "バージョン",
         values: {
           7.3: "7.3",
           8: "8",
@@ -220,6 +220,6 @@ return {
     }
   },
   fsharp: {
-    name: "[TBT] F#"
+    name: "F#"
   }
 };

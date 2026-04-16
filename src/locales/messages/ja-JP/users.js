@@ -3,7 +3,7 @@ return {
   error: {
     TAKE_TOO_MANY: "リクエストが制限を超えています。"
   },
-  manage_groups: "[TBT] Manage groups",
+  manage_groups: "グループを管理",
   rank: "ランキング",
   username: "ユーザ名",
   id: "識別子",

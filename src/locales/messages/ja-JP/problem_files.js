@@ -24,21 +24,21 @@ return {
   confirm_override: "上書きする",
   progress_waiting: "アップロードを待機中",
   progress_uploading: "アップロード中 {progress}%",
-  progress_retrying: "[TBT] Retrying",
+  progress_retrying: "再試行中",
   progress_requesting: "リクエストしています",
   progress_error: "アップロードに失敗しました",
   progress_cancelled: "アップロードをキャンセルしました",
   cancel_upload: "キャンセル",
   back_to_problem: "戻る",
-  no_files_to_download: "[TBT] No files to download.",
-  invalid_filename: "[TBT] Invalid filename.",
+  no_files_to_download: "ダウンロードするファイルがありません。",
+  invalid_filename: "無効なファイル名です。",
   error: {
     PERMISSION_DENIED: "権限がありません。",
     NO_SUCH_PROBLEM: "問題が存在しません。",
     NO_SUCH_FILE: "ファイルが存在しません。",
     TOO_MANY_FILES: "ファイル数が制限を超えました，管理者に連絡してください。",
     TOTAL_SIZE_TOO_LARGE: "データのサイズが制限を超えました，管理者に連絡してください。",
-    FILE_UUID_EXISTS: "[TBT] Unknown error.",
+    FILE_UUID_EXISTS: "不明なエラーです。",
     FILE_NOT_UPLOADED: "アップロードしたファイルは存在しません。"
   }
 };

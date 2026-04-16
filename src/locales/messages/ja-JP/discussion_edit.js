@@ -1,13 +1,13 @@
 return {
-  title_new: "[TBT] Add discussion",
-  title_update: "[TBT] Edit discussion",
+  title_new: "ディスカッションを追加",
+  title_update: "ディスカッションを編集",
   errors: {
-    PERMISSION_DENIED: "[TBT] Permission denied.",
-    NO_SUCH_PROBLEM: "[TBT] No such problem.",
-    NO_SUCH_DISCUSSION: "[TBT] No such discussion."
+    PERMISSION_DENIED: "権限がありません。",
+    NO_SUCH_PROBLEM: "問題が存在しません。",
+    NO_SUCH_DISCUSSION: "ディスカッションが存在しません。"
   },
   header: {
-    add: "[TBT] Add discussion",
-    update: "[TBT] Edit discussion"
+    add: "ディスカッションを追加",
+    update: "ディスカッションを編集"
   }
 };

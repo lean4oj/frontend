@@ -23,10 +23,10 @@ return {
     clear_filters: "フィルタを消去",
     create: "問題を追加"
   },
-  column_status: "[TBT] Status",
+  column_status: "状態",
   column_title: "問題",
   column_submission_count: "提出",
   column_accepted_rate: "正答率",
   non_public: "非公開",
-  no_title: "[TBT] (No title)"
+  no_title: "（タイトルなし）"
 };

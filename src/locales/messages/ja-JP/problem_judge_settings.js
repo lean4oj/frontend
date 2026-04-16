@@ -9,80 +9,80 @@ return {
   error: {
     NO_SUCH_PROBLEM: "問題が存在しません。",
     PERMISSION_DENIED: "権限がありません。",
-    PROBLEM_HAS_SUBMISSION: "[TBT] The type of a problem with submissions can't be switched.",
+    PROBLEM_HAS_SUBMISSION: "提出がある問題のタイプは切り替えられません。",
     INVALID_JUDGE_INFO: {
-      INVALID_TIME_LIMIT_TASK: "[TBT] Invalid time limit.",
-      TIME_LIMIT_TOO_LARGE_TASK: "[TBT] The time limit {3} ms is too large, please contact the admin.",
-      INVALID_TIME_LIMIT_SUBTASK: "[TBT] The time limit of subtask {1} is invalid.",
+      INVALID_TIME_LIMIT_TASK: "時間制限が無効です。",
+      TIME_LIMIT_TOO_LARGE_TASK: "時間制限 {3} ms が大きすぎます。管理者に連絡してください。",
+      INVALID_TIME_LIMIT_SUBTASK: "サブタスク {1} の時間制限が無効です。",
       TIME_LIMIT_TOO_LARGE_SUBTASK:
-        "[TBT] The time limit {3} ms of subtask {1} is too large, please contact the admin.",
-      INVALID_TIME_LIMIT_TESTCASE: "[TBT] The time limit of subtask {1}'s testcase {2} is invalid.",
+        "サブタスク {1} の時間制限 {3} ms が大きすぎます。管理者に連絡してください。",
+      INVALID_TIME_LIMIT_TESTCASE: "サブタスク {1} のテストケース {2} の時間制限が無効です。",
       TIME_LIMIT_TOO_LARGE_TESTCASE:
-        "[TBT] The time limit {3} ms of subtask {1}'s testcase {2} is too large, please contact the admin.",
-      INVALID_MEMORY_LIMIT_TASK: "[TBT] Invalid memory limit.",
-      MEMORY_LIMIT_TOO_LARGE_TASK: "[TBT] The memory {3} MiB is too large, please contact the admin.",
-      INVALID_MEMORY_LIMIT_SUBTASK: "[TBT] The memory limit of subtask {1} is invalid.",
+        "サブタスク {1} のテストケース {2} の時間制限 {3} ms が大きすぎます。管理者に連絡してください。",
+      INVALID_MEMORY_LIMIT_TASK: "メモリ制限が無効です。",
+      MEMORY_LIMIT_TOO_LARGE_TASK: "メモリ制限 {3} MiB が大きすぎます。管理者に連絡してください。",
+      INVALID_MEMORY_LIMIT_SUBTASK: "サブタスク {1} のメモリ制限が無効です。",
       MEMORY_LIMIT_TOO_LARGE_SUBTASK:
-        "[TBT] The memory limit {3} MiB of subtask {1} is too large, please contact the admin.",
-      INVALID_MEMORY_LIMIT_TESTCASE: "[TBT] The memory limit of subtask {1}'s testcase {2} is invalid.",
+        "サブタスク {1} のメモリ制限 {3} MiB が大きすぎます。管理者に連絡してください。",
+      INVALID_MEMORY_LIMIT_TESTCASE: "サブタスク {1} のテストケース {2} のメモリ制限が無効です。",
       MEMORY_LIMIT_TOO_LARGE_TESTCASE:
-        "[TBT] The memory limit {3} MiB of subtask {1}'s testcase {2} is too large, please contact the admin.",
-      INVALID_FILEIO_FILENAME: "[TBT] The input or output filename {1} is invalid.",
-      NO_TESTCASES: "[TBT] No testcases.",
-      SUBTASK_HAS_NO_TESTCASES: "[TBT] Subtask {1} has no testcases.",
-      INVALID_SCORING_TYPE: "[TBT] Unknown error.",
-      INVALID_POINTS_SUBTASK: "[TBT] Subtask {1}'s percentage points {2} is invalid.",
-      INVALID_POINTS_TESTCASE: "[TBT] Subtask {1}'s testcase {2}'s percentage points {2} is invalid.",
+        "サブタスク {1} のテストケース {2} のメモリ制限 {3} MiB が大きすぎます。管理者に連絡してください。",
+      INVALID_FILEIO_FILENAME: "入力ファイル名または出力ファイル名 {1} が無効です。",
+      NO_TESTCASES: "テストケースがありません。",
+      SUBTASK_HAS_NO_TESTCASES: "サブタスク {1} にテストケースがありません。",
+      INVALID_SCORING_TYPE: "不明なエラーです。",
+      INVALID_POINTS_SUBTASK: "サブタスク {1} の配点比率 {2} が無効です。",
+      INVALID_POINTS_TESTCASE: "サブタスク {1} のテストケース {2} の配点比率 {3} が無効です。",
       POINTS_SUM_UP_TO_LARGER_THAN_100_SUBTASKS:
-        "[TBT] The sum of all subtasks' points is {1}, exceeding the full points 100.",
+        "全サブタスクの配点合計が {1} で、満点の 100 を超えています。",
       POINTS_SUM_UP_TO_LARGER_THAN_100_TESTCASES:
-        "[TBT] The sum of subtask {1}'s all testcases' points is {2}, exceeding the full points 100.",
-      INVALID_DEPENDENCY: "[TBT] Subtask {1}'s dependency subtask ID {2} is invalid",
-      NO_SUCH_INPUT_FILE: "[TBT] Input file {3} referenced by subtask {1}'s testcase {2} doesn't exist.",
-      NO_SUCH_OUTPUT_FILE: "[TBT] Output file {3} referenced by subtask {1}'s testcase {2} doesn't exist.",
-      INVALID_CHECKER_TYPE: "[TBT] Unknown error.",
-      INVALID_CHECKER_OPTIONS: "[TBT] Unknown error.",
-      INVALID_CHECKER_INTERFACE: "[TBT] Unknown error.",
-      INVALID_CHECKER_LANGUAGE: "[TBT] Unknown error.",
-      NO_SUCH_CHECKER_FILE: "[TBT] The checker file {1} doesn't exist.",
-      INVALID_CHECKER_COMPILE_AND_RUN_OPTIONS: "[TBT] Unknown error.",
-      INVALID_TIME_LIMIT_CHECKER: "[TBT] Invalid time limit for checker.",
-      INVALID_MEMORY_LIMIT_CHECKER: "[TBT] Invalid memory limit for checker.",
-      TIME_LIMIT_TOO_LARGE_CHECKER: "[TBT] The time limit for checker {1} ms is too large, please contact the admin.",
+        "サブタスク {1} の全テストケースの配点合計が {2} で、満点の 100 を超えています。",
+      INVALID_DEPENDENCY: "サブタスク {1} の依存サブタスク ID {2} が無効です。",
+      NO_SUCH_INPUT_FILE: "サブタスク {1} のテストケース {2} が参照する入力ファイル {3} が存在しません。",
+      NO_SUCH_OUTPUT_FILE: "サブタスク {1} のテストケース {2} が参照する出力ファイル {3} が存在しません。",
+      INVALID_CHECKER_TYPE: "不明なエラーです。",
+      INVALID_CHECKER_OPTIONS: "不明なエラーです。",
+      INVALID_CHECKER_INTERFACE: "不明なエラーです。",
+      INVALID_CHECKER_LANGUAGE: "不明なエラーです。",
+      NO_SUCH_CHECKER_FILE: "チェッカーファイル {1} が存在しません。",
+      INVALID_CHECKER_COMPILE_AND_RUN_OPTIONS: "不明なエラーです。",
+      INVALID_TIME_LIMIT_CHECKER: "チェッカーの時間制限が無効です。",
+      INVALID_MEMORY_LIMIT_CHECKER: "チェッカーのメモリ制限が無効です。",
+      TIME_LIMIT_TOO_LARGE_CHECKER: "チェッカーの時間制限 {1} ms が大きすぎます。管理者に連絡してください。",
       TIME_MEMORY_TOO_LARGE_CHECKER:
-        "[TBT] The memory limit for checker {1} ms is too large, please contact the admin.",
-      INVALID_INTERACTOR: "[TBT] Unknown error",
-      INVALID_INTERACTOR_INTERFACE: "[TBT] Unknown error",
-      INVALID_INTERACTOR_SHARED_MEMORY_SIZE: "[TBT] Unknown error",
-      INVALID_INTERACTOR_COMPILE_AND_RUN_OPTIONS: "[TBT] Unknown error",
-      INVALID_INTERACTOR_LANGUAGE: "[TBT] Unknown error",
-      NO_SUCH_INTERACTOR_FILE: "[TBT] The interactor file {1} doesn't exist.",
-      INVALID_TIME_LIMIT_INTERACTOR: "[TBT] Invalid time limit for interactor.",
-      INVALID_MEMORY_LIMIT_INTERACTOR: "[TBT] Invalid time limit for interactor.",
+        "チェッカーのメモリ制限 {1} MiB が大きすぎます。管理者に連絡してください。",
+      INVALID_INTERACTOR: "不明なエラーです。",
+      INVALID_INTERACTOR_INTERFACE: "不明なエラーです。",
+      INVALID_INTERACTOR_SHARED_MEMORY_SIZE: "不明なエラーです。",
+      INVALID_INTERACTOR_COMPILE_AND_RUN_OPTIONS: "不明なエラーです。",
+      INVALID_INTERACTOR_LANGUAGE: "不明なエラーです。",
+      NO_SUCH_INTERACTOR_FILE: "インタラクターファイル {1} が存在しません。",
+      INVALID_TIME_LIMIT_INTERACTOR: "インタラクターの時間制限が無効です。",
+      INVALID_MEMORY_LIMIT_INTERACTOR: "インタラクターのメモリ制限が無効です。",
       TIME_LIMIT_TOO_LARGE_INTERACTOR:
-        "[TBT] The time limit for interactor {1} ms is too large, please contact the admin.",
+        "インタラクターの時間制限 {1} ms が大きすぎます。管理者に連絡してください。",
       MEMORY_LIMIT_TOO_LARGE_INTERACTOR:
-        "[TBT] The memory limit for interactor {1} ms is too large, please contact the admin.",
-      INVALID_EXTRA_SOURCE_FILES: "[TBT] Unknown error.",
-      INVALID_EXTRA_SOURCE_FILES_LANGUAGE: "[TBT] Unknown error.",
-      INVALID_EXTRA_SOURCE_FILES_DST: "[TBT] Extra source files {3}'s destination filename is invalid.",
-      NO_SUCH_EXTRA_SOURCE_FILES_SRC: "[TBT] Extra source files {3} doesn't exist.",
-      CYCLICAL_SUBTASK_DEPENDENCY: "[TBT] Cyclical subtask dependency.",
-      TOO_MANY_TESTCASES: "[TBT] Too many testcases, please contact the admin."
+        "インタラクターのメモリ制限 {1} MiB が大きすぎます。管理者に連絡してください。",
+      INVALID_EXTRA_SOURCE_FILES: "不明なエラーです。",
+      INVALID_EXTRA_SOURCE_FILES_LANGUAGE: "不明なエラーです。",
+      INVALID_EXTRA_SOURCE_FILES_DST: "追加ソースファイル {3} の出力先ファイル名が無効です。",
+      NO_SUCH_EXTRA_SOURCE_FILES_SRC: "追加ソースファイル {3} が存在しません。",
+      CYCLICAL_SUBTASK_DEPENDENCY: "サブタスクの依存関係に循環があります。",
+      TOO_MANY_TESTCASES: "テストケース数が多すぎます。管理者に連絡してください。"
     }
   },
   edit_raw: {
     edit_raw: "コードを編集する",
     parse_error: "YAMLパースに失敗しました",
     cancel: "キャンセル",
-    confirm_cancel: "[TBT] Discard changes",
+    confirm_cancel: "変更を破棄",
     ok: "保存"
   },
   problem_type: "問題のタイプ",
   switch_type: "スイッチする",
-  submittable: "[TBT] Submittable",
-  confirm_switch_type: "[TBT] Confirm switch type",
-  switch_type_success: "[TBT] Successfully switched problem type.",
+  submittable: "提出可能",
+  confirm_switch_type: "タイプ切り替えを確認",
+  switch_type_success: "問題タイプの切り替えに成功しました。",
   meta: {
     time_limit: "時間制限",
     memory_limit: "メモリ制限",
@@ -92,55 +92,55 @@ return {
     run_samples: "サンプルをジャッジする"
   },
   checker: {
-    checker: "[TBT] Checker",
+    checker: "チェッカー",
     types: {
-      integers: "[TBT] Integers",
-      floats: "[TBT] Floats",
-      lines: "[TBT] Lines",
-      binary: "[TBT] Binary",
-      custom: "[TBT] Custom"
+      integers: "整数",
+      floats: "浮動小数点数",
+      lines: "行比較",
+      binary: "バイナリ",
+      custom: "カスタム"
     },
     config: {
       floats: {
-        precision: "[TBT] Precision",
+        precision: "精度",
         description:
-          "[TBT] The participant's answer is considered correct if its absolute or relative error to the jury's answer is less than {value}."
+          "参加者の答えと正解との絶対誤差または相対誤差が {value} 未満の場合、正解とみなされます。"
       },
       lines: {
-        case_sensitive: "[TBT] Case Sensitive",
+        case_sensitive: "大文字小文字を区別",
         description:
-          "[TBT] The blank characters in the end of each line and empty lines in the end of file are ignored."
+          "各行の末尾の空白文字とファイル末尾の空行は無視されます。"
       },
       custom: {
-        interface: "[TBT] Interface",
+        interface: "インターフェース",
         interfaces: {
-          testlib: "[TBT] Testlib",
-          legacy: "[TBT] SYZOJ 2",
-          lemon: "[TBT] Lemon",
-          hustoj: "[TBT] HustOJ",
-          qduoj: "[TBT] QDUOJ",
-          domjudge: "[TBT] DOMjudge"
+          testlib: "Testlib",
+          legacy: "SYZOJ 2",
+          lemon: "Lemon",
+          hustoj: "HustOJ",
+          qduoj: "QDUOJ",
+          domjudge: "DOMjudge"
         },
-        filename: "[TBT] File",
-        filename_no_file: "[TBT] No file"
+        filename: "ファイル",
+        filename_no_file: "ファイルなし"
       }
     }
   },
   interactor: {
-    interactor: "[TBT] Interactor",
+    interactor: "インタラクター",
     interfaces: {
-      stdio: "[TBT] Standard Input/Output",
-      shm: "[TBT] Shared Memory"
+      stdio: "標準入出力",
+      shm: "共有メモリ"
     },
-    shm_size: "[TBT] Shared Memory Size",
-    filename: "[TBT] File",
-    filename_no_file: "[TBT] No file"
+    shm_size: "共有メモリサイズ",
+    filename: "ファイル",
+    filename_no_file: "ファイルなし"
   },
   subtasks: {
     auto_testcases:
-      "[TBT] Detect testcases from testdata files (Match <code>.in</code> and <code>.out</code> files automatically)",
-    auto_testcases_no_output: "[TBT] Detect testcases from testdata files (Match <code>.in</code> files automatically)",
-    cannot_detect_testcases_from_testdata: "[TBT] Cannot detect testcases from testdata",
+      "テストデータファイルからテストケースを検出（<code>.in</code> と <code>.out</code> ファイルを自動的に一致）",
+    auto_testcases_no_output: "テストデータファイルからテストケースを検出（<code>.in</code> ファイルを自動的に一致）",
+    cannot_detect_testcases_from_testdata: "テストデータからテストケースを検出できません",
     subtask: "サブタスク",
     single_subtask: "シングルサブタスク",
     subtask_testcases_count: "{count}",
@@ -164,7 +164,7 @@ return {
       subtask: "サブタスク",
       help: "正規表現を使って入力ファイルと出力ファイルを選択し，リンクしてテストケースを追加します。",
       help_no_output:
-        "[TBT] Enter the regexes to match the filenames. Each matched file will become a testcase's input file.",
+        "ファイル名に一致する正規表現を入力してください。一致した各ファイルはテストケースの入力ファイルになります。",
       input_file: "入力ファイル",
       output_file: "出力ファイル",
       can_not_compile_for_input: "入力ファイルの正規表現はコンパイルできません：{message}",
@@ -188,7 +188,7 @@ return {
     testcase: {
       input_file: "入力ファイル",
       output_file: "出力ファイル",
-      output_file_not_needed: "[TBT] Output file is not needed"
+      output_file_not_needed: "出力ファイルは不要です"
     },
     testcase_add: {
       before: "前に追加",
@@ -203,15 +203,15 @@ return {
     dependencies: "このサブタスクに依存する"
   },
   file_selector: {
-    no_matching_files: "[TBT] No matching files.",
-    file_not_found_warning: "[TBT] File not found."
+    no_matching_files: "一致するファイルがありません。",
+    file_not_found_warning: "ファイルが見つかりません。"
   },
   extra_source_files: {
-    option: "[TBT] Add extra source files when compiling",
-    title: "[TBT] Extra source files",
-    src: "[TBT] Source",
-    dst: "[TBT] Destination",
-    delete: "[TBT] Delete",
-    confirm_delete: "[TBT] Confirm delete"
+    option: "コンパイル時に追加ソースファイルを含める",
+    title: "追加ソースファイル",
+    src: "ソース",
+    dst: "出力先",
+    delete: "削除",
+    confirm_delete: "削除を確認"
   }
 };

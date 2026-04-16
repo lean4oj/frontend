@@ -16,8 +16,8 @@ return {
   hide_tags: "タグを隠す",
   type: {
     Traditional: "Batch",
-    Interaction: "[TBT] Interaction",
-    SubmitAnswer: "[TBT] Submit Answer",
+    Interaction: "インタラクティブ",
+    SubmitAnswer: "解答提出",
     Lean: "Lean"
   },
   statistic: {
@@ -43,12 +43,12 @@ return {
     set_public_confirm: "公開する",
     set_non_public_confirm: "非公開にする",
     delete: "削除",
-    delete_confirm_title: "[TBT] Delete Problem",
+    delete_confirm_title: "問題を削除",
     delete_confirm_content:
-      "[TBT] Are you sure to delete the problem? The submissions, discussions and files of the problem will also be deleted. It may take some time.",
-    delete_confirm: "[TBT] Confirm delete",
-    delete_cancel: "[TBT] Cancel",
-    delete_success: "[TBT] Successfully deleted."
+      "問題を削除してもよろしいですか？問題の提出、ディスカッション、ファイルもすべて削除されます。時間がかかる場合があります。",
+    delete_confirm: "削除を確認",
+    delete_cancel: "キャンセル",
+    delete_success: "削除に成功しました。"
   },
   error: {
     PERMISSION_DENIED: "権限がありません。",
@@ -58,22 +58,22 @@ return {
     PUBLIC_PROBLEM_MUST_HAVE_DISPLAY_ID: "公開する問題にはIDを設定してください。",
     DUPLICATE_DISPLAY_ID: "ID {displayId} は使用されています。"
   },
-  upload_error: "[TBT] Failed to upload file: {error}",
+  upload_error: "ファイルのアップロードに失敗しました: {error}",
   submit: {
     // This must be at most than full-width character characters e.g. "上次提交"
-    last_submission: "[TBT] Last Sub.",
+    last_submission: "前回提出",
     back_to_statement: "戻る",
     skip_samples: "サンプルをスキップする",
-    upload_files: "[TBT] Upload files",
-    choose_files: "[TBT] Choose ...",
-    selected_archive: "[TBT] Selected a archive file.",
-    selected_valid_files: "[TBT] Selected {all} file(s). {valid} of them are valid.",
-    selected_files: "[TBT] Selected {all} file(s).",
-    cancel_select_files: "[TBT] Cancel selected files",
-    clear_editor_to_use_upload_left: "[TBT] To use file uploading, please ",
-    clear_editor: "[TBT] clear the editor(s)",
-    clear_editor_to_use_upload_right: "[TBT] .",
-    fill_in_editor_or_upload_file: "[TBT] Fill in the editor(s) with your answer or upload file(s).",
+    upload_files: "ファイルをアップロード",
+    choose_files: "ファイルを選択...",
+    selected_archive: "アーカイブファイルを選択しました。",
+    selected_valid_files: "{all} 個のファイルを選択しました。そのうち {valid} 個が有効です。",
+    selected_files: "{all} 個のファイルを選択しました。",
+    cancel_select_files: "選択をキャンセル",
+    clear_editor_to_use_upload_left: "ファイルアップロードを使用するには、",
+    clear_editor: "エディタの内容をクリア",
+    clear_editor_to_use_upload_right: "してください。",
+    fill_in_editor_or_upload_file: "エディタに解答を入力するか、ファイルをアップロードしてください。",
     module_name: "モジュールパス",
     module_name_example: "AplusB.Mainなど、ユーザー識別子なしで、「.」で区切る",
     const_name: "定理名",
