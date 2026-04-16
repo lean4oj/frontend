@@ -610,7 +610,6 @@ const SecurityView: React.FC<SecurityViewProps> = props => {
       {apiTokens.length ? (
         <SegmentGroup className={style.sessionList}>
           {apiTokens
-            .sort((a, b) => b.createdAt - a.createdAt)
             .map(token => {
               const createdAt = new Date(token.createdAt);
               const lastUsedAt = token.lastUsedAt ? new Date(token.lastUsedAt) : null;

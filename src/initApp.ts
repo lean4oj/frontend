@@ -2,7 +2,6 @@ import * as timeago from "timeago.js";
 import timeAgoJa from "timeago.js/esm/lang/ja";
 
 import { appState, initAppStateStore } from "@/appState";
-import { unescapeLocalizedMessage } from "@/locales";
 import { loadGoogleAnalytics, loadPlausible } from "@/misc/analytics";
 import toast from "@/utils/toast";
 

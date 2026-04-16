@@ -3,8 +3,8 @@ return {
     profile: "プロファイル",
     preference: "環境設定",
     security: "セキュリティ",
-    privilege: "[TBT] Privileges",
-    audit: "[TBT] Audit log"
+    privilege: "権限",
+    audit: "監査ログ"
   },
   back_to_profile: "ユーザページに戻る",
   back_to_profile_of_user: "このユーザのプロファイルに戻る",
@@ -14,9 +14,9 @@ return {
     NO_SUCH_USER: "ユーザが存在しません。",
     DUPLICATE_USERNAME: "このユーザ名はすでに使用されています。",
     DUPLICATE_EMAIL: "このメールアドレスはすでに使用されています。",
-    FAILED: "[TBT] Unknown error.",
-    FAILED_TO_SEND: "[TBT] Failed to send mail: {errorMessage}",
-    RATE_LIMITED: "[TBT] Your operations are too frequent. Please try again later.",
+    FAILED: "不明なエラーです。",
+    FAILED_TO_SEND: "メール送信に失敗しました：{errorMessage}",
+    RATE_LIMITED: "操作が頻繁すぎます。しばらく待ってからもう一度お試しください。"
     TOO_MANY_TOKENS: "[TBT] You have reached the maximum number of API tokens."
   },
   profile: {
@@ -62,8 +62,8 @@ return {
     github_placeholder: "@ を含めない",
     github_notes: "あなたのGitHubリンクは：",
     submit: "保存",
-    error_invalid_username: "[TBT] Invalid username.",
-    error_invalid_email: "[TBT] Invalid email address.",
+    error_invalid_username: "無効なユーザ名です。",
+    error_invalid_email: "無効なメールアドレスです。",
     error_invalid_url: "無効なURLです。",
     success: "保存に成功しました。"
   },
@@ -80,41 +80,41 @@ return {
       content_default: "システムのデフォルト",
       content_default_name: "システムのデフォルト（{name}）",
       content_notes: "選択した言語の問題文がない場合は、問題のデフォルト言語で表示します",
-      hide_unavailable_message: '[TBT] Hide "this content is not available in your preferred language" message'
+      hide_unavailable_message: "「このコンテンツはあなたの言語では利用できません」のメッセージを非表示"
     },
     appearance: {
-      header: "[TBT] Appearance",
-      theme: "[TBT] Theme",
+      header: "外観",
+      theme: "テーマ",
       themes: {
         auto: {
-          name: "[TBT] Auto",
-          description: "[TBT] Use light (PURE) or dark (FAR) theme based on browser or system preference"
+          name: "自動",
+          description: "ブラウザまたはシステムの設定に基づいてライトテーマ（PURE）またはダークテーマ（FAR）を使用"
         },
         pure: {
-          name: "[TBT] PURE",
-          description: "[TBT] Light theme"
+          name: "PURE",
+          description: "ライトテーマ"
         },
         far: {
-          name: "[TBT] FAR",
-          description: "[TBT] Dark theme"
+          name: "FAR",
+          description: "ダークテーマ"
         }
       },
-      content_font_face: "[TBT] Content Font",
-      system_default_sans_serif: "[TBT] sans-serif (browser default)",
-      system_default_serif: "[TBT] serif (browser default)",
-      content_preview: "[TBT] Preview",
-      code_font_face: "[TBT] Code Font",
-      system_default: "[TBT] monospace (browser default)",
-      code_font_size: "[TBT] Code Font Size",
-      code_line_height: "[TBT] Code Line Height",
-      code_font_ligatures: "[TBT] Enable Ligatures",
+      content_font_face: "コンテンツフォント",
+      system_default_sans_serif: "sans-serif（ブラウザのデフォルト）",
+      system_default_serif: "serif（ブラウザのデフォルト）",
+      content_preview: "プレビュー",
+      code_font_face: "コードフォント",
+      system_default: "monospace（ブラウザのデフォルト）",
+      code_font_size: "コードフォントサイズ",
+      code_line_height: "コード行の高さ",
+      code_font_ligatures: "合字を有効にする",
       code_font_ligatures_notes:
-        "[TBT] Ligatures could display some combining symbols in a more readable form. Only several fonts support this feature.",
-      code_preview: "[TBT] Preview",
+        "合字により、一部の組み合わせ記号をより読みやすい形で表示できます。この機能をサポートするフォントは限られています。",
+      code_preview: "プレビュー",
       markdown_editor_font: {
-        markdown_editor: "[TBT] Markdown Editor",
-        content_font: "[TBT] Content Font",
-        code_font: "[TBT] Code Font"
+        markdown_editor: "Markdownエディタ",
+        content_font: "コンテンツフォント",
+        code_font: "コードフォント"
       }
     },
     code_language: {
@@ -155,30 +155,30 @@ return {
       email: "メールアドレス",
       invalid_email: "無効なメールアドレスです。",
       duplicate_email: "このメールアドレスはすでに使用されています。",
-      email_verification_code: "[TBT] Email verification code",
-      send_email_verification_code: "[TBT] Send",
-      verification_code_sent: "[TBT] Email verification code sent.",
-      invalid_email_verification_code: "[TBT] Invalid email verification code",
+      email_verification_code: "メール確認コード",
+      send_email_verification_code: "送信",
+      verification_code_sent: "メール確認コードを送信しました。",
+      invalid_email_verification_code: "無効なメール確認コードです",
       success: "メールアドレス変更に成功しました。",
       submit: "変更"
     },
     sessions: {
-      header: "[TBT] Sessions",
-      revoke_all: "[TBT] Logout all",
-      confirm_revoke_all: "[TBT] Confirm logout all",
-      success_revoke_all: "[TBT] Successfully logged out all sessions of this user.",
-      success_revoke_all_current_user: "[TBT] Successfully logged out all your other sessions.",
-      current: "[TBT] Current session",
-      last_active: "[TBT] Last seen {time}",
-      revoke: "[TBT] Logout",
-      confirm_revoke: "[TBT] Confirm logout",
-      success_revoke: "[TBT] Successfully logged out the session.",
-      login_ip: "[TBT] Logged-in on {ip}   ·   ",
-      login_ip_location: "[TBT] Logged-in on {ip}   ·   ", // Currently we don't support IP location in other languages
-      no_sessions: "[TBT] This user has no sessions",
-      unknown_os_browser: "[TBT] Unknown browser and OS",
+      header: "セッション",
+      revoke_all: "すべてログアウト",
+      confirm_revoke_all: "すべてログアウトの確認",
+      success_revoke_all: "このユーザーのすべてのセッションを正常にログアウトしました。",
+      success_revoke_all_current_user: "他のすべてのセッションを正常にログアウトしました。",
+      current: "現在のセッション",
+      last_active: "最終アクセス {time}",
+      revoke: "ログアウト",
+      confirm_revoke: "ログアウトの確認",
+      success_revoke: "セッションを正常にログアウトしました。",
+      login_ip: "{ip} でログイン   ·   ",
+      login_ip_location: "{ip} でログイン   ·   ", // Currently we don't support IP location in other languages
+      no_sessions: "このユーザーはセッションがありません",
+      unknown_os_browser: "不明なブラウザとOS",
       notes_current_user:
-        '[TBT] All logged-in sessions of your account are above. If you see a session used by others, logout it and change your password immediately.\nChanging your password in "Reset your password" page will logout ALL your sessions automatically.'
+        'あなたのアカウントのログイン中のセッションはすべて上記の通りです。他人が使用しているセッションを見つけた場合は、すぐにログアウトしてパスワードを変更してください。\n「パスワードをリセット」ページでパスワードを変更すると、すべてのセッションが自動的にログアウトされます。'
     },
     api_tokens: {
       header: "[TBT] API Tokens",
@@ -207,57 +207,57 @@ return {
     // NOTE: "Privilege" is NOT "Permission"
     // "Permission" is granted easily to anyone by a manager/admin or problem's owner to view or edit a problem
     // "Privilege" is granted to a managers by the admin to take control of a part of the app.
-    title: "[TBT] Privileges",
-    header: "[TBT] Privileges",
+    title: "権限",
+    header: "権限",
     privileges: {
       EditHomepage: {
-        name: "[TBT] Edit Homepage",
-        notes: "[TBT] Modify the configuration and contents of homepage. e.g. notice and announcements."
+        name: "ホームページ編集",
+        notes: "ホームページの設定と内容を変更できます。例：お知らせやアナウンス。"
       },
       ManageUser: {
-        name: "[TBT] Manage user",
-        notes: "[TBT] Modify other user's profile, preference and security settings."
+        name: "ユーザー管理",
+        notes: "他のユーザーのプロフィール、設定、セキュリティ設定を変更できます。"
       },
       ManageUserGroup: {
-        name: "[TBT] Manage user group",
-        notes: "[TBT] Create, edit and delete user groups. Manage user groups' members."
+        name: "ユーザーグループ管理",
+        notes: "ユーザーグループの作成、編集、削除ができます。グループメンバーを管理できます。"
       },
       ManageProblem: {
-        name: "[TBT] Manage problem",
-        notes: "[TBT] View, edit all problems and submissions, manage problems' permissions and delete problems."
+        name: "問題管理",
+        notes: "すべての問題と提出を閲覧・編集でき、問題の権限を管理し、問題を削除できます。"
       },
       ManageContest: {
-        name: "[TBT] Manage contest",
-        notes: "[TBT] Placeholder."
+        name: "コンテスト管理",
+        notes: "準備中。"
       },
       ManageDiscussion: {
-        name: "[TBT] Manage discussion",
+        name: "ディスカッション管理",
         notes:
-          "[TBT] View, edit all discussions and replies, manage discussions' permissions and delete discussions or replies."
+          "すべてのディスカッションと返信を閲覧・編集でき、ディスカッションの権限を管理し、ディスカッションまたは返信を削除できます。"
       },
       SkipRecaptcha: {
-        name: "[TBT] Skip reCAPTCHA",
+        name: "reCAPTCHAスキップ",
         notes:
-          "[TBT] Submit any requests without verifying reCAPTCHA (if enabled). Useful for robots and virtual judge."
+          "reCAPTCHA（有効な場合）を検証せずに任意のリクエストを送信できます。ボットや仮想ジャッジに便利です。"
       }
     },
-    admin_only: "[TBT] Only admins can change user's privileges.",
-    submit: "[TBT] Submit",
-    success: "[TBT] Privileges updated successfully"
+    admin_only: "管理者のみがユーザーの権限を変更できます。",
+    submit: "送信",
+    success: "権限が正常に更新されました"
   },
   audit: {
-    title: "[TBT] Audit log",
-    header: "[TBT] Audit log",
+    title: "監査ログ",
+    header: "監査ログ",
     query: {
-      action_query: "[TBT] Action",
-      ip: "[TBT] IP Address",
-      first_object_id: "[TBT] Object 1",
-      second_object_id: "[TBT] Object 2",
-      filter: "[TBT] Filter"
+      action_query: "アクション",
+      ip: "IPアドレス",
+      first_object_id: "オブジェクト1",
+      second_object_id: "オブジェクト2",
+      filter: "フィルター"
     },
-    no_audit_log: "[TBT] No audit log",
-    no_matched_audit_log: "[TBT] No matched audit log",
-    copy_details: "[TBT] Copy details",
-    goback: "[TBT] Go back"
+    no_audit_log: "監査ログがありません",
+    no_matched_audit_log: "一致する監査ログがありません",
+    copy_details: "詳細をコピー",
+    goback: "戻る"
   }
 };

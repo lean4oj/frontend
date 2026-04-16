@@ -417,7 +417,7 @@ declare namespace ApiTypes {
     extraError?: string;
   }
   export interface GetSubmissionDetailRequestDto {
-    submissionId: string;
+    submissionId: number;
     locale: "en_US" | "zh_CN" | "ja_JP";
   }
   export interface GetSubmissionDetailResponseDto {

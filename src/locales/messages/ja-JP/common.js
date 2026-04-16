@@ -15,8 +15,8 @@ return {
       profile: "マイページ",
       submissions: "自分の提出",
       problems: "自分の問題",
-      discussions: "[TBT] My discussions",
-      groups: "[TBT] My groups",
+      discussions: "自分のディスカッション",
+      groups: "自分のグループ",
       edit_profile: "プロファイル設定",
       preference: "環境設定",
       logout: "ログアウト"
@@ -31,23 +31,23 @@ return {
   localized_content_unavailable: "設定された言語では表示できないため，{display_locale}で表示します。",
   footer: {
     judge_machine: "ジャッジサーバーの状態",
-    locale: "[TBT] Language",
-    github: "[TBT] Open source"
+    locale: "言語",
+    github: "オープンソース"
   },
-  invalid_url: "[TBT] Invalid URL.",
+  invalid_url: "無効なURLです。",
   request_error: {
-    400: "[TBT] Invalid request.",
-    401: "[TBT] Verification failed. Please refresh and try again.",
-    429: "[TBT] Too many requests. Please try again later.",
-    500: "[TBT] Server error. Please try again later.",
-    502: "[TBT] Couldn't connect to the server. Please try again later.",
-    503: "[TBT] Couldn't connect to the server. Please try again later.",
-    504: "[TBT] Timeout connecting to the server. Please try again later.",
-    unknown: "[TBT] Request error: {text}"
+    400: "無効なリクエストです。",
+    401: "認証に失敗しました。ページを更新してもう一度お試しください。",
+    429: "リクエストが多すぎます。しばらく待ってからもう一度お試しください。",
+    500: "サーバーエラーです。しばらく待ってからもう一度お試しください。",
+    502: "サーバーに接続できませんでした。しばらく待ってからもう一度お試しください。",
+    503: "サーバーに接続できませんでした。しばらく待ってからもう一度お試しください。",
+    504: "サーバーへの接続がタイムアウトしました。しばらく待ってからもう一度お試しください。",
+    unknown: "リクエストエラー：{text}"
   },
-  confirm_navigation: "[TBT] Be sure to leave this page? Your changes will not be saved.",
+  confirm_navigation: "このページを離れてもよろしいですか？変更内容は保存されません。",
   recaptcha: {
     copyright:
-      '[TBT] This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer noopener">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer noopener">Terms of Service</a> apply.'
+      'このサイトはreCAPTCHAによって保護されており、Googleの<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer noopener">プライバシーポリシー</a>と<a href="https://policies.google.com/terms" target="_blank" rel="noreferrer noopener">利用規約</a>が適用されます。'
   }
 };
