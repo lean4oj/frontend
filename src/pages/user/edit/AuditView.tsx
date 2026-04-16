@@ -277,7 +277,7 @@ const AuditView: React.FC<AuditViewProps> = props => {
                 {_(".no_matched_audit_log")}
               </Header>
               <Segment.Inline>
-                <Button primary onClick={() => navigation.goBack()}>
+                <Button primary onClick={navigation.goBack}>
                   {_(".goback")}
                 </Button>
               </Segment.Inline>

@@ -402,7 +402,7 @@ const SecurityView: React.FC<SecurityViewProps> = props => {
               <Popup
                 trigger={<Button basic negative className={style.revokeAll} content={_(".sessions.revoke_all")} />}
                 content={
-                  <Button content={_(".sessions.confirm_revoke_all")} negative onClick={() => onRevokeSession()} />
+                  <Button content={_(".sessions.confirm_revoke_all")} negative onClick={onRevokeSession} />
                 }
                 open={revokeAllPopupOpen}
                 onOpen={() => setRevokeAllPopupOpen(true)}
@@ -538,7 +538,7 @@ const SecurityView: React.FC<SecurityViewProps> = props => {
         content={
           <>
             <span className={style.text}>
-              {_(".api_tokens.header")} ({apiTokens.length}/{MAX_API_TOKENS})
+              {`${_(".api_tokens.header")} (${apiTokens.length}/${MAX_API_TOKENS})`}
             </span>
             <Button
               basic

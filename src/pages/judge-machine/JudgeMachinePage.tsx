@@ -166,7 +166,7 @@ let JudgeMachinePage: React.FC<JudgeMachinePageProps> = props => {
     <>
       <div className={style.headerWrapper}>
         <Header as="h1" icon="server" className={style.header + " withIcon"} content={_(".header")} />
-        <Button icon="refresh" content={_(".refresh")} labelPosition="left" onClick={() => navigation.refresh()} />
+        <Button icon="refresh" content={_(".refresh")} labelPosition="left" onClick={navigation.refresh} />
         {props.hasManagePermission && (
           <Popup
             open={addPopupOpened || addPending}

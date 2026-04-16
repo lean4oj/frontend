@@ -411,7 +411,7 @@ let PermissionManager: React.FC<PermissionManagerProps> = props => {
           trigger={<Button content={_(".cancel")} disabled={pendingSubmit} onClick={() => !modified && onClose()} />}
           // It's safe to close if not modified, don't confirm
           disabled={!modified}
-          content={<Button negative content={_(".confirm_cancel")} onClick={() => onClose()} />}
+          content={<Button negative content={_(".confirm_cancel")} onClick={onClose} />}
           on="click"
           position="top center"
         />
@@ -420,7 +420,7 @@ let PermissionManager: React.FC<PermissionManagerProps> = props => {
           content={permissions.haveSubmitPermission ? _(".submit") : _(".no_submit_permission")}
           loading={pendingSubmit}
           disabled={!permissions.haveSubmitPermission}
-          onClick={() => onSubmit()}
+          onClick={onSubmit}
         />
       </>
     )

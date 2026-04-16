@@ -210,7 +210,7 @@ let ForgetPage: React.FC = () => {
                 value={email}
                 autoComplete="email"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
-                onBlur={() => checkEmail()}
+                onBlur={checkEmail}
                 onKeyPress={onEnterPress(() => {
                   if (sendEmailVerificationCodeTimeout === 0) onSendEmailVerificationCode();
                   refEmailVerificationCodeInput.current.focus();
@@ -269,7 +269,7 @@ let ForgetPage: React.FC = () => {
                 type="password"
                 autoComplete="new-password"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
-                onBlur={() => checkPassword()}
+                onBlur={checkPassword}
                 onKeyPress={onEnterPress(() => refRetypePasswordInput.current.focus())}
               />
               <Form.Field
@@ -290,7 +290,7 @@ let ForgetPage: React.FC = () => {
                 type="password"
                 autoComplete="new-password"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setRetypePassword(e.target.value)}
-                onBlur={() => checkRetypePassword()}
+                onBlur={checkRetypePassword}
                 onKeyPress={onEnterPress(() => {
                   checkRetypePassword(); // Since the focus is not lost, forcibly re-check the field
                   onSubmit();
@@ -306,7 +306,7 @@ let ForgetPage: React.FC = () => {
               fluid
               size="large"
               loading={resetPasswordPending && !successMessage}
-              onClick={() => onSubmit()}
+              onClick={onSubmit}
             >
               {successMessage ? (
                 <>

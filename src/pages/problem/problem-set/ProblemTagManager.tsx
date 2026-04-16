@@ -477,7 +477,7 @@ let ProblemTagManager: React.FC<ProblemTagManagerProps> = props => {
               />
             }
             disabled={!modified}
-            content={<Button negative content={_(".confirm_discard_unsaved")} onClick={() => onNewTag()} />}
+            content={<Button negative content={_(".confirm_discard_unsaved")} onClick={onNewTag} />}
             position="bottom center"
             on="click"
           />

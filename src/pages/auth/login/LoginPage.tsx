@@ -119,7 +119,7 @@ let LoginPage: React.FC = () => {
           primary
           loading={migrationPending}
           content={_(".migration.confirm")}
-          onClick={() => doDialogMigration()}
+          onClick={doDialogMigration}
         />
       </>
     )
@@ -295,7 +295,7 @@ let LoginPage: React.FC = () => {
               fluid
               size="large"
               loading={pending && !successMessage}
-              onClick={() => onSubmit()}
+              onClick={onSubmit}
             >
               {successMessage ? (
                 <>

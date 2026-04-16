@@ -307,7 +307,7 @@ let RegisterPage: React.FC = () => {
                 value={username}
                 autoComplete="username"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setUsername(e.target.value)}
-                onBlur={() => checkUsername()}
+                onBlur={checkUsername}
                 onKeyPress={onEnterPress(() => refIdentifierInput.current.focus())}
               />
             {/* identifier */}
@@ -328,7 +328,7 @@ let RegisterPage: React.FC = () => {
                 value={identifier}
                 autoComplete="identifier"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setIdentifier(e.target.value)}
-                onBlur={() => checkIdentifier()}
+                onBlur={checkIdentifier}
                 onKeyPress={onEnterPress(() => refEmailInput.current.focus())}
               />
 
@@ -350,7 +350,7 @@ let RegisterPage: React.FC = () => {
                 value={email}
                 autoComplete="email"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
-                onBlur={() => checkEmail()}
+                onBlur={checkEmail}
                 onKeyPress={onEnterPress(() => {
                   if (appState.serverPreference.security.requireEmailVerification) {
                     refEmailVerificationCodeInput.current.focus();
@@ -415,7 +415,7 @@ let RegisterPage: React.FC = () => {
                 type="password"
                 autoComplete="new-password"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
-                onBlur={() => checkPassword()}
+                onBlur={checkPassword}
                 onKeyPress={onEnterPress(() => refRetypePasswordInput.current.focus())}
               />
               <Form.Field
@@ -436,7 +436,7 @@ let RegisterPage: React.FC = () => {
                 type="password"
                 autoComplete="new-password"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setRetypePassword(e.target.value)}
-                onBlur={() => checkRetypePassword()}
+                onBlur={checkRetypePassword}
                 onKeyPress={onEnterPress(() => {
                   checkRetypePassword(); // Since the focus is not lost, forcibly re-check the field
                   onSubmit();
@@ -452,7 +452,7 @@ let RegisterPage: React.FC = () => {
               fluid
               size="large"
               loading={registerPending && !successMessage}
-              onClick={() => onSubmit()}
+              onClick={onSubmit}
             >
               {successMessage ? (
                 <>

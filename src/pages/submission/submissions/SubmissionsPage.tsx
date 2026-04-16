@@ -305,7 +305,7 @@ let SubmissionsPage: React.FC<SubmissionsPageProps> = props => {
             )}
           </Header>
           <Segment.Inline>
-            <Button primary onClick={() => navigation.goBack()}>
+            <Button primary onClick={navigation.goBack}>
               {_(".empty.goback")}
             </Button>
           </Segment.Inline>

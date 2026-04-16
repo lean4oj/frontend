@@ -67,7 +67,7 @@ const SubwayGraph: React.FC<SubwayGraphProps> = props => {
   // The month label for each week is the month of the first day of the week
   const monthOfWeek = startDateOfWeek.map(date => date.month() + 1);
 
-  const getLevel = (count: number) => [1, 10, 20, 25, Infinity].findIndex(x => count < x);
+  const getLevel = (count: number) => [1, 3, 6, 10, Infinity].findIndex(x => count < x);
 
   return (
     <Segment className={style.subwayGraphSegment}>

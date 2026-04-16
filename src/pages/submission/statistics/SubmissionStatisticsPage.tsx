@@ -119,7 +119,7 @@ let SubmissionStatisticsPage: React.FC<SubmissionStatisticsPageProps> = props =>
             {_(".empty")}
           </Header>
           <Segment.Inline>
-            <Button primary onClick={() => navigation.goBack()}>
+            <Button primary onClick={navigation.goBack}>
               {_(".empty_goback")}
             </Button>
           </Segment.Inline>

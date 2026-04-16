@@ -280,7 +280,7 @@ let DiscussionsPage: React.FC<DiscussionsPageProps> = props => {
             icon="eye slash"
             active={false}
             title={_(".search_icon.nonpublic")}
-            onClick={() => onAddFilterNonpublic()}
+            onClick={onAddFilterNonpublic}
           />
         )}
       </Menu>
@@ -296,21 +296,21 @@ let DiscussionsPage: React.FC<DiscussionsPageProps> = props => {
         <Label size="small" color="grey">
           <Icon name="file alternate" />
           {props.searchQuery.keyword}
-          <Icon name="delete" onClick={() => onDelFilterKeyword()} />
+          <Icon name="delete" onClick={onDelFilterKeyword} />
         </Label>
       )}
       {props.response.filterPublisher && (
         <Label size="small" color="pink">
           <Icon name="user" />
           {props.response.filterPublisher.username}
-          <Icon name="delete" onClick={() => onDelFilterPublisher()} />
+          <Icon name="delete" onClick={onDelFilterPublisher} />
         </Label>
       )}
       {props.searchQuery.nonpublic && (
         <Label size="small" color="red" basic>
           <Icon name="eye slash" />
           {_(".non_public")}
-          <Icon name="delete" onClick={() => onDelFilterNonpublic()} />
+          <Icon name="delete" onClick={onDelFilterNonpublic} />
         </Label>
       )}
     </>
@@ -368,7 +368,7 @@ let DiscussionsPage: React.FC<DiscussionsPageProps> = props => {
               {_(".no_discussions.message_search")}
             </Header>
             <Segment.Inline>
-              <Button primary onClick={() => navigation.goBack()}>
+              <Button primary onClick={navigation.goBack}>
                 {_(".no_discussions.back")}
               </Button>
               <Button
@@ -451,7 +451,7 @@ let DiscussionsPage: React.FC<DiscussionsPageProps> = props => {
                           as="a"
                           // As long as a user can see the "nonpublic" label, it has the permission to filter the
                           // nonpublic discussions
-                          onClick={() => onAddFilterNonpublic()}
+                          onClick={onAddFilterNonpublic}
                         />
                       )}
                     </>

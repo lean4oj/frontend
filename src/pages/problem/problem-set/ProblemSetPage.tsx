@@ -324,7 +324,7 @@ let ProblemSetPage: React.FC<ProblemSetPageProps> = props => {
             icon="eye slash"
             active={false}
             title={_(".search_icon.nonpublic")}
-            onClick={() => onAddFilterNonpublic()}
+            onClick={onAddFilterNonpublic}
           />
         )}
       </Menu>
@@ -358,7 +358,7 @@ let ProblemSetPage: React.FC<ProblemSetPageProps> = props => {
           <Label size="small" color="grey">
             <Icon name="file alternate" />
             {props.searchQuery.keyword}
-            <Icon name="delete" onClick={() => onDelFilterKeyword()} />
+            <Icon name="delete" onClick={onDelFilterKeyword} />
           </Label>
         </EmojiRenderer>
       )}
@@ -366,14 +366,14 @@ let ProblemSetPage: React.FC<ProblemSetPageProps> = props => {
         <Label size="small" color="pink">
           <Icon name="user" />
           {props.response.filterOwner.username}
-          <Icon name="delete" onClick={() => onDelFilterOwner()} />
+          <Icon name="delete" onClick={onDelFilterOwner} />
         </Label>
       )}
       {props.searchQuery.nonpublic && (
         <Label size="small" color="red" basic>
           <Icon name="eye slash" />
           {_(".non_public")}
-          <Icon name="delete" onClick={() => onDelFilterNonpublic()} />
+          <Icon name="delete" onClick={onDelFilterNonpublic} />
         </Label>
       )}
       {props.response.filterTags && sortTags(props.response.filterTags).map(tag => getTagLabel(tag, "del"))}
@@ -449,7 +449,7 @@ let ProblemSetPage: React.FC<ProblemSetPageProps> = props => {
               {_(".no_problem.message_search")}
             </Header>
             <Segment.Inline>
-              <Button primary onClick={() => navigation.goBack()}>
+              <Button primary onClick={navigation.goBack}>
                 {_(".no_problem.back")}
               </Button>
               <Button as={Link} href="/p">
@@ -513,7 +513,7 @@ let ProblemSetPage: React.FC<ProblemSetPageProps> = props => {
                       as="a"
                       // As long as a user can see the "nonpublic" label, it has the permission to filter the
                       // nonpublic problems
-                      onClick={() => onAddFilterNonpublic()}
+                      onClick={onAddFilterNonpublic}
                     />
                   )}
                   <div className={style.tags} style={{ display: appState.showTagsInProblemSet ? null : "none" }}>

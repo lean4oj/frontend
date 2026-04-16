@@ -42,7 +42,7 @@ let ErrorPage: React.FC<ErrorPageProps> = props => {
               </p>
               <p>
                 {/* These errors could not be recovered. The page must be reloaded. */}
-                <a onClick={() => location.reload()}>{_(".refresh")}</a>
+                <a onClick={location.reload}>{_(".refresh")}</a>
               </p>
             </>
           ) : (

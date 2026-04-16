@@ -141,12 +141,12 @@ let SubtaskEditorTastcaseItem: React.FC<SubtaskEditorTastcaseItemProps> = props 
               <Dropdown.Item
                 icon="angle double up"
                 text={_(".subtasks.testcase_add.before")}
-                onClick={() => props.onAddTestcaseBefore()}
+                onClick={props.onAddTestcaseBefore}
               />
               <Dropdown.Item
                 icon="angle double down"
                 text={_(".subtasks.testcase_add.after")}
-                onClick={() => props.onAddTestcaseAfter()}
+                onClick={props.onAddTestcaseAfter}
               />
             </Dropdown.Menu>
           </Dropdown>
@@ -226,13 +226,13 @@ let SubtaskEditorTastcaseItem: React.FC<SubtaskEditorTastcaseItemProps> = props 
                 <Dropdown.Item
                   icon="angle double up"
                   text={_(".subtasks.testcase_options.move_up")}
-                  onClick={() => props.onMoveUp()}
+                  onClick={props.onMoveUp}
                   disabled={props.testcaseIndex === 0}
                 />
                 <Dropdown.Item
                   icon="angle double down"
                   text={_(".subtasks.testcase_options.move_down")}
-                  onClick={() => props.onMoveDown()}
+                  onClick={props.onMoveDown}
                   disabled={props.testcaseIndex === props.testcaseCount - 1}
                 />
                 <Popup
@@ -242,7 +242,7 @@ let SubtaskEditorTastcaseItem: React.FC<SubtaskEditorTastcaseItemProps> = props 
                     <Button
                       negative
                       content={_(".subtasks.testcase_options.confirm_delete")}
-                      onClick={() => props.onDelete()}
+                      onClick={props.onDelete}
                     />
                   }
                   on="click"
@@ -588,7 +588,7 @@ let SubtaskEditor: React.FC<SubtaskEditorProps> = props => {
       );
     })(),
     <>
-      <Button content={_(".subtasks.auto_add_testcases.close")} onClick={() => autoAddTestcaseDialog.close()} />
+      <Button content={_(".subtasks.auto_add_testcases.close")} onClick={autoAddTestcaseDialog.close} />
       <Button
         positive
         disabled={autoAddTestcaseMatchResult.length === 0}
@@ -732,12 +732,12 @@ let SubtaskEditor: React.FC<SubtaskEditorProps> = props => {
                 <Dropdown.Item
                   icon="arrow up"
                   text={_(".subtasks.subtask_options.add_before")}
-                  onClick={() => props.onAddSubtaskBefore()}
+                  onClick={props.onAddSubtaskBefore}
                 />
                 <Dropdown.Item
                   icon="arrow down"
                   text={_(".subtasks.subtask_options.add_after")}
-                  onClick={() => props.onAddSubtaskAfter()}
+                  onClick={props.onAddSubtaskAfter}
                 />
                 <Dropdown.Item
                   icon="plus"
@@ -748,13 +748,13 @@ let SubtaskEditor: React.FC<SubtaskEditorProps> = props => {
                   icon="angle double up"
                   text={_(".subtasks.subtask_options.move_up")}
                   disabled={props.subtaskIndex === 0}
-                  onClick={() => props.onMoveUp()}
+                  onClick={props.onMoveUp}
                 />
                 <Dropdown.Item
                   icon="angle double down"
                   text={_(".subtasks.subtask_options.move_down")}
                   disabled={props.subtaskIndex === props.subtaskCount - 1}
-                  onClick={() => props.onMoveDown()}
+                  onClick={props.onMoveDown}
                 />
                 <Popup
                   trigger={<Dropdown.Item icon="delete" text={_(".subtasks.subtask_options.delete")} />}
@@ -763,7 +763,7 @@ let SubtaskEditor: React.FC<SubtaskEditorProps> = props => {
                     <Button
                       negative
                       content={_(".subtasks.subtask_options.confirm_delete")}
-                      onClick={() => props.onDelete()}
+                      onClick={props.onDelete}
                     />
                   }
                   on="click"

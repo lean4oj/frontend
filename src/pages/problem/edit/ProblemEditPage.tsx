@@ -203,12 +203,12 @@ const LocalizedContentEditorSection: React.FC<LocalizedContentEditorSectionProps
               <Dropdown.Item
                 icon="arrow up"
                 text={_(".content_editor.add_section.before_this_section")}
-                onClick={() => props.onAddSectionBefore()}
+                onClick={props.onAddSectionBefore}
               />
               <Dropdown.Item
                 icon="arrow down"
                 text={_(".content_editor.add_section.after_this_section")}
-                onClick={() => props.onAddSectionAfter()}
+                onClick={props.onAddSectionAfter}
               />
             </Dropdown.Menu>
           </Dropdown>
@@ -218,13 +218,13 @@ const LocalizedContentEditorSection: React.FC<LocalizedContentEditorSectionProps
                   disabled={props.isFirst}
                   icon="angle double up"
                   text={_(".content_editor.section_options.move_up")}
-                  onClick={() => props.onMoveSectionUp()}
+                  onClick={props.onMoveSectionUp}
                 />
                 <Dropdown.Item
                   disabled={props.isLast}
                   icon="angle double down"
                   text={_(".content_editor.section_options.move_down")}
-                  onClick={() => props.onMoveSectionDown()}
+                  onClick={props.onMoveSectionDown}
                 />
                 <Popup
                   trigger={
@@ -239,7 +239,7 @@ const LocalizedContentEditorSection: React.FC<LocalizedContentEditorSectionProps
                     <Button
                       color="red"
                       content={_(".content_editor.section_options.confirm_delete")}
-                      onClick={() => props.onDeleteSection()}
+                      onClick={props.onDeleteSection}
                     />
                   }
                   on="click"
@@ -409,7 +409,7 @@ const LocalizedContentEditor: React.FC<LocalizedContentEditorProps> = props => {
               <Popup
                 trigger={<Menu.Item as="a" icon="delete" className={style.toolbarMenuIconItem} />}
                 content={
-                  <Button color="red" content={_(".content_editor.confirm_delete")} onClick={() => props.onDelete()} />
+                  <Button color="red" content={_(".content_editor.confirm_delete")} onClick={props.onDelete} />
                 }
                 on="click"
                 position="top right"
@@ -507,12 +507,12 @@ const SampleEditor: React.FC<SampleEditorProps> = props => {
               <Dropdown.Item
                 icon="arrow up"
                 text={_(".sample_editor.add_sample.before_this_sample")}
-                onClick={() => props.onAddSampleBefore()}
+                onClick={props.onAddSampleBefore}
               />
               <Dropdown.Item
                 icon="arrow down"
                 text={_(".sample_editor.add_sample.after_this_sample")}
-                onClick={() => props.onAddSampleAfter()}
+                onClick={props.onAddSampleAfter}
               />
             </Dropdown.Menu>
           </Dropdown>
@@ -522,13 +522,13 @@ const SampleEditor: React.FC<SampleEditorProps> = props => {
                   disabled={props.isFirst}
                   icon="angle double up"
                   text={_(".sample_editor.options.move_up")}
-                  onClick={() => props.onMoveSampleUp()}
+                  onClick={props.onMoveSampleUp}
                 />
                 <Dropdown.Item
                   disabled={props.isLast}
                   icon="angle double down"
                   text={_(".sample_editor.options.move_down")}
-                  onClick={() => props.onMoveSampleDown()}
+                  onClick={props.onMoveSampleDown}
                 />
                 <Popup
                   trigger={<Dropdown.Item icon="delete" text={_(".sample_editor.options.delete")} />}
@@ -537,7 +537,7 @@ const SampleEditor: React.FC<SampleEditorProps> = props => {
                     <Button
                       color="red"
                       content={_(".sample_editor.options.confirm_delete")}
-                      onClick={() => props.onDeleteSample()}
+                      onClick={props.onDeleteSample}
                     />
                   }
                   on="click"
@@ -1194,7 +1194,7 @@ let ProblemEditPage: React.FC<ProblemEditPageProps> = props => {
                   onDeleteSample={null}
                 />
                 <Dimmer active={true}>
-                  <Button primary onClick={() => onAddSample()}>
+                  <Button primary onClick={onAddSample}>
                     {_(".sample_editor.add_sample_when_empty")}
                   </Button>
                 </Dimmer>

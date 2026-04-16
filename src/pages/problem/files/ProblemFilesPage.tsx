@@ -320,7 +320,7 @@ let FileTableRow: React.FC<FileTableRowProps> = props => {
             getUploadStatus()
           ) : (
             <>
-              <Icon className={style.fileTableOperationIcon} name="download" onClick={() => props.onDownload()} />
+              <Icon className={style.fileTableOperationIcon} name="download" onClick={props.onDownload} />
               {props.hasPermission && (
                 <>
                   <Popup

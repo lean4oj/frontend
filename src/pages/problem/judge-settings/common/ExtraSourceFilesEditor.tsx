@@ -113,7 +113,7 @@ let ExtraSourceFilesEditor: React.FC<ExtraSourceFilesEditorProps> = props => {
         <Form.Checkbox
           checked={!!props.judgeInfo.extraSourceFiles}
           label={_(".extra_source_files.option")}
-          onChange={() => onToggleExtraSourceFiles()}
+          onChange={onToggleExtraSourceFiles}
         />
         {props.judgeInfo.extraSourceFiles && (
           <>

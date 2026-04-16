@@ -323,7 +323,7 @@ let ProblemViewPage: React.FC<ProblemViewPageProps> = props => {
           inverted
           content={_(".action.delete_cancel")}
           disabled={deletePending}
-          onClick={() => deleteDialog.close()}
+          onClick={deleteDialog.close}
         />
       </>
     )
@@ -648,7 +648,7 @@ let ProblemViewPage: React.FC<ProblemViewPageProps> = props => {
                     />
                   }
                   disabled={!!appState.currentUser}
-                  content={<Button primary content={_(".action.login_to_submit")} onClick={() => navigateToLogin()} />}
+                  content={<Button primary content={_(".action.login_to_submit")} onClick={navigateToLogin} />}
                   on="click"
                   position="top left"
                 />

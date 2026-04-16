@@ -179,7 +179,7 @@ let LeanProblemSubmitView: React.FC<LeanProblemSubmitViewProps> = props => {
             onChange={(_, { value }) => {
               props.onUpdateSubmissionContent('moduleName', value);
             }}
-            onBlur={() => updateModuleName()}
+            onBlur={updateModuleName}
             value={props.submissionContent.moduleName}
           />
           <Form.Select

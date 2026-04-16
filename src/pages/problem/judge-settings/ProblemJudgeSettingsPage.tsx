@@ -150,7 +150,7 @@ let ProblemJudgeSettingsPage: React.FC<ProblemJudgeSettingsPageProps> = props =>
         trigger={
           <Button content={_(".edit_raw.cancel")} onClick={() => !editRowEditorModified && closeEditRawDialog()} />
         }
-        content={<Button negative content={_(".edit_raw.confirm_cancel")} onClick={() => closeEditRawDialog()} />}
+        content={<Button negative content={_(".edit_raw.confirm_cancel")} onClick={closeEditRawDialog} />}
         disabled={!editRowEditorModified}
         position="top center"
         on="click"
