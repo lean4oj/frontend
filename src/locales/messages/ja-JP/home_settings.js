@@ -19,9 +19,9 @@ return {
     operations: "操作",
     add: "アナウンスを追加"
   },
-  hitokoto: "Hitokoto",
+  hitokoto: "一言",
   countdown: "カウントダウン",
-  friend_links: "友達リンク",
+  friend_links: "相互リンク",
   submit: "送信",
   success: "正常に更新されました。"
 };

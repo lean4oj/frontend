@@ -20,11 +20,11 @@ return {
   },
   countdown: {
     header: "カウントダウン",
-    display_time_first: "1",
-    before_time: "",
-    after_time_before_event: " まであと ",
-    after_days_before_event: " まであと ",
-    after_event: " 日",
+    display_time_first: "0",
+    before_event: "",
+    after_event_before_time: " まであと ",
+    after_time: "",
+    after_days: " 日",
     completed_before_event: "",
     completed_after_event: " が開始しました"
   },
@@ -37,5 +37,5 @@ return {
     accepted_problem_count: "解いた問題数",
     no_users: "ユーザはいません"
   },
-  friend_links: "友情リンク"
+  friend_links: "相互リンク"
 };
