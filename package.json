@@ -115,6 +115,7 @@
     "wastyle": "^0.0.5",
     "xss": "^1.0.15"
   },
+  "packageManager": "yarn@4.14.1",
   "scripts": {
     "start": "vite",
     "build": "vite build",
@@ -124,7 +125,8 @@
   },
   "resolutions": {
     "markdown-it-regexp@npm:^0.4.0": "patch:markdown-it-regexp@npm%3A^0.4.0#./.yarn/patches/markdown-it-regexp-npm-0.4.0-316ff27a18.patch",
-    "history@npm:^4.9.0": "patch:history@npm%3A^4.9.0#./.yarn/patches/history-npm-4.10.1-ee217563ae.patch"
+    "history@npm:^4.9.0": "patch:history@npm%3A^4.9.0#./.yarn/patches/history-npm-4.10.1-ee217563ae.patch",
+    "bundle-require@npm:^5.1.0": "patch:bundle-require@npm%3A5.1.0#./.yarn/patches/bundle-require-npm-5.1.0-022b2c8e1b.patch"
   },
   "eslintConfig": {
     "extends": "react-app"

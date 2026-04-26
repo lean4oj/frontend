@@ -1833,7 +1833,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bundle-require@npm:^5.1.0":
+"bundle-require@npm:5.1.0":
   version: 5.1.0
   resolution: "bundle-require@npm:5.1.0"
   dependencies:
@@ -1841,6 +1841,17 @@ __metadata:
   peerDependencies:
     esbuild: ">=0.18"
   checksum: 10c0/8bff9df68eb686f05af952003c78e70ffed2817968f92aebb2af620cc0b7428c8154df761d28f1b38508532204278950624ef86ce63644013dc57660a9d1810f
+  languageName: node
+  linkType: hard
+
+"bundle-require@patch:bundle-require@npm%3A5.1.0#./.yarn/patches/bundle-require-npm-5.1.0-022b2c8e1b.patch::locator=%40lyrio%2Fui%40workspace%3A.":
+  version: 5.1.0
+  resolution: "bundle-require@patch:bundle-require@npm%3A5.1.0#./.yarn/patches/bundle-require-npm-5.1.0-022b2c8e1b.patch::version=5.1.0&hash=b6db26&locator=%40lyrio%2Fui%40workspace%3A."
+  dependencies:
+    load-tsconfig: "npm:^0.2.3"
+  peerDependencies:
+    esbuild: ">=0.18"
+  checksum: 10c0/4a7b9595341a64e54153713794a0e0fed1064176e3e7f380947915a9c5c06fc46311de6fd77603597fa3f86893e57c10fa5f3e1da94e33cd4be655ec3e2fbdfb
   languageName: node
   linkType: hard
 
