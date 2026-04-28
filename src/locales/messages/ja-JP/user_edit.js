@@ -195,8 +195,8 @@ return {
       created_warning: "このトークンをすぐにコピーして保存してください。再度表示することはできません。",
       copied: "クリップボードにコピーしました",
       close: "閉じる",
-      created_at: "作成日時 {time}",
-      last_used_at: "最終使用日時 {time}",
+      created_at: "作成日時{time}",
+      last_used_at: "最終使用日時{time}",
       never_used: "未使用",
       no_tokens: "APIトークンがありません",
       notes_current_user:

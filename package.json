@@ -72,7 +72,7 @@
     "mobx-react-lite": "^4.1.1",
     "mobx-utils": "^6.1.1",
     "monaco-ace-tokenizer": "^0.2.3",
-    "monaco-editor": "0.55.1",
+    "monaco-editor": "^0.55.1",
     "monaco-themes": "^0.4.8",
     "navi": "^0.15.0",
     "noty": "3.2.0-beta",
@@ -82,7 +82,7 @@
     "prettier": "^3.8.3",
     "prismjs": "^1.30.0",
     "react": "^18.3.1",
-    "react-chartjs-2": "5.3.1",
+    "react-chartjs-2": "^5.3.1",
     "react-countdown": "^2.3.6",
     "react-dom": "^18.3.1",
     "react-google-recaptcha-v3": "^1.11.0",
@@ -126,7 +126,7 @@
   "resolutions": {
     "markdown-it-regexp@npm:^0.4.0": "patch:markdown-it-regexp@npm%3A^0.4.0#./.yarn/patches/markdown-it-regexp-npm-0.4.0-316ff27a18.patch",
     "history@npm:^4.9.0": "patch:history@npm%3A^4.9.0#./.yarn/patches/history-npm-4.10.1-ee217563ae.patch",
-    "bundle-require@npm:^5.1.0": "patch:bundle-require@npm%3A5.1.0#./.yarn/patches/bundle-require-npm-5.1.0-022b2c8e1b.patch"
+    "bundle-require@npm:^5.1.0": "patch:bundle-require@npm%3A^5.1.0#./.yarn/patches/bundle-require-npm-5.1.0-022b2c8e1b.patch"
   },
   "eslintConfig": {
     "extends": "react-app"

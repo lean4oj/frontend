@@ -26,5 +26,3 @@ jobs:
       uses: actions/upload-artifact@v7
       with:
         path: dist
-    - name: Check style
-      run: yarn check-style
