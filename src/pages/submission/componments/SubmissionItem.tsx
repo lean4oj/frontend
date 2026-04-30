@@ -14,7 +14,7 @@ import { getProblemDisplayName, getProblemIdString, getProblemUrl } from "@/page
 import { EmojiRenderer } from "@/components/EmojiRenderer";
 
 function getModuleUrl(moduleName: string) {
-  const url = '/lean/' + moduleName.replaceAll('.', '/');
+  const url = `${window.apiEndpoint}lean/${moduleName.replaceAll('.', '/')}`;
   return url.substring(0, url.lastIndexOf('/') + 1);
 }
 
@@ -174,7 +174,7 @@ export const SubmissionItem: React.FC<SubmissionItemProps> = props => {
                 submission.leanVersion}
               &nbsp;/&nbsp;
               <span title={submission.answerSize + " B"}>{formatFileSize(submission.answerSize, 1)}</span>
-              <a href={`/lean/submission/${props.submission.id}/`}>
+              <a href={`${window.apiEndpoint}lean/submission/${props.submission.id}/`}>
                 <Icon className={style.downloadIcon} name="download" />
               </a>
             </span>
@@ -396,7 +396,7 @@ export const SubmissionItemExtraRows: React.FC<SubmissionItemExtraRowsProps> = p
             &nbsp;/&nbsp;
             <span title={submission.answerSize + " B"}>{formatFileSize(submission.answerSize, 1)}</span>
           </span>
-          <a href={`/lean/submission/${props.submission.id}`}>
+          <a href={`${window.apiEndpoint}lean/submission/${props.submission.id}`}>
             <Icon className={style.downloadIcon} name="download" />
           </a>
         </div>

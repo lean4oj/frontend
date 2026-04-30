@@ -12,6 +12,7 @@ import SubmitViewFrame from "../common/SubmitViewFrame";
 import api from "@/api";
 import toast from "@/utils/toast";
 import { isValidLeanName } from "@/utils/validators";
+import { normalizeLeanLink } from "@/utils/leanLink";
 
 type LeanProblemLabelsProps = ProblemTypeLabelsProps<JudgeInfoLean>;
 
@@ -61,7 +62,7 @@ const LeanProblemLabels: React.FC<LeanProblemLabelsProps> = React.memo(props => 
         .map(axiom =>
           <Label key={axiom.name} size={props.size} color="green">
             <Icon name="disk" />
-            {axiom.url ? <a className={style.axiomLink} href={axiom.url}>{axiom.name}</a> : axiom.name}
+            {axiom.url ? <a className={style.axiomLink} href={normalizeLeanLink(axiom.url)}>{axiom.name}</a> : axiom.name}
           </Label>
         )
       }
@@ -83,7 +84,7 @@ interface LeanDependencyLinkProps {
 
 const LeanDependencyLink: React.FC<LeanDependencyLinkProps> = ({ dependency, leanVersion }) => {
   const dpath = dependency.replaceAll('.', '/');
-  let url = `/lean/${dpath}`;
+  let url = `${window.apiEndpoint}lean/${dpath}`;
   url = url.substring(0, url.lastIndexOf('/') + 1);
 
   for (const std of ['aesop', 'archive', 'batteries', 'counterexamples', 'importgraph', 'init', 'lake', 'lean', 'leansearchclient', 'mathlib', 'plausible', 'proofwidgets', 'std', 'docs', 'references']) {
@@ -94,7 +95,7 @@ const LeanDependencyLink: React.FC<LeanDependencyLinkProps> = ({ dependency, lea
   }
 
   if (dependency.toLowerCase() === 'lean4oj' || dependency.toLowerCase().startsWith('lean4oj.')) {
-    url = `/lean/Lean4OJ/doc/${dpath}.html`;
+    url = `${window.apiEndpoint}lean/Lean4OJ/doc/${dpath}.html`;
   }
 
   return (

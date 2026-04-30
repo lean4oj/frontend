@@ -7,6 +7,7 @@ import style from "./MarkdownContent.module.less";
 
 import { sanitize } from "./sanitize";
 import { useNavigationChecked, useMaybeAsyncFunctionResult } from "@/utils/hooks";
+import { isLeanLink } from "@/utils/leanLink";
 import { getTwemojiOptions } from "@/components/EmojiRenderer";
 import { codeBoxStyle } from "@/components/CodeBox";
 
@@ -122,6 +123,11 @@ async function render(
   Array.from(wrapper.getElementsByTagName("a")).forEach(a => {
     a.relList.add("noreferrer", "noreferrer");
     if (!parseUrlIfSameOrigin(a.href)) a.target = "_blank";
+    const rawHref = a.getAttribute('href');
+    if (isLeanLink(rawHref)) {
+      a.href = window.apiEndpoint + rawHref.substring(1);
+      a.setAttribute('lean', 'true');
+    }
   });
 
   Array.from(wrapper.getElementsByClassName("task-list-item")).forEach(li => {
@@ -180,10 +186,11 @@ const MarkdownContent: React.FC<MarkdownContentProps> = props => {
       if (targetElement.tagName === "A") {
         const a = targetElement as HTMLAnchorElement;
         if (a.getAttribute('href').startsWith("#")) return;
+        if (a.getAttribute('lean')) return;
         if (!["", "_self"].includes(a.target.toLowerCase())) return;
 
         const url = parseUrlIfSameOrigin(a.href);
-        if (url && url.pathname !== '/lean' && !url.pathname.startsWith('/lean/')) {
+        if (url) {
           e.preventDefault();
           navigation.navigate(url.pathname + url.search + url.hash);
         }

@@ -432,10 +432,10 @@ declare namespace ApiTypes {
     permissionDelete?: boolean;
   }
   export interface GetUserDetailRequestDto {
-    userId?: number;
+    userId?: string;
     username?: string;
     timezone: string;
-    now: string;
+    now: number;
   }
   export interface GetUserDetailResponseDto {
     error?: "NO_SUCH_USER";
@@ -1276,7 +1276,7 @@ declare namespace ApiTypes {
     github: string;
   }
   export interface UserMetaDto {
-    id: number;
+    id: string;
     username: string;
     email: string;
     nickname: string;

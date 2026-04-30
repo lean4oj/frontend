@@ -23,7 +23,7 @@ function getTimeZone() {
   }
 }
 
-async function fetchData(query: { userId?: number; username?: string }): Promise<[Date, Required<typeof response>]> {
+async function fetchData(query: { uid: string }): Promise<[Date, Required<typeof response>]> {
   const now = new Date();
   const { requestError, response } = await api.user.getUserDetail({
     ...query,
@@ -183,7 +183,7 @@ let UserPage: React.FC<UserPageProps> = props => {
         </EmojiRenderer>
       ) : null}
       <div className={style.username} title={props.meta.id}>{props.meta.username}</div>
-      <div className={style.identifier}><code><span className={style.identifierImport}>import</span> <a className={style.identifierIdentifier} href={`/lean/${encodeURIComponent(props.meta.id)}`}>{props.meta.id}</a></code></div>
+      <div className={style.identifier}><code><span className={style.identifierImport}>import</span> <a className={style.identifierIdentifier} href={`${window.apiEndpoint}lean/${encodeURIComponent(props.meta.id)}`}>{props.meta.id}</a></code></div>
       {props.meta.bio && (
         <EmojiRenderer>
           <p className={style.bio}>
@@ -400,8 +400,8 @@ UserPage = observer(UserPage);
 
 export default {
   byId: defineRoute(async request => {
-    const userId = parseInt(request.params.userId) || 0;
-    const [now, response] = await fetchData({ userId });
+    const userId = decodeURIComponent(request.params.userId);
+    const [now, response] = await fetchData({ uid: userId });
 
     return <UserPage now={now} {...response} />;
   }),
