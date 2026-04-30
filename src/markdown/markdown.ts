@@ -93,5 +93,16 @@ export function renderMarkdown(
 
   if (onPatchRenderer) onPatchRenderer(renderer);
 
+  text = text.replaceAll(/⍼(.)/g, (origin, match) => {
+    switch (match) {
+      case '⍼': // escape itself
+        return '⍼';
+      case 'h': // return official (backend) website
+        return window.apiEndpoint;
+      default:
+        return origin;
+    }
+  });
+
   return [renderer.render(text), highlightPlaceholders, mathPlaceholders, findPlaceholderElement];
 }
