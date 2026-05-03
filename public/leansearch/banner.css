@@ -1,0 +1,23 @@
+#banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--light-grey);
+    padding: 1rem 2rem;
+    z-index: 999;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#banner a {
+    margin: 0 8px;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}

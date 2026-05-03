@@ -1,0 +1,24 @@
+.montserrat-base {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.julia-mono {
+  font-family: "JuliaMono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LatinModern-Math";
+  src: url("../font/LatinModern-Math.otf");
+  font-display: auto;
+}
+
+.latin-modern-math {
+  font-family: "LatinModern-Math", serif;
+  font-weight: 400;
+  font-style: normal;
+}

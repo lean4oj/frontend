@@ -1,16 +1,48 @@
 diff --git a/index.js b/index.js
-index 26df7859ff8d1adc50360f6d532a87c699444d67..bce9c6290cb2b960183175400ced1c3d5e5b5a8b 100644
+index 26df7859ff8d1adc50360f6d532a87c699444d67..88331b78cc462b01079bea5886af1db56c572fe6 100644
 --- a/index.js
 +++ b/index.js
-@@ -3,7 +3,6 @@
+@@ -2,8 +2,6 @@
+ 
  'use strict';
  
- var ascii2mathml = null;
+-var ascii2mathml = null;
 -require('./lib/polyfills');
  
  
  function scanDelims(state, start, delimLength) {
-@@ -225,6 +224,22 @@ module.exports = function math_plugin(md, options) {
+@@ -173,28 +171,12 @@ function makeMath_block(open, close) {
+ }
+ 
+ function makeMathRenderer(renderingOptions) {
+-  if (ascii2mathml === null) {
+-    try {
+-      ascii2mathml = require('ascii2mathml').default;
+-    } catch (e) {
+-      return renderingOptions && renderingOptions.display === 'block' ?
+-        function(tokens, idx) {
+-          return '<div class="math block">' + tokens[idx].content + '</div>';
+-        } :
+-        function(tokens, idx) {
+-          return '<span class="math inline">' + tokens[idx].content + '</span>';
+-        };
+-    }
+-  }
+-
+-  var mathml = ascii2mathml(Object.assign({}, renderingOptions));
+-
+   return renderingOptions && renderingOptions.display === 'block' ?
+     function(tokens, idx) {
+-      return mathml(tokens[idx].content) + '\n';
++      return '<div class="math block">' + tokens[idx].content + '</div>';
+     } :
+     function(tokens, idx) {
+-      return mathml(tokens[idx].content);
++      return '<span class="math inline">' + tokens[idx].content + '</span>';
+     };
+ }
+ 
+@@ -225,6 +207,22 @@ module.exports = function math_plugin(md, options) {
    md.block.ruler.after('blockquote', 'math_block', math_block, {
      alt: [ 'paragraph', 'reference', 'blockquote', 'list' ]
    });

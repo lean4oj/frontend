@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.061/juliamono.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+    integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+    integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg"
+    crossorigin="anonymous"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"
+    integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+  <link rel="stylesheet" href="./leansearch/root.css">
+  <link rel="stylesheet" href="./leansearch/generic.css">
+  <link rel="stylesheet" href="./leansearch/font.css">
+  <link rel="stylesheet" href="./leansearch/card.css">
+  <link rel="stylesheet" href="./leansearch/banner.css">
+  <link rel="stylesheet" href="./leansearch/search.css">
+  <link rel="stylesheet" href="./leansearch/toast.css">
+  <link rel="stylesheet" href="./leansearch/main.css">
+
+  <title>LeanSearch (Lean4OJ mirror)</title>
+</head>
+
+<body class="montserrat-base">
+  <header class="header">
+    <h1>LeanSearch (Lean4OJ mirror)</h1>
+    <p>Find theorems in Mathlib4 &amp; Lean4OJ using natural language query</p>
+  </header>
+
+  <main>
+    <div class="search">
+      <div class="component">
+        <div class="component-description">
+          <label for="query">
+            <span class="component-label badge">Query</span>
+            <span>Name or description of the theorem or definition you are looking for</span>
+          </label>
+        </div>
+        <textarea id="query" rows="3" dir="ltr" class="montserrat-base"
+          placeholder="Example: dim(V)=dim(ker)+dim(im)"></textarea>
+      </div>
+      <div class="component">
+        <label for="num-results">
+          <span class="component-label badge">Number of results</span>
+        </label>
+        <input id="num-results" aria-label="Number of results" type="number"
+          min="1" max="100" value="50" step="1">
+      </div>
+      <div class="component">
+        <div class="button-group">
+          <button id="clear">Clear</button>
+          <button id="search" class="black-button">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="results"></div>
+  </main>
+  <footer>
+    <span>AI4M Team, BICMR@PKU</span>
+  </footer>
+  <div id="toast"></div>
+
+  <template id="card">
+    <article class="card">
+      <div class="card-header">
+        <span class="formal-name name"></span>
+        <span class="kind badge"></span>
+      </div>
+      <div class="card-content">
+        <section class="formal">
+          <div><pre class="formal-statement julia-mono"></pre></div>
+        </section>
+
+        <section class="informal">
+          <details>
+            <summary>
+              <span class="informal-name name"></span>
+            </summary>
+            <div class="informal-statement"></div>
+          </details>
+        </section>
+      </div>
+
+      <div class="extra">
+        <div class="link">
+          <a class="doc-link" target="_blank">Doc</a>
+          <a class="doc-link-new" target="_blank">Doc-Next-Gen (beta)</a>
+          <a class="similar">Similar</a>
+        </div>
+
+        <div class="action">
+          <span class="feedback" data-action="upvote" title="This result should go up">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 14h4v7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-7h4a1.001 1.001 0 0 0 .781-1.625l-8-10c-.381-.475-1.181-.475-1.562 0l-8 10A1.001 1.001 0 0 0 4 14z"/>
+            </svg>
+          </span>
+          <span class="feedback" data-action="downvote" title="This result should go down">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.901 10.566A1.001 1.001 0 0 0 20 10h-4V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v7H4a1.001 1.001 0 0 0-.781 1.625l8 10a1 1 0 0 0 1.562 0l8-10c.24-.301.286-.712.12-1.059z"/>
+            </svg>
+          </span>
+          <span class="feedback" data-action="remove" title="This result is irrelevant">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.8,16l5.5-5.5c0.8-0.8,0.8-2,0-2.8l0,0C24,7.3,23.5,7,23,7c-0.5,0-1,0.2-1.4,0.6L16,13.2l-5.5-5.5  c-0.8-0.8-2.1-0.8-2.8,0C7.3,8,7,8.5,7,9.1s0.2,1,0.6,1.4l5.5,5.5l-5.5,5.5C7.3,21.9,7,22.4,7,23c0,0.5,0.2,1,0.6,1.4  C8,24.8,8.5,25,9,25c0.5,0,1-0.2,1.4-0.6l5.5-5.5l5.5,5.5c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L18.8,16z"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </article>
+  </template>
+
+</body>
+
+<script type="module" src="./leansearch/main.mjs"></script>
+
+</html>

@@ -1,0 +1,133 @@
+.card {
+  width: 100%;
+  margin: 2em 0;
+  overflow: hidden;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 4px 1px var(--shadow);
+}
+
+.inner {
+  width: auto;
+  margin: 0.5em 2em;
+  font-size: smaller;
+}
+
+.card-content {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-content>.formal {
+  flex: 2 0 0;
+}
+.card-content>.informal {
+  flex: 1 0 0;
+}
+
+.card-content div {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.125rem 1rem;
+}
+
+.card .name {
+  color: black;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+.card .formal {
+  font-size: 1rem;
+  font-family: IBM Plex Mono, monospace;
+}
+
+.card-header {
+  padding: 0.25rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.card .kind {
+  color: white;
+  background-color: grey;
+}
+
+.card pre {
+  margin: 0;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.card .informal {
+  font-size: 1em;
+}
+
+.card .link>a {
+  color: var(--black-trans);
+  margin: 0.5rem;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.card .link>a:hover {
+  color: var(--blue);
+  background-size: 100% 0.38em;
+}
+
+.card .link>a>svg {
+  margin: 0 4px;
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.card .extra {
+  margin-top: 0;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .action {
+  display: flex;
+}
+
+.card .action>span {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 0.375rem;
+}
+
+.card .action>span>svg {
+  display: block;
+  margin: auto;
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: var(--dark-grey);
+}
+
+.card .action>span.feedback[data-action="upvote"]>svg:hover, .card .action>span.selected[data-action="upvote"]>svg {
+  fill: var(--green-deep);
+}
+
+.card .action>span.feedback[data-action="downvote"]>svg:hover, .card .action>span.selected[data-action="downvote"]>svg {
+  fill: var(--red);
+}
+
+.card .action>span.feedback[data-action="remove"]>svg:hover, .card .action>span.selected[data-action="remove"]>svg {
+  fill: black;
+}
+
+.card .action>span.selected {
+  background-color: lightblue;
+}
+
+.card:hover {
+  background-color: var(--blue-tint);
+}
+
+.card:hover .card-header {
+  background-color: skyblue;
+}

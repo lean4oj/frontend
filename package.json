@@ -22,7 +22,7 @@
     "@fontsource/ubuntu-mono": "^5.2.8",
     "@fontsource/zilla-slab": "^5.2.8",
     "@hackmd/markdown-it-task-lists": "^2.1.4",
-    "@mathjax/src": "^4.1.1",
+    "@mathjax/src": "^4.1.2",
     "@monaco-editor/react": "^4.7.0",
     "@rolldown/plugin-node-polyfills": "patch:@rolldown/plugin-node-polyfills@npm%3A^1.0.3#./.yarn/patches/@rolldown-plugin-node-polyfills-npm-1.0.3-c505d53f2e.patch",
     "@tanem/react-nprogress": "^6.0.3",
