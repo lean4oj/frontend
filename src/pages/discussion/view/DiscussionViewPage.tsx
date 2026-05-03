@@ -215,7 +215,7 @@ let DiscussionItem: React.FC<DiscussionItemProps> = props => {
           inverted
           content={_(".actions.confirm_delete_dialog_cancel")}
           disabled={pendingDelete}
-          onClick={confirmDeleteDialog.close}
+          onClick={() => confirmDeleteDialog.close()}
         />
       </>
     )

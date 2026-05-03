@@ -323,7 +323,7 @@ let ProblemViewPage: React.FC<ProblemViewPageProps> = props => {
           inverted
           content={_(".action.delete_cancel")}
           disabled={deletePending}
-          onClick={deleteDialog.close}
+          onClick={() => deleteDialog.close()}
         />
       </>
     )

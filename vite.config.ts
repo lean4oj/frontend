@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import path from "path";
 
 // Vite plugins
-import react from "@vitejs/plugin-react";
 import compileTime from "vite-plugin-compile-time";
 import { ViteEjsPlugin as ejs } from "vite-plugin-ejs";
 import minifyHtml from "vite-plugin-html-minifier-terser";
