@@ -67,7 +67,7 @@
     "markdown-it-math-loose": "patch:markdown-it-math-loose@npm%3A^4.1.1#./.yarn/patches/markdown-it-math-loose-npm-4.1.1-a5a4144c49.patch",
     "markdown-it-mentions": "patch:markdown-it-mentions@npm%3A^1.0.0#./.yarn/patches/markdown-it-mentions-npm-1.0.0-450125626c.patch",
     "markdown-it-merge-cells": "^2.0.0",
-    "mobx": "^6.15.1",
+    "mobx": "^6.15.2",
     "mobx-persist": "^0.4.1",
     "mobx-react-lite": "^4.1.1",
     "mobx-utils": "^6.1.1",

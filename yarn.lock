@@ -728,7 +728,7 @@ __metadata:
     markdown-it-math-loose: "patch:markdown-it-math-loose@npm%3A^4.1.1#./.yarn/patches/markdown-it-math-loose-npm-4.1.1-a5a4144c49.patch"
     markdown-it-mentions: "patch:markdown-it-mentions@npm%3A^1.0.0#./.yarn/patches/markdown-it-mentions-npm-1.0.0-450125626c.patch"
     markdown-it-merge-cells: "npm:^2.0.0"
-    mobx: "npm:^6.15.1"
+    mobx: "npm:^6.15.2"
     mobx-persist: "npm:^0.4.1"
     mobx-react-lite: "npm:^4.1.1"
     mobx-utils: "npm:^6.1.1"
@@ -3755,10 +3755,10 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"mobx@npm:^6.15.1":
-  version: 6.15.1
-  resolution: "mobx@npm:6.15.1"
-  checksum: 10c0/6dc645b6a7dd6f331bbe3bcb1cc3486e79a23d89879fb88e94f89668eb61b7113a63837e95c9204df2d770db6b144389e5c1bd5815bf7dcac9d6503996fc4cfe
+"mobx@npm:^6.15.2":
+  version: 6.15.2
+  resolution: "mobx@npm:6.15.2"
+  checksum: 10c0/80599353f53ec0ff35cd017e9b160ae3a1ec50ef7c574e06fa9183c3e0c88776390a6fdfc3ab99a3c459191d3bd4da74c6ab0d7e460bfb5d5864a8fa5dcd8a81
   languageName: node
   linkType: hard
 
