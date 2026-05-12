@@ -498,10 +498,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/roboto-mono@npm:^5.2.8":
-  version: 5.2.8
-  resolution: "@fontsource/roboto-mono@npm:5.2.8"
-  checksum: 10c0/042aeb468ebd89cecb2e78d1c3775ce5ab33d496003f56d31c84c0f04db38fc11714fa30846a330800e44ec0faf7620bca54833b641a9bcbae33e8489f0b5444
+"@fontsource/roboto-mono@npm:^5.2.9":
+  version: 5.2.9
+  resolution: "@fontsource/roboto-mono@npm:5.2.9"
+  checksum: 10c0/869d8481e9c8b767fdb327f3013c2fdaa772f74fa4f3592c9bd3ee0c9050033b8af536e412d0b131bcbae281537ac7390ee53d5e2ea19e1e383a20f523f9eda4
   languageName: node
   linkType: hard
 
@@ -675,7 +675,7 @@ __metadata:
     "@fontsource/pt-mono": "npm:^5.2.8"
     "@fontsource/pt-sans": "npm:^5.2.8"
     "@fontsource/roboto": "npm:^5.2.10"
-    "@fontsource/roboto-mono": "npm:^5.2.8"
+    "@fontsource/roboto-mono": "npm:^5.2.9"
     "@fontsource/roboto-slab": "npm:^5.2.8"
     "@fontsource/source-code-pro": "npm:^5.2.7"
     "@fontsource/source-serif-pro": "npm:^5.2.5"
