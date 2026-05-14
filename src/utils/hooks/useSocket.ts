@@ -1,26 +1,35 @@
-import { useRef, useEffect } from "react";
+import { useEffect } from "react";
+import { type EventSourceMessage, fetchEventSource } from "@microsoft/fetch-event-source";
+
+import { appState } from "@/appState";
 
 export function useSocket(
   url: string,
   query: URLSearchParams,
-  onInit: (socket: EventSource) => void,
-  onConnect: (socket: EventSource) => void,
+  onopen: (response: Response) => void,
+  onmessage: (event: EventSourceMessage) => void,
   useOrNot: boolean
-): EventSource {
-  const refSse = useRef<EventSource>(null);
-
+) {
   useEffect(() => {
     if (useOrNot) {
       const u = new URL(url, window.apiEndpoint);
       u.search = query.toString();
-      refSse.current = new EventSource(u);
-      refSse.current.addEventListener('error', (err: any) => console.log("SSE error:", err));
-      refSse.current.addEventListener('open', () => onConnect(refSse.current));
+      const abortController = new AbortController();
+      fetchEventSource(u, {
+        signal: abortController.signal,
+        openWhenHidden: true,
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: appState.token && `Bearer ${appState.token}`,
+        },
+        onopen,
+        onmessage,
+        onerror(err) {
+          console.log("SSE error:", err);
+        }
+      });
 
-      onInit(refSse.current);
-      return () => refSse.current.close();
+      return () => abortController.abort();
     }
   }, []);
-
-  return refSse.current;
 }

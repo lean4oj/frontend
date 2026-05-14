@@ -12,8 +12,8 @@ return {
   "auth.change_others_password": "修改用户 [firstObject] 的密码",
   "auth.change_email": "修改邮箱",
   "auth.request_reset_password": "请求重置密码",
-  "auth.api_token.create": "为用户 [secondObject] 创建API密钥",
-  "auth.api_token.delete": "删除用户 [secondObject] 的API密钥",
+  "auth.api_token.create": "为用户 [firstObject] 创建API密钥",
+  "auth.api_token.delete": "删除用户 [firstObject] 的API密钥",
 
   "group.create": "创建用户组 [firstObject]",
   "group.delete": "删除用户组 [firstObject]",

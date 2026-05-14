@@ -12,8 +12,8 @@ return {
   "auth.change_others_password": "ユーザ [firstObject] のパスワードを変更",
   "auth.change_email": "メールアドレスを変更",
   "auth.request_reset_password": "パスワードのリセットをリクエスト",
-  "auth.api_token.create": "ユーザ [secondObject] のAPIトークンを作成",
-  "auth.api_token.delete": "ユーザ [secondObject] のAPIトークンを削除",
+  "auth.api_token.create": "ユーザ [firstObject] のAPIトークンを作成",
+  "auth.api_token.delete": "ユーザ [firstObject] のAPIトークンを削除",
 
   "group.create": "グループ [firstObject] を作成",
   "group.delete": "グループ [firstObject] を削除",

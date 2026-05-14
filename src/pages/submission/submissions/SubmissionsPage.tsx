@@ -132,17 +132,17 @@ let SubmissionsPage: React.FC<SubmissionsPageProps> = props => {
   // Subscribe to submission progress with the key
   const pendingSubmissions = submissions.flatMap(submission => isSettledStatus(submission.status) ? [] : [submission.id]);
   // Save the messages to a map, since we receive message delta each time
-  const messagesMapRef = useRef<Map<number, SubmissionProgressMessageMetaOnly>>();
   useSocket(
     "api/submission/subscribeSubmissions",
     new URLSearchParams(pendingSubmissions.map(id => ['ids', id.toString()])),
-    socket => {
-      socket.addEventListener("update", event => {
+    () => {},
+    event => {
+      if (event.event === 'update') {
         const message = JSON.parse(event.data);
         setSubmissions(submissions => {
           const newSubmissions = [...submissions];
           for (const i in newSubmissions) {
-            if (event.lastEventId === newSubmissions[i].id.toString()) {
+            if (event.id === newSubmissions[i].id.toString()) {
               const meta = { ...newSubmissions[i] };
               if (message.Status) {
                 meta.status = message.Status[0];
@@ -158,13 +158,7 @@ let SubmissionsPage: React.FC<SubmissionsPageProps> = props => {
           }
           return newSubmissions;
         });
-      });
-    },
-    () => {
-      // Server maintains the "previous" messages for each connection,
-      // so clear the local "previous" messages after reconnection
-      console.log("connected");
-      messagesMapRef.current = new Map();
+      }
     },
     !!pendingSubmissions.length
   );

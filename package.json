@@ -141,6 +141,7 @@
   ],
   "jsdelivr": "dist/index.html",
   "dependencies": {
+    "@microsoft/fetch-event-source": "^2.0.1",
     "git-commit-info": "^2.0.2"
   }
 }

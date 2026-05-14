@@ -124,7 +124,7 @@ async function render(
     a.relList.add("noreferrer", "noreferrer");
     if (!parseUrlIfSameOrigin(a.href)) a.target = "_blank";
     const rawHref = a.getAttribute('href');
-    if (isLeanLink(rawHref)) {
+    if (typeof rawHref === 'string' && isLeanLink(rawHref)) {
       a.href = window.apiEndpoint + rawHref.substring(1);
       a.setAttribute('lean', 'true');
     }
