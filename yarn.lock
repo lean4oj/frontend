@@ -684,20 +684,20 @@ __metadata:
     "@hackmd/markdown-it-task-lists": "npm:^2.1.4"
     "@mathjax/src": "npm:^4.1.2"
     "@microsoft/fetch-event-source": "npm:^2.0.1"
-    "@monaco-editor/react": "npm:^4.7.0"
+    "@monaco-editor/react": "npm:^4.8.0-rc.3"
     "@rolldown/plugin-node-polyfills": "patch:@rolldown/plugin-node-polyfills@npm%3A^1.0.3#./.yarn/patches/@rolldown-plugin-node-polyfills-npm-1.0.3-c505d53f2e.patch"
     "@tanem/react-nprogress": "npm:^6.0.3"
     "@twemoji/api": "patch:@twemoji/api@npm%3A^17.0.2#./.yarn/patches/@twemoji-api-npm-17.0.2-2a6cd572e6.patch"
     "@types/blueimp-md5": "npm:^2.18.2"
     "@types/chart.js": "npm:^4.0.1"
-    "@types/css": "npm:^0.0.38"
+    "@types/css": "npm:^1.0.28-alpha"
     "@types/flat": "npm:^5.0.5"
     "@types/gravatar": "npm:^1.8.6"
     "@types/html-minifier-terser": "npm:^7.0.2"
     "@types/js-yaml": "npm:^4.0.9"
     "@types/lodash": "npm:^4.17.24"
     "@types/markdown-it": "npm:^14.1.2"
-    "@types/node": "npm:^25.8.0"
+    "@types/node": "npm:^25.9.0"
     "@types/object-path": "npm:^0.11.4"
     "@types/prismjs": "npm:^1.26.6"
     "@types/react": "npm:^19.2.14"
@@ -714,7 +714,7 @@ __metadata:
     chart.js: "npm:^4.5.1"
     css: "npm:^3.0.0"
     css-element-queries: "npm:^1.2.3"
-    dayjs: "npm:^1.11.20"
+    dayjs: "npm:^2.0.0-alpha.4"
     flat: "npm:^6.0.1"
     fomantic-ui-css: "npm:^2.9.4"
     getscript-promise: "npm:^0.0.1"
@@ -741,7 +741,7 @@ __metadata:
     object-path: "npm:^0.11.8"
     p-all: "npm:^5.0.1"
     plausible-tracker: "npm:^0.3.9"
-    prettier: "npm:^3.8.3"
+    prettier: "npm:^4.0.0-alpha.13"
     prismjs: "npm:^1.30.0"
     react: "npm:^18.3.1"
     react-chartjs-2: "npm:^5.3.1"
@@ -805,7 +805,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monaco-editor/loader@npm:^1.5.0":
+"@monaco-editor/loader@npm:^1.7.0":
   version: 1.7.0
   resolution: "@monaco-editor/loader@npm:1.7.0"
   dependencies:
@@ -814,16 +814,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monaco-editor/react@npm:^4.7.0":
-  version: 4.7.0
-  resolution: "@monaco-editor/react@npm:4.7.0"
+"@monaco-editor/react@npm:^4.8.0-rc.3":
+  version: 4.8.0-rc.3
+  resolution: "@monaco-editor/react@npm:4.8.0-rc.3"
   dependencies:
-    "@monaco-editor/loader": "npm:^1.5.0"
+    "@monaco-editor/loader": "npm:^1.7.0"
   peerDependencies:
     monaco-editor: ">= 0.25.0 < 1"
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/a4e91c6eda1a71f5fd23871bd801de435490ccbc43934d23cba65cefe2be7e9d02c9a57c4ef80fc9fe99e4d4deea51e5db19cb4e0ecf3f51818dda0eb9cdbf12
+  checksum: 10c0/4af93cf42a91b8ddd1275c175c4841570cc519d6b9c8ae3bfb066669979ead897b453be5edca3a1e0e76eea053d8899dc99624fbffcd693baf28b8a68f4f682c
   languageName: node
   linkType: hard
 
@@ -1371,10 +1371,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/css@npm:^0.0.38":
-  version: 0.0.38
-  resolution: "@types/css@npm:0.0.38"
-  checksum: 10c0/cb22d45acf98cf8962004fa03e707ef616e23095d9dd9cdb8cc6163cf1958962f5b923191c1b6ce689a75250349df2758524f45c9ae2f653f34c81ec2ef3fd9e
+"@types/css@npm:^1.0.28-alpha":
+  version: 1.0.28-alpha
+  resolution: "@types/css@npm:1.0.28-alpha"
+  checksum: 10c0/e4b7d670f363ddb6f601b31452833d523e5052e9f8cfc487e710c10d40a372ae59c694fd055b48cddeebe1140df8e9242414b397f01823cf72d8fdff4e3478d0
   languageName: node
   linkType: hard
 
@@ -1444,12 +1444,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^25.8.0":
-  version: 25.8.0
-  resolution: "@types/node@npm:25.8.0"
+"@types/node@npm:^25.9.0":
+  version: 25.9.0
+  resolution: "@types/node@npm:25.9.0"
   dependencies:
     undici-types: "npm:>=7.24.0 <7.24.7"
-  checksum: 10c0/ff53e5428309d2e6060190ec5e02afd0e4a7369456b16130a7f5898f12a6ad0efd62d752830f2f7355d714ae429bc0acbb2dc0cbf761cadb03e88c4996cdf1dc
+  checksum: 10c0/1845f0ce5471213a4f0c887845c50993968ea863c03bb355282b59bdcc877d009a2785f0f506cfc40b8ce7548a21e33ac826e998be62d42b000bfd9ccdc6c910
   languageName: node
   linkType: hard
 
@@ -1732,11 +1732,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.10.12":
-  version: 2.10.29
-  resolution: "baseline-browser-mapping@npm:2.10.29"
+  version: 2.10.31
+  resolution: "baseline-browser-mapping@npm:2.10.31"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/d629a6d87f1aa0585b85ec8bf686bf58d706836fe7827d7bd11f646db2292f2089d8dff33fdd9a1ffe4c07424ae5b08743f57d9405d45cd8ceeb145e8dfb58e5
+  checksum: 10c0/ecb6a10b4bb62d8660e3a4c525acdae2b1c7f68e4ec1e03f473b2050781b7131fbd562a200489ae987d11eb8ae85ec95d3ac77d9d84b4afe6548dfdfdceb6734
   languageName: node
   linkType: hard
 
@@ -1874,9 +1874,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001782":
-  version: 1.0.30001792
-  resolution: "caniuse-lite@npm:1.0.30001792"
-  checksum: 10c0/03bab64b123453e18e7c6747c32bb820be6d82ac78536c5c3704988aaeec411715a2045069fb569f872d73acf1ea64bf83508c9fdfa87b6d012236cde738e1be
+  version: 1.0.30001793
+  resolution: "caniuse-lite@npm:1.0.30001793"
+  checksum: 10c0/bee8f8b55d1ccdb2076b7355c06fd01916952eadd76b828e4d5fb9ac62d17ec7db0e2b7c326b923478b93526ad1ff74f189cf40c06de0e4a5edbc677009b97fe
   languageName: node
   linkType: hard
 
@@ -2178,10 +2178,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.11.20":
-  version: 1.11.20
-  resolution: "dayjs@npm:1.11.20"
-  checksum: 10c0/8af525e2aa100c8db9923d706c42b2b2d30579faf89456619413a5c10916efc92c2b166e193c27c02eb3174b30aa440ee1e7b72b0a2876b3da651d204db848a0
+"dayjs@npm:^2.0.0-alpha.4":
+  version: 2.0.0-alpha.4
+  resolution: "dayjs@npm:2.0.0-alpha.4"
+  checksum: 10c0/c0db2ab0dc57d4087b1649e3d87a3dea4f60e5456aba643d57bf0361a1005802f5c214e6a4007be14f35e203083d28467745a8b52a71ceffa0e2652432b0c6db
   languageName: node
   linkType: hard
 
@@ -2373,9 +2373,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.328":
-  version: 1.5.355
-  resolution: "electron-to-chromium@npm:1.5.355"
-  checksum: 10c0/ab21dcbc0f1c3d0ea0fa744ea4c1a0deacb04e8407bff9b607f16b84403ea76ad020c00a554924ee90ca4e3151cc06f23e9adb8d33a0fdbad5f90092bc80e025
+  version: 1.5.358
+  resolution: "electron-to-chromium@npm:1.5.358"
+  checksum: 10c0/86e3e5cb9541fe3a3d435e614b97024fda81c913a60ffa822b156995a8ffa1049f81cfa3e43888dae88d2e2c8254b1b51a8b9169858b3c4093ed3d34dc5de9bb
   languageName: node
   linkType: hard
 
@@ -3493,9 +3493,9 @@ hack-font@source-foundry/Hack:
   linkType: hard
 
 "lru-cache@npm:^11.0.0":
-  version: 11.3.6
-  resolution: "lru-cache@npm:11.3.6"
-  checksum: 10c0/3afe3e3000e424c18b640dcea5776b5c1de8684b7dac9718d58792dff1a4692b38cc14e263cbb41bdab98ffcf5408f003b33133b179ce5d271284be72a3ff2a9
+  version: 11.4.0
+  resolution: "lru-cache@npm:11.4.0"
+  checksum: 10c0/ac59697b1bcc19494b4a12af5e2320bb6c353473654d73e6c84033deb22faf220c861b1e0bc1ac9f65a394d46653870e982598a046c5976f44c4b1deb5ad8197
   languageName: node
   linkType: hard
 
@@ -4162,12 +4162,12 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.8.3":
-  version: 3.8.3
-  resolution: "prettier@npm:3.8.3"
+"prettier@npm:^4.0.0-alpha.13":
+  version: 4.0.0-alpha.13
+  resolution: "prettier@npm:4.0.0-alpha.13"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/754816fd7593eb80f6376d7476d463e832c38a12f32775a82683adb6e35b772b1f484d65f19401507b983a8c8a7cd5a4a9f12006bd56491e8f35503473f77473
+  checksum: 10c0/f5577cc7a7e4fec10170d54641d9a4d155e5882198ce0660985bdeb63ca6f63a9a6864f2d602956b48fdda53f588bf2b2a15838d8ae31af1ec7d5fe6105346ee
   languageName: node
   linkType: hard
 
