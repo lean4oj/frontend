@@ -749,7 +749,7 @@ __metadata:
     react-dom: "npm:^18.3.1"
     react-google-recaptcha-v3: "npm:^1.11.0"
     react-helmet-async: "npm:^3.0.0"
-    react-intl: "npm:^10.1.7"
+    react-intl: "npm:^10.1.8"
     react-navi: "patch:react-navi@npm%3A^0.15.0#./.yarn/patches/react-navi-npm-0.15.0-51a95f8cdd.patch"
     react-textarea-autosize: "npm:^8.5.9"
     rollup-plugin-visualizer: "npm:^7.0.1"
@@ -4319,9 +4319,9 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"react-intl@npm:^10.1.7":
-  version: 10.1.7
-  resolution: "react-intl@npm:10.1.7"
+"react-intl@npm:^10.1.8":
+  version: 10.1.8
+  resolution: "react-intl@npm:10.1.8"
   dependencies:
     "@formatjs/icu-messageformat-parser": "npm:3.5.9"
     "@formatjs/intl": "npm:4.1.11"
@@ -4329,7 +4329,7 @@ hack-font@source-foundry/Hack:
   peerDependencies:
     "@types/react": 19
     react: 19
-  checksum: 10c0/128a3b9600dc86ac1f27eef0e94d8df088a1b7670769518b871e23b9e808edcc96b9e359563213fe2c0496e88df7d5c98a7df3fc0f8cf5a767a51fb09fada881
+  checksum: 10c0/c67c98a528dabf82fcc08c53809c8217b056b21b060880579497553fa8bb9169d9159ff98cf801a19235d471c3e6189b9956854b4cb97d9d8f8e7f54d521d518
   languageName: node
   linkType: hard
 
