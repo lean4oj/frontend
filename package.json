@@ -101,7 +101,7 @@
     "typeface-lato": "^1.1.13",
     "typeface-saira": "^1.1.13",
     "typescript": "^6.0.3",
-    "ua-parser-js": "^2.0.9",
+    "ua-parser-js": "^2.0.10",
     "use-debounce": "^10.1.1",
     "uuid": "^14.0.0",
     "validator": "^13.15.35",
