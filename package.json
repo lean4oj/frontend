@@ -87,7 +87,7 @@
     "react-dom": "^18.3.1",
     "react-google-recaptcha-v3": "^1.11.0",
     "react-helmet-async": "^3.0.0",
-    "react-intl": "^10.1.9",
+    "react-intl": "^10.1.11",
     "react-navi": "patch:react-navi@npm%3A^0.15.0#./.yarn/patches/react-navi-npm-0.15.0-51a95f8cdd.patch",
     "react-textarea-autosize": "^8.5.9",
     "rollup-plugin-visualizer": "^7.0.1",
