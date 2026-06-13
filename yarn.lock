@@ -700,7 +700,7 @@ __metadata:
     "@types/node": "npm:^25.9.3"
     "@types/object-path": "npm:^0.11.4"
     "@types/prismjs": "npm:^1.26.6"
-    "@types/react": "npm:^19.2.16"
+    "@types/react": "npm:^19.2.17"
     "@types/react-dom": "npm:^19.2.3"
     "@types/streamsaver": "npm:^2.0.5"
     "@types/svgo": "npm:^3.0.0"
@@ -743,7 +743,7 @@ __metadata:
     plausible-tracker: "npm:^0.3.9"
     prettier: "npm:^4.0.0-alpha.13"
     prismjs: "npm:^1.30.0"
-    react: "npm:^18.3.1"
+    react: "npm:^19.2.7"
     react-chartjs-2: "npm:^5.3.1"
     react-countdown: "npm:^2.3.6"
     react-dom: "npm:^18.3.1"
@@ -1476,12 +1476,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.2.16":
-  version: 19.2.16
-  resolution: "@types/react@npm:19.2.16"
+"@types/react@npm:^19.2.17":
+  version: 19.2.17
+  resolution: "@types/react@npm:19.2.17"
   dependencies:
     csstype: "npm:^3.2.2"
-  checksum: 10c0/96f2850b67c5aa4a695bc32eb06c7609acdda1c0c597ace21ad24a5b9e2ccbccd97c0643253579fd629789a422a3694b4bbcb26e5fc6aec5f0357820bf0ee81c
+  checksum: 10c0/bc2c4af96b3e480604424de70d5ebda90c5f4b485df471858c0bc2d7d70364b606ec3c4d8579f94f01aa0c6c0591f56bcf14cba5689f5eea4b74250ccdc3a232
   languageName: node
   linkType: hard
 
@@ -4398,12 +4398,10 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"react@npm:^18.3.1":
-  version: 18.3.1
-  resolution: "react@npm:18.3.1"
-  dependencies:
-    loose-envify: "npm:^1.1.0"
-  checksum: 10c0/283e8c5efcf37802c9d1ce767f302dd569dd97a70d9bb8c7be79a789b9902451e0d16334b05d73299b20f048cbc3c7d288bbbde10b701fa194e2089c237dbea3
+"react@npm:^19.2.7":
+  version: 19.2.7
+  resolution: "react@npm:19.2.7"
+  checksum: 10c0/0bd0e2f1bbd4ba97561c6597bf8a5fec05e6476fe61e165c1065598d16668efc6715205599c94d3ddd49d36cb0f21cbf1b9bcc18ee840b805ce222c3e8d558ac
   languageName: node
   linkType: hard
 
