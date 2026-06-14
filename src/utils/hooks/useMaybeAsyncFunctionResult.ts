@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { v4 as uuid } from "uuid";
 
 type RemoveLast<T extends any[]> = T extends [...infer RemovedLast, any] ? RemovedLast : any[];
 type Last<T extends any[]> = T extends [...any, infer Last] ? Last : any[];
@@ -14,7 +13,7 @@ export const useMaybeAsyncFunctionResult = <F extends (...args: [...any, (result
   const refCurrentRenderingProcessId = useRef(null);
 
   function invoke(onResult: (result: Result) => void, onPending: () => void) {
-    const renderingProcessId = uuid();
+    const renderingProcessId = crypto.randomUUID();
     refCurrentRenderingProcessId.current = renderingProcessId;
 
     let finished = false;

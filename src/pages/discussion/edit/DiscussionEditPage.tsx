@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Breadcrumb } from "semantic-ui-react";
-import { v4 as uuid } from "uuid";
 import { observer } from "mobx-react";
 
 import style from "./DiscussionEditPage.module.less";
@@ -124,7 +123,7 @@ export default {
       };
     })();
 
-    return <DiscussionEditPage key={uuid()} problem={problem} />;
+    return <DiscussionEditPage key={crypto.randomUUID()} problem={problem} />;
   }),
   edit: defineRoute(async request => {
     const { requestError, response } = await api.discussion.getDiscussionAndReplies({
@@ -136,6 +135,6 @@ export default {
     if (requestError) throw new RouteError(requestError, { showRefresh: true, showBack: true });
     else if (response.error) throw new RouteError(makeToBeLocalizedText(`discussion_edit.errors.${response.error}`));
 
-    return <DiscussionEditPage key={uuid()} discussion={response.discussion} />;
+    return <DiscussionEditPage key={crypto.randomUUID()} discussion={response.discussion} />;
   })
 };

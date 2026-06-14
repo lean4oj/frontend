@@ -1,7 +1,6 @@
 import React, { useState, useRef, useMemo } from "react";
 import { Dropdown, Header, Menu, Popup, Button, Form, Message, Input, Table } from "semantic-ui-react";
 import { observer } from "mobx-react";
-import { v4 as uuid } from "uuid";
 import update, { Spec } from "immutability-helper";
 
 import style from "./SubtasksEditor.module.less";
@@ -444,7 +443,7 @@ let SubtaskEditor: React.FC<SubtaskEditorProps> = props => {
 
   function getNewTestcases(matchResult: [string, string][]): Testcase[] {
     return matchResult.map(m => ({
-      uuid: uuid(),
+      uuid: crypto.randomUUID(),
       inputFile: m[0],
       outputFile: m[1]
     }));
@@ -868,7 +867,7 @@ let SubtasksEditor: React.FC<SubtasksEditorProps> = props => {
 
   // Prevent losing subtasks by toggling "auto detect testcases"
   const [subtasksBackup, setSubtasksBackup] = useState(
-    judgeInfo.subtasks || [{ scoringType: SubtaskScoringType.Sum, testcases: [], uuid: uuid(), dependencies: [] }]
+    judgeInfo.subtasks || [{ scoringType: SubtaskScoringType.Sum, testcases: [], uuid: crypto.randomUUID(), dependencies: [] }]
   );
 
   // For manual subtask editor
@@ -909,7 +908,7 @@ let SubtasksEditor: React.FC<SubtasksEditorProps> = props => {
       updateSubtasks({
         $set: [
           {
-            uuid: uuid(),
+            uuid: crypto.randomUUID(),
             scoringType: SubtaskScoringType.Sum,
             testcases: [],
             dependencies: []
@@ -954,7 +953,7 @@ let SubtasksEditor: React.FC<SubtasksEditorProps> = props => {
           subtaskIndex,
           0,
           {
-            uuid: uuid(),
+            uuid: crypto.randomUUID(),
             scoringType: template.scoringType,
             points: null,
             timeLimit: template.timeLimit,
@@ -1016,7 +1015,7 @@ let SubtasksEditor: React.FC<SubtasksEditorProps> = props => {
               testcaseIndex,
               0,
               {
-                uuid: uuid(),
+                uuid: crypto.randomUUID(),
                 inputFile: null,
                 outputFile: null,
                 userOutputFilename: null,
@@ -1134,7 +1133,7 @@ const judgeInfoProcessor: JudgeInfoProcessor<JudgeInfoWithSubtasks, SubtasksEdit
           ? (raw.subtasks as any[])
               .map(x => x || {})
               .map(rawSubtask => ({
-                uuid: uuid(),
+                uuid: crypto.randomUUID(),
                 scoringType:
                   rawSubtask.scoringType in SubtaskScoringType ? rawSubtask.scoringType : SubtaskScoringType.Sum,
                 points: Number.isSafeInteger(rawSubtask.points) && raw.subtasks.length > 1 ? rawSubtask.points : null,
@@ -1155,7 +1154,7 @@ const judgeInfoProcessor: JudgeInfoProcessor<JudgeInfoWithSubtasks, SubtasksEdit
                   ? (rawSubtask.testcases as any[])
                       .map(x => x || {})
                       .map(rawTestcase => ({
-                        uuid: uuid(),
+                        uuid: crypto.randomUUID(),
                         inputFile:
                           options.enableInputFile && typeof rawTestcase.inputFile === "string"
                             ? rawTestcase.inputFile

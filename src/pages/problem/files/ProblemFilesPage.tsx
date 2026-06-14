@@ -13,7 +13,6 @@ import {
   SemanticCOLORS,
   Progress,
 } from "semantic-ui-react";
-import { v4 as uuid } from "uuid";
 import isEqual from "lodash/isEqual";
 import streamsaver from "streamsaver";
 import pAll from "p-all";
@@ -673,7 +672,7 @@ let ProblemFilesPage: React.FC<ProblemFilesPageProps> = props => {
 
   function transformResponseToFileTableItems(fileList: ApiTypes.ProblemFileDto[]): FileTableItem[] {
     return fileList.map(file => ({
-      uuid: uuid(),
+      uuid: crypto.randomUUID(),
       filename: file.filename,
       size: file.size
     }));
@@ -757,7 +756,7 @@ let ProblemFilesPage: React.FC<ProblemFilesPageProps> = props => {
     const uploadingFileList: FileTableItem[] = [];
     for (const file of files) {
       uploadingFileList.push({
-        uuid: uuid(),
+        uuid: crypto.randomUUID(),
         filename: file.name,
         size: file.size,
         upload: {
@@ -938,12 +937,12 @@ export default {
     const id = parseInt(request.params["id"]);
     const problem = await fetchData("id", id);
 
-    return <ProblemFilesPage key={uuid()} idType="id" problem={problem} />;
+    return <ProblemFilesPage key={crypto.randomUUID()} idType="id" problem={problem} />;
   }),
   byDisplayId: defineRoute(async request => {
     const displayId = parseInt(request.params["displayId"]);
     const problem = await fetchData("displayId", displayId);
 
-    return <ProblemFilesPage key={uuid()} idType="displayId" problem={problem} />;
+    return <ProblemFilesPage key={crypto.randomUUID()} idType="displayId" problem={problem} />;
   })
 };

@@ -1,5 +1,3 @@
-import { v4 as uuid } from "uuid";
-
 import { Locale } from "@/interfaces/Locale";
 
 import type { LocalizedContentSection } from "./ProblemEditPage";
@@ -7,19 +5,19 @@ import type { LocalizedContentSection } from "./ProblemEditPage";
 export default <Record<Locale, LocalizedContentSection[]>>{
   [Locale.zh_CN]: [
     {
-      uuid: uuid(),
+      uuid: crypto.randomUUID(),
       sectionTitle: "题目描述",
       type: "Text",
       text: ""
     },
     {
-      uuid: uuid(),
+      uuid: crypto.randomUUID(),
       sectionTitle: "形式化命题",
       type: "Text",
       text: ""
     },
     {
-      uuid: uuid(),
+      uuid: crypto.randomUUID(),
       sectionTitle: "提示",
       type: "Text",
       text: ""
@@ -27,19 +25,19 @@ export default <Record<Locale, LocalizedContentSection[]>>{
   ],
   [Locale.en_US]: [
     {
-      uuid: uuid(),
+      uuid: crypto.randomUUID(),
       sectionTitle: "Description",
       type: "Text",
       text: ""
     },
     {
-      uuid: uuid(),
+      uuid: crypto.randomUUID(),
       sectionTitle: "Formal statement",
       type: "Text",
       text: ""
     },
     {
-      uuid: uuid(),
+      uuid: crypto.randomUUID(),
       sectionTitle: "Hint",
       type: "Text",
       text: ""
@@ -47,19 +45,19 @@ export default <Record<Locale, LocalizedContentSection[]>>{
   ],
   [Locale.ja_JP]: [
     {
-      uuid: uuid(),
+      uuid: crypto.randomUUID(),
       sectionTitle: "問題文",
       type: "Text",
       text: ""
     },
     {
-      uuid: uuid(),
+      uuid: crypto.randomUUID(),
       sectionTitle: "形式な命題",
       type: "Text",
       text: ""
     },
     {
-      uuid: uuid(),
+      uuid: crypto.randomUUID(),
       sectionTitle: "ヒント",
       type: "Text",
       text: ""

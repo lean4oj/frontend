@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Dropdown, Menu, Popup, Button, Form, Input } from "semantic-ui-react";
 import { observer } from "mobx-react";
 import update from "immutability-helper";
-import { v4 as uuid } from "uuid";
 
 import style from "./ExtraSourceFilesEditor.module.less";
 
@@ -31,7 +30,7 @@ let ExtraSourceFilesEditor: React.FC<ExtraSourceFilesEditorProps> = props => {
         props.judgeInfo.extraSourceFiles
           ? [
               codeLanguage,
-              Object.entries(props.judgeInfo.extraSourceFiles[codeLanguage] || {}).map(a => [uuid(), ...a])
+              Object.entries(props.judgeInfo.extraSourceFiles[codeLanguage] || {}).map(a => [crypto.randomUUID(), ...a])
             ]
           : [codeLanguage, []]
       )
@@ -79,7 +78,7 @@ let ExtraSourceFilesEditor: React.FC<ExtraSourceFilesEditorProps> = props => {
       updateExtraSourceFiles(
         update(extraSourceFiles, {
           [codeLanguage]: {
-            $push: [[uuid(), "", ""]]
+            $push: [[crypto.randomUUID(), "", ""]]
           }
         })
       );

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Table, Icon, Button } from "semantic-ui-react";
 import { observer } from "mobx-react";
 import { useCurrentRoute } from "react-navi";
-import { v4 as uuid } from "uuid";
 
 import style from "./UsersPage.module.less";
 

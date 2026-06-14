@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Table, Form, Icon, Button, Segment, Header } from "semantic-ui-react";
 import { observer } from "mobx-react";
-import { v4 as uuid } from "uuid";
-import { patch } from "jsondiffpatch";
 
 import style from "./SubmissionsPage.module.less";
 
@@ -351,5 +349,5 @@ export default defineRoute(async request => {
   const query = normalizeQuery(request.query);
   const queryResult = await fetchData(query);
 
-  return <SubmissionsPage key={uuid()} query={query} queryResult={queryResult} />;
+  return <SubmissionsPage key={crypto.randomUUID()} query={query} queryResult={queryResult} />;
 });

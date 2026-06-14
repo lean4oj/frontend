@@ -15,7 +15,6 @@ import {
 import { observer } from "mobx-react";
 import twemoji from "@twemoji/api";
 import TextAreaAutoSize from "react-textarea-autosize";
-import { v4 as uuid } from "uuid";
 
 import style from "./DiscussionViewPage.module.less";
 import loadMoreBackground from "./LoadMoreBackground.svg";
@@ -1123,5 +1122,5 @@ DiscussionViewPage = observer(DiscussionViewPage);
 export default defineRoute(async request => {
   const discussionId = Number(request.params.id) || 0;
   const response = await fetchData(discussionId);
-  return <DiscussionViewPage key={uuid()} response={response} />;
+  return <DiscussionViewPage key={crypto.randomUUID()} response={response} />;
 });

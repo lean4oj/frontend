@@ -2,15 +2,12 @@ import React, { useMemo } from "react";
 import { Menu, Icon, Message } from "semantic-ui-react";
 import { observer } from "mobx-react";
 import { useCurrentRoute } from "react-navi";
-import { v4 as uuid } from "uuid";
-import { redirect } from "navi";
 
 import style from "./UserEdit.module.less";
 
 import { appState } from "@/appState";
 import { useLocalizer, useNavigationChecked, Link } from "@/utils/hooks";
 import { defineRoute, RouteError } from "@/AppRouter";
-import api from "@/api";
 import { isValidIdentifier } from "@/utils/validators";
 import { makeToBeLocalizedText } from "@/locales";
 
@@ -111,7 +108,7 @@ async function getView(username: string, type: EditType, query: Record<string, s
 
   const response = await fetchData(username, query);
 
-  return <UserEditPage key={uuid()} username={username} type={type} data={response} view={View} />;
+  return <UserEditPage key={crypto.randomUUID()} username={username} type={type} data={response} view={View} />;
 }
 
 export default defineRoute(async request => {

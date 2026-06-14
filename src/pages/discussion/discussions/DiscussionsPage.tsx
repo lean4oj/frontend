@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Breadcrumb, Button, Header, Icon, Label, Menu, Segment, Table } from "semantic-ui-react";
 import { URLDescriptor } from "navi";
 import { observer } from "mobx-react";
-import { v4 as uuid } from "uuid";
 
 import style from "./DiscussionsPage.module.less";
 
@@ -517,5 +516,5 @@ export default defineRoute(async request => {
   const searchQuery = parseSearchQuery(request.query);
   const response = await fetchData(searchQuery, page);
 
-  return <DiscussionsPage key={uuid()} searchQuery={searchQuery} currentPage={page} response={response} />;
+  return <DiscussionsPage key={crypto.randomUUID()} searchQuery={searchQuery} currentPage={page} response={response} />;
 });

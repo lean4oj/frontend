@@ -705,7 +705,6 @@ __metadata:
     "@types/streamsaver": "npm:^2.0.5"
     "@types/svgo": "npm:^3.0.0"
     "@types/ua-parser-js": "npm:^0.7.39"
-    "@types/uuid": "npm:^11.0.0"
     "@types/validator": "npm:^13.15.10"
     "@vitejs/plugin-react": "npm:^6.0.2"
     ansi_up: "npm:^6.0.6"
@@ -765,7 +764,6 @@ __metadata:
     typescript: "npm:^6.0.3"
     ua-parser-js: "npm:^2.0.10"
     use-debounce: "npm:^10.1.1"
-    uuid: "npm:^14.0.0"
     validator: "npm:^13.15.35"
     vite: "npm:^8.0.16"
     vite-plugin-compile-time: "patch:vite-plugin-compile-time@npm%3A^0.4.6#./.yarn/patches/vite-plugin-compile-time-npm-0.4.6-e94713ab44.patch"
@@ -1512,15 +1510,6 @@ __metadata:
   version: 0.7.39
   resolution: "@types/ua-parser-js@npm:0.7.39"
   checksum: 10c0/fea522f42dfc2854d9c93144a13c3db3bbe1c791458451db06d46bec7e1dbbe945d1542e02bb38378e39a04bdb7810b43e2ead26f9e6c250832e187312522708
-  languageName: node
-  linkType: hard
-
-"@types/uuid@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "@types/uuid@npm:11.0.0"
-  dependencies:
-    uuid: "npm:*"
-  checksum: 10c0/6ebf1448d8fdc78d348a8a84389b74083f2f58bed75a5a6cf3be8419d33dcf757735c8b2de746b066ff8ef07f4384d02549774dc84195ffa46b24745471e9d8e
   languageName: node
   linkType: hard
 
@@ -5255,15 +5244,6 @@ hack-font@source-foundry/Hack:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 10c0/41a5bdd214df2f6c3ecf8622745e4a366c4adced864bc3c833739791aeeeb1838119af7daed4ba36428114b5c67dcda034a79c882e97e43c03e66a4dd7389942
-  languageName: node
-  linkType: hard
-
-"uuid@npm:*, uuid@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "uuid@npm:14.0.0"
-  bin:
-    uuid: dist-node/bin/uuid
-  checksum: 10c0/a57ae7794c45005c1a9208989196c5baf79a7679c30f43c1bee9033a2c4d113a2cea216fa6fcc9663b08b0d55635df1a7c6eb7e7f3d21c3e50688c698fa39a50
   languageName: node
   linkType: hard
 

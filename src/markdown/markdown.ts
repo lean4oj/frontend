@@ -1,5 +1,4 @@
 import MarkdownIt from "markdown-it";
-import { v4 as uuid } from "uuid";
 
 import MarkdownItMath from "markdown-it-math-loose";
 import MarkdownItMergeCells from "markdown-it-merge-cells/src";
@@ -44,7 +43,7 @@ export function renderMarkdown(
 
   function addHighlightPlaceholder(code: string, language: string) {
     const placeholder: MarkdownHighlightPlaceholder = {
-      id: uuid(),
+      id: crypto.randomUUID(),
       code,
       language
     };
@@ -56,7 +55,7 @@ export function renderMarkdown(
 
   function addMathPlaceholder(code: string, display: boolean) {
     const placeholder: MarkdownMathPlaceholder = {
-      id: uuid(),
+      id: crypto.randomUUID(),
       code,
       display
     };

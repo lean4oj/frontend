@@ -12,7 +12,6 @@ import {
   BarElement,
   Tooltip
 } from "chart.js";
-import { v4 as uuid } from "uuid";
 
 import style from "./SubmissionStatisticsPage.module.less";
 
@@ -408,7 +407,7 @@ export default {
 
     return (
       <SubmissionStatisticsPage
-        key={uuid()}
+        key={crypto.randomUUID()}
         id={displayId}
         idType="displayId"
         type={type}

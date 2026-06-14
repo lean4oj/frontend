@@ -1,8 +1,6 @@
 import React, { useState, useRef, useEffect, useMemo } from "react";
 import { Table, Icon, Accordion, Grid, SemanticWIDTHS, Button, Popup, Menu } from "semantic-ui-react";
 import { observer } from "mobx-react";
-import { v4 as uuid } from "uuid";
-import { patch } from "jsondiffpatch";
 
 import style from "./SubmissionPage.module.less";
 
@@ -912,6 +910,6 @@ export default defineRoute(async request => {
   }
 
   return (
-    <SubmissionPage key={uuid()} {...(queryResult as any)} ProblemTypeSubmissionView={ProblemTypeSubmissionView} />
+    <SubmissionPage key={crypto.randomUUID()} {...(queryResult as any)} ProblemTypeSubmissionView={ProblemTypeSubmissionView} />
   );
 });

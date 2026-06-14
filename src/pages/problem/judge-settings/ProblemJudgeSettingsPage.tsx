@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Dropdown, Grid, Header, Popup, Button, Form, Message } from "semantic-ui-react";
 import { observer } from "mobx-react";
 import yaml from "js-yaml";
-import { v4 as uuid } from "uuid";
 import cloneDeep from "lodash/cloneDeep";
 
 import style from "./ProblemJudgeSettingsPage.module.less";
@@ -66,7 +65,7 @@ let ProblemJudgeSettingsPage: React.FC<ProblemJudgeSettingsPageProps> = props =>
   const [submittable, setSubmittable] = useState(props.problem.submittable);
 
   // Unmount and remount the editor after each time the judge info is edited raw by source
-  const [editorUuid, setEditorUuid] = useState(uuid());
+  const [editorUuid, setEditorUuid] = useState(crypto.randomUUID());
 
   const [pending, setPending] = useState(false);
   const [modified, setModified] = useConfirmNavigation();
@@ -163,7 +162,7 @@ let ProblemJudgeSettingsPage: React.FC<ProblemJudgeSettingsPageProps> = props =>
             const parsed = parseJudgeInfo(yaml.load(editRawEditorValue));
             setJudgeInfo(parsed);
             setModified(true);
-            setEditorUuid(uuid());
+            setEditorUuid(crypto.randomUUID());
             closeEditRawDialog();
           } catch (e) {
             setEditRawEditorErrorMessage(e.message);
@@ -351,7 +350,7 @@ export default {
 
     return (
       <ProblemJudgeSettingsPage
-        key={uuid()}
+        key={crypto.randomUUID()}
         idType="id"
         problem={problem}
         ProblemTypeEditorComponent={await getProblemTypeEditorComponent(problem.meta.type as ProblemType)}
@@ -364,7 +363,7 @@ export default {
 
     return (
       <ProblemJudgeSettingsPage
-        key={uuid()}
+        key={crypto.randomUUID()}
         idType="displayId"
         problem={problem}
         ProblemTypeEditorComponent={await getProblemTypeEditorComponent(problem.meta.type as ProblemType)}

@@ -18,7 +18,6 @@ import {
 import { observer } from "mobx-react";
 import update from "immutability-helper";
 import objectPath from "object-path";
-import { v4 as uuid } from "uuid";
 
 import style from "./ProblemViewPage.module.less";
 
@@ -828,7 +827,7 @@ export default {
 
     return (
       <ProblemViewPage
-        key={uuid()}
+        key={crypto.randomUUID()}
         idType="id"
         requestedLocale={requestedLocale}
         problem={problem}
@@ -843,7 +842,7 @@ export default {
 
     return (
       <ProblemViewPage
-        key={uuid()}
+        key={crypto.randomUUID()}
         idType="displayId"
         requestedLocale={requestedLocale}
         problem={problem}

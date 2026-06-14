@@ -17,7 +17,6 @@ import {
   List,
 } from "semantic-ui-react";
 import TextAreaAutoSize from "react-textarea-autosize";
-import { v4 as uuid } from "uuid";
 import update from "immutability-helper";
 
 import style from "./ProblemEditPage.module.less";
@@ -607,7 +606,7 @@ let ProblemEditPage: React.FC<ProblemEditPageProps> = props => {
           converted[content.locale] = {
             title: content.title,
             contentSections: content.contentSections.map(section => ({
-              uuid: uuid(),
+              uuid: crypto.randomUUID(),
               ...section
             }))
           };
@@ -788,7 +787,7 @@ let ProblemEditPage: React.FC<ProblemEditPageProps> = props => {
             title: "",
             contentSections: [
               {
-                uuid: uuid(),
+                uuid: crypto.randomUUID(),
                 sectionTitle: "",
                 type: "Text",
                 text: ""
@@ -810,7 +809,7 @@ let ProblemEditPage: React.FC<ProblemEditPageProps> = props => {
       update(samples, {
         $push: [
           {
-            uuid: uuid(),
+            uuid: crypto.randomUUID(),
             inputData: "",
             outputData: ""
           }
@@ -841,7 +840,7 @@ let ProblemEditPage: React.FC<ProblemEditPageProps> = props => {
                 index,
                 0,
                 {
-                  uuid: uuid(),
+                  uuid: crypto.randomUUID(),
                   sectionTitle: "",
                   type,
                   text: "",
@@ -1018,7 +1017,7 @@ let ProblemEditPage: React.FC<ProblemEditPageProps> = props => {
             index,
             0,
             {
-              uuid: uuid(),
+              uuid: crypto.randomUUID(),
               inputData: "",
               outputData: ""
             }
@@ -1069,9 +1068,9 @@ let ProblemEditPage: React.FC<ProblemEditPageProps> = props => {
 
   const [samples, setSamples] = useState<Sample[]>(
     props.new
-      ? [{ uuid: uuid(), inputData: "", outputData: "" }]
+      ? [{ uuid: crypto.randomUUID(), inputData: "", outputData: "" }]
       : props.problem.samples.map(sample => ({
-          uuid: uuid(),
+          uuid: crypto.randomUUID(),
           ...sample
         }))
   );
@@ -1260,7 +1259,7 @@ export default {
   new: defineRoute(async request => {
     const allProblemTags = await fetchDataAllProblemTags();
 
-    return <ProblemEditPage key={uuid()} new={true} allProblemTags={allProblemTags} />;
+    return <ProblemEditPage key={crypto.randomUUID()} new={true} allProblemTags={allProblemTags} />;
   }),
   byId: defineRoute(async request => {
     const id = parseInt(request.params["id"]);
@@ -1269,7 +1268,7 @@ export default {
 
     return (
       <ProblemEditPage
-        key={uuid()}
+        key={crypto.randomUUID()}
         idType="id"
         problem={problem}
         allProblemTags={allProblemTags}
@@ -1284,7 +1283,7 @@ export default {
 
     return (
       <ProblemEditPage
-        key={uuid()}
+        key={crypto.randomUUID()}
         idType="displayId"
         problem={problem}
         allProblemTags={allProblemTags}

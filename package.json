@@ -44,7 +44,6 @@
     "@types/streamsaver": "^2.0.5",
     "@types/svgo": "^3.0.0",
     "@types/ua-parser-js": "^0.7.39",
-    "@types/uuid": "^11.0.0",
     "@types/validator": "^13.15.10",
     "@vitejs/plugin-react": "^6.0.2",
     "ansi_up": "^6.0.6",
@@ -103,7 +102,6 @@
     "typescript": "^6.0.3",
     "ua-parser-js": "^2.0.10",
     "use-debounce": "^10.1.1",
-    "uuid": "^14.0.0",
     "validator": "^13.15.35",
     "vite": "^8.0.16",
     "vite-plugin-compile-time": "patch:vite-plugin-compile-time@npm%3A^0.4.6#./.yarn/patches/vite-plugin-compile-time-npm-0.4.6-e94713ab44.patch",
@@ -115,7 +113,7 @@
     "wastyle": "^0.0.5",
     "xss": "^1.0.15"
   },
-  "packageManager": "yarn@4.16.0",
+  "packageManager": "yarn@4.17.0",
   "scripts": {
     "start": "vite",
     "build": "vite build",
