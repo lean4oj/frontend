@@ -697,7 +697,7 @@ __metadata:
     "@types/js-yaml": "npm:^4.0.9"
     "@types/lodash": "npm:^4.17.24"
     "@types/markdown-it": "npm:^14.1.2"
-    "@types/node": "npm:^25.9.3"
+    "@types/node": "npm:^26.0.0"
     "@types/object-path": "npm:^0.11.4"
     "@types/prismjs": "npm:^1.26.6"
     "@types/react": "npm:^19.2.17"
@@ -761,7 +761,7 @@ __metadata:
     timeago.js: "npm:^4.0.2"
     typeface-lato: "npm:^1.1.13"
     typeface-saira: "npm:^1.1.13"
-    typescript: "npm:^6.0.3"
+    typescript: "npm:^7.0.1-rc"
     ua-parser-js: "npm:^2.0.10"
     use-debounce: "npm:^10.1.1"
     validator: "npm:^13.15.35"
@@ -1442,12 +1442,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^25.9.3":
-  version: 25.9.3
-  resolution: "@types/node@npm:25.9.3"
+"@types/node@npm:^26.0.0":
+  version: 26.0.0
+  resolution: "@types/node@npm:26.0.0"
   dependencies:
-    undici-types: "npm:>=7.24.0 <7.24.7"
-  checksum: 10c0/72d3aece9d42c2c641bcd3f3cb2dc2828b4bd384dfcbd910c404b8859a68bd69d50c4769ce7defd4ff5e049768e23e615f09407ea2cbbb5f44b90d75a7c6b8ca
+    undici-types: "npm:~8.3.0"
+  checksum: 10c0/f36e21634fd8e8ded162ca486508bd8bb229d398a8d5541f6d8c1255968d4464e53327a77f403b216ef98e3b6f6956882eef83e4857d4bc2be9569dd55d37aae
   languageName: node
   linkType: hard
 
@@ -1517,6 +1517,146 @@ __metadata:
   version: 13.15.10
   resolution: "@types/validator@npm:13.15.10"
   checksum: 10c0/3e2e65fcd37dd6961ca3fd0535293d0c42f5911dc3ca44b96f458835e6db2392b678ccbb0c9815d8c0a14e653439e6c62c7b8758a6cd1d6e390551c9e56618ac
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-aix-ppc64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-aix-ppc64@npm:7.0.1-rc"
+  conditions: os=aix & cpu=ppc64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-darwin-arm64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-darwin-arm64@npm:7.0.1-rc"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-darwin-x64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-darwin-x64@npm:7.0.1-rc"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-freebsd-arm64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-freebsd-arm64@npm:7.0.1-rc"
+  conditions: os=freebsd & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-freebsd-x64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-freebsd-x64@npm:7.0.1-rc"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-arm64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-linux-arm64@npm:7.0.1-rc"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-arm@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-linux-arm@npm:7.0.1-rc"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-loong64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-linux-loong64@npm:7.0.1-rc"
+  conditions: os=linux & cpu=loong64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-mips64el@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-linux-mips64el@npm:7.0.1-rc"
+  conditions: os=linux & cpu=mips64el
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-ppc64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-linux-ppc64@npm:7.0.1-rc"
+  conditions: os=linux & cpu=ppc64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-riscv64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-linux-riscv64@npm:7.0.1-rc"
+  conditions: os=linux & cpu=riscv64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-s390x@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-linux-s390x@npm:7.0.1-rc"
+  conditions: os=linux & cpu=s390x
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-x64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-linux-x64@npm:7.0.1-rc"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-netbsd-arm64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-netbsd-arm64@npm:7.0.1-rc"
+  conditions: os=netbsd & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-netbsd-x64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-netbsd-x64@npm:7.0.1-rc"
+  conditions: os=netbsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-openbsd-arm64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-openbsd-arm64@npm:7.0.1-rc"
+  conditions: os=openbsd & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-openbsd-x64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-openbsd-x64@npm:7.0.1-rc"
+  conditions: os=openbsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-sunos-x64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-sunos-x64@npm:7.0.1-rc"
+  conditions: os=sunos & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-win32-arm64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-win32-arm64@npm:7.0.1-rc"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-win32-x64@npm:7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "@typescript/typescript-win32-x64@npm:7.0.1-rc"
+  conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
@@ -2362,9 +2502,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.328":
-  version: 1.5.375
-  resolution: "electron-to-chromium@npm:1.5.375"
-  checksum: 10c0/f8cd3d364779589acfffd75c0566b15112aa78421520712dfa88708185b71eaf0de24b76df1f2a70b80aea6b1ade2c8c0b08b17db57f85259ec74c70a8d4475c
+  version: 1.5.376
+  resolution: "electron-to-chromium@npm:1.5.376"
+  checksum: 10c0/c57e306ef12ad258e427218f90e14d155dfba68b23699674d7b66e528ce41ff69b46a78f38545ee7690d080d25d3ebb98338282e95d65510e8fa5fd4f7455a86
   languageName: node
   linkType: hard
 
@@ -3785,11 +3925,11 @@ hack-font@source-foundry/Hack:
   linkType: hard
 
 "nanoid@npm:^3.3.12":
-  version: 3.3.12
-  resolution: "nanoid@npm:3.3.12"
+  version: 3.3.13
+  resolution: "nanoid@npm:3.3.13"
   bin:
     nanoid: bin/nanoid.cjs
-  checksum: 10c0/ba142b7b39e11e80c16dd74b0365d407880c87c1cf7e1480956981ae940ee36060fa5b6f092cd1e315184dd19244c657bd017d03327bd3c62247d691c5e8edfb
+  checksum: 10c0/e913cd6d081e3b646788aa36e686964f2746f15935759425c98344053676b9444efedff4d87915bfb38b1626057e66c788f59ee7746b48c2b7886a4b049ca2ac
   languageName: node
   linkType: hard
 
@@ -3864,9 +4004,9 @@ hack-font@source-foundry/Hack:
   linkType: hard
 
 "node-releases@npm:^2.0.36":
-  version: 2.0.47
-  resolution: "node-releases@npm:2.0.47"
-  checksum: 10c0/fb1a703adb88c3bfe73aa39ebe0a0bc6d59c9d20d74ad61fb50958ffb22840da82a7a256076840b84c8ed57bb80e6fc8e588e675712fcf7af269aab16206b9b5
+  version: 2.0.48
+  resolution: "node-releases@npm:2.0.48"
+  checksum: 10c0/17eac8493c0be99130793e87fd67feb6291aecb9f4e473dea3b00f59c002cc8b9c0bdc923227c9aa84968da6b2e4c58e75251981503eb367ec9c742715175a34
   languageName: node
   linkType: hard
 
@@ -4720,11 +4860,11 @@ hack-font@source-foundry/Hack:
   linkType: hard
 
 "semver@npm:^7.3.5":
-  version: 7.8.4
-  resolution: "semver@npm:7.8.4"
+  version: 7.8.5
+  resolution: "semver@npm:7.8.5"
   bin:
     semver: bin/semver.js
-  checksum: 10c0/81b7c296fd7927b80f67fa516b75fa1017caac8167795320de28e76ccbc6f7f01763c30ecd10d6a0d8fd089708ab0548a5aebb94b0870e99c2a2b4600a46389b
+  checksum: 10c0/b1f3127a5be8125a94f37188b361c212466c292c6910adce3ec106cff5dc211ccaedc4739c11bb70fda59d6fc1f040a9bca289f4e093451521a2372e5231fe0c
   languageName: node
   linkType: hard
 
@@ -5100,23 +5240,74 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"typescript@npm:^6.0.3":
-  version: 6.0.3
-  resolution: "typescript@npm:6.0.3"
+"typescript@npm:^7.0.1-rc":
+  version: 7.0.1-rc
+  resolution: "typescript@npm:7.0.1-rc"
+  dependencies:
+    "@typescript/typescript-aix-ppc64": "npm:7.0.1-rc"
+    "@typescript/typescript-darwin-arm64": "npm:7.0.1-rc"
+    "@typescript/typescript-darwin-x64": "npm:7.0.1-rc"
+    "@typescript/typescript-freebsd-arm64": "npm:7.0.1-rc"
+    "@typescript/typescript-freebsd-x64": "npm:7.0.1-rc"
+    "@typescript/typescript-linux-arm": "npm:7.0.1-rc"
+    "@typescript/typescript-linux-arm64": "npm:7.0.1-rc"
+    "@typescript/typescript-linux-loong64": "npm:7.0.1-rc"
+    "@typescript/typescript-linux-mips64el": "npm:7.0.1-rc"
+    "@typescript/typescript-linux-ppc64": "npm:7.0.1-rc"
+    "@typescript/typescript-linux-riscv64": "npm:7.0.1-rc"
+    "@typescript/typescript-linux-s390x": "npm:7.0.1-rc"
+    "@typescript/typescript-linux-x64": "npm:7.0.1-rc"
+    "@typescript/typescript-netbsd-arm64": "npm:7.0.1-rc"
+    "@typescript/typescript-netbsd-x64": "npm:7.0.1-rc"
+    "@typescript/typescript-openbsd-arm64": "npm:7.0.1-rc"
+    "@typescript/typescript-openbsd-x64": "npm:7.0.1-rc"
+    "@typescript/typescript-sunos-x64": "npm:7.0.1-rc"
+    "@typescript/typescript-win32-arm64": "npm:7.0.1-rc"
+    "@typescript/typescript-win32-x64": "npm:7.0.1-rc"
+  dependenciesMeta:
+    "@typescript/typescript-aix-ppc64":
+      optional: true
+    "@typescript/typescript-darwin-arm64":
+      optional: true
+    "@typescript/typescript-darwin-x64":
+      optional: true
+    "@typescript/typescript-freebsd-arm64":
+      optional: true
+    "@typescript/typescript-freebsd-x64":
+      optional: true
+    "@typescript/typescript-linux-arm":
+      optional: true
+    "@typescript/typescript-linux-arm64":
+      optional: true
+    "@typescript/typescript-linux-loong64":
+      optional: true
+    "@typescript/typescript-linux-mips64el":
+      optional: true
+    "@typescript/typescript-linux-ppc64":
+      optional: true
+    "@typescript/typescript-linux-riscv64":
+      optional: true
+    "@typescript/typescript-linux-s390x":
+      optional: true
+    "@typescript/typescript-linux-x64":
+      optional: true
+    "@typescript/typescript-netbsd-arm64":
+      optional: true
+    "@typescript/typescript-netbsd-x64":
+      optional: true
+    "@typescript/typescript-openbsd-arm64":
+      optional: true
+    "@typescript/typescript-openbsd-x64":
+      optional: true
+    "@typescript/typescript-sunos-x64":
+      optional: true
+    "@typescript/typescript-win32-arm64":
+      optional: true
+    "@typescript/typescript-win32-x64":
+      optional: true
   bin:
     tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 10c0/4a25ff5045b984370f48f196b3a0120779b1b343d40b9a68d114ea5e5fff099809b2bb777576991a63a5cd59cf7bffd96ff6fe10afcefbcb8bd6fb96ad4b6606
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@npm%3A^6.0.3#optional!builtin<compat/typescript>":
-  version: 6.0.3
-  resolution: "typescript@patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>::version=6.0.3&hash=5786d5"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 10c0/2f25c74e65663c248fa1ade2b8459d9ce5372ff9dad07067310f132966ebec1d93f6c42f0baf77a6b6a7a91460463f708e6887013aaade22111037457c6b25df
+  checksum: 10c0/f83e3c85823b5b76d131a985fad2112d01006bce2ad752f4b92ee4794c53a760acd5f6c760ec4d9f105baa848f4ffe0f8107a5c80b8abd504a1c906bef34e29f
   languageName: node
   linkType: hard
 
@@ -5140,10 +5331,10 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"undici-types@npm:>=7.24.0 <7.24.7":
-  version: 7.24.6
-  resolution: "undici-types@npm:7.24.6"
-  checksum: 10c0/d9cd8befb643ac904615c280a095ba4240531f6bb4a5e75a22a7483630ca8d3f1016d2ab6ace6ceda1f63b3a2db2fe037fafe121d6917a0187573aa548ff78ca
+"undici-types@npm:~8.3.0":
+  version: 8.3.0
+  resolution: "undici-types@npm:8.3.0"
+  checksum: 10c0/c8aa7e2fbebfce519654dafadc0ece59be888d2ccaf180fb4495da875e7b536d2456345c384069c7e6f3e9c9ab7435f074957da306f142343eee86ff8048855a
   languageName: node
   linkType: hard
 
