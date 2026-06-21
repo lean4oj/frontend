@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Checkbox, Dropdown, Header, Icon, Popup, Table } from "semantic-ui-react";
-import yaml from "js-yaml";
+import { dump, load } from "js-yaml";
 
 import style from "./HomeSettingsPage.module.less";
 
@@ -107,14 +107,14 @@ let HomeSettingsPage: React.FC<HomeSettingsPageProps> = props => {
     };
   }
 
-  const [hitokotoConfig, setHitokotoConfig] = useState(() => yaml.dump(props.settings.hitokoto));
-  const [countdownConfig, setCountdownConfig] = useState(() => yaml.dump(props.settings.countdown));
-  const [friendLinksConfig, setFriendLinksConfig] = useState(() => yaml.dump(props.settings.friendLinks));
+  const [hitokotoConfig, setHitokotoConfig] = useState(() => dump(props.settings.hitokoto));
+  const [countdownConfig, setCountdownConfig] = useState(() => dump(props.settings.countdown));
+  const [friendLinksConfig, setFriendLinksConfig] = useState(() => dump(props.settings.friendLinks));
 
   const [pending, onSubmit] = useAsyncCallbackPending(async () => {
-    const hitokoto = yaml.load(hitokotoConfig) as any;
-    const countdown = yaml.load(countdownConfig) as any;
-    const friendLinks = yaml.load(friendLinksConfig) as any;
+    const hitokoto = load(hitokotoConfig) as any;
+    const countdown = load(countdownConfig) as any;
+    const friendLinks = load(friendLinksConfig) as any;
     const announcementIds = Object.fromEntries(
       Object.entries(announcements).map(([locale, discussions]) => [locale, discussions.map(({ id }) => id)])
     );

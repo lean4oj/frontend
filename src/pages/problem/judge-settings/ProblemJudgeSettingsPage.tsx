@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Dropdown, Grid, Header, Popup, Button, Form, Message } from "semantic-ui-react";
 import { observer } from "mobx-react";
-import yaml from "js-yaml";
+import { dump, load } from "js-yaml";
 import cloneDeep from "lodash/cloneDeep";
 
 import style from "./ProblemJudgeSettingsPage.module.less";
@@ -111,7 +111,7 @@ let ProblemJudgeSettingsPage: React.FC<ProblemJudgeSettingsPageProps> = props =>
     setPending(false);
   }
 
-  const [editRawEditorValue, setEditRawEditorValue] = useState(yaml.dump(normalizeJudgeInfo(judgeInfo), { lineWidth: -1 }));
+  const [editRawEditorValue, setEditRawEditorValue] = useState(dump(normalizeJudgeInfo(judgeInfo), { lineWidth: -1 }));
   const [editRowEditorModified, setEditRowEditorModified] = useConfirmNavigation();
   const [editRawEditorErrorMessage, setEditRawEditorErrorMessage] = useState("");
   function closeEditRawDialog() {
@@ -159,7 +159,7 @@ let ProblemJudgeSettingsPage: React.FC<ProblemJudgeSettingsPageProps> = props =>
         content={_(".edit_raw.ok")}
         onClick={() => {
           try {
-            const parsed = parseJudgeInfo(yaml.load(editRawEditorValue));
+            const parsed = parseJudgeInfo(load(editRawEditorValue));
             setJudgeInfo(parsed);
             setModified(true);
             setEditorUuid(crypto.randomUUID());
@@ -201,7 +201,7 @@ let ProblemJudgeSettingsPage: React.FC<ProblemJudgeSettingsPageProps> = props =>
     <HighlightedCodeBox
       className={style.yamlCodeBox}
       segmentClassName={style.yamlSegment}
-      code={yaml.dump(normalizeJudgeInfo(judgeInfo), { lineWidth: -1 })}
+      code={dump(normalizeJudgeInfo(judgeInfo), { lineWidth: -1 })}
       language="yaml"
     >
       <Button
@@ -211,7 +211,7 @@ let ProblemJudgeSettingsPage: React.FC<ProblemJudgeSettingsPageProps> = props =>
         content={_(".edit_raw.edit_raw")}
         onClick={() => {
           setEditRawEditorErrorMessage("");
-          setEditRawEditorValue(yaml.dump(normalizeJudgeInfo(judgeInfo), { lineWidth: -1 }));
+          setEditRawEditorValue(dump(normalizeJudgeInfo(judgeInfo), { lineWidth: -1 }));
           editRawDialog.open();
         }}
       />
