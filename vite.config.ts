@@ -8,7 +8,7 @@ import minifyHtml from "vite-plugin-html-minifier-terser";
 import svgo from "./vite/svgo";
 import publicPath from "vite-plugin-public-path";
 import { viteExternalsPlugin as externals } from "vite-plugin-externals";
-import { visualizer } from "rollup-plugin-visualizer";
+import { bundleAnalyzerPlugin } from "rolldown/experimental";
 import { replacePlugin } from "rolldown/plugins";
 
 // Node polyfill
@@ -201,7 +201,7 @@ export default defineConfig({
           .map(([packageName, { globalVariableName }]) => [packageName, globalVariableName])
       )
     }),
-    visualizer()
+    bundleAnalyzerPlugin({ format: 'md' })
   ],
   base: isDev ? "/" : "/__vite_base__/",
   experimental: {
