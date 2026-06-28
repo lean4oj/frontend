@@ -97,7 +97,7 @@
     "timeago.js": "^4.0.2",
     "typeface-lato": "^1.1.13",
     "typeface-saira": "^1.1.13",
-    "typescript": "^7.0.1-rc",
+    "typescript": "^5.9.2",
     "ua-parser-js": "^2.0.10",
     "use-debounce": "^10.1.1",
     "validator": "^13.15.35",
