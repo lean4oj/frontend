@@ -111,7 +111,7 @@
     "wastyle": "^0.0.5",
     "xss": "^1.0.15"
   },
-  "packageManager": "yarn@4.17.0",
+  "packageManager": "yarn@4.17.1",
   "scripts": {
     "start": "vite",
     "build": "vite build",
