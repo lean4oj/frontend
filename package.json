@@ -79,7 +79,7 @@
     "plausible-tracker": "^0.3.9",
     "prettier": "^4.0.0-alpha.13",
     "prismjs": "^1.30.0",
-    "react": "^18.3.1",
+    "react": "^19.2.7",
     "react-chartjs-2": "^5.3.1",
     "react-countdown": "^3.0.0-beta.0",
     "react-dom": "^18.3.1",
