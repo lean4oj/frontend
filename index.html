@@ -62,6 +62,10 @@ function safeStringify(object) {
       var siteName = localStorage.getItem("siteName") ?? "Lean4OJ";
       window.siteName = siteName;
 
+      // Specify the copyright notice in the same way.
+      var copyrightNotice = localStorage.getItem("copyrightNotice") ?? "🄯 2026 Lean4OJ, Powered by LibreOJ.";
+      window.copyrightNotice = copyrightNotice;
+
       // Specify the API endpoint in the same way.
       var apiEndpoint = localStorage.getItem("apiEndpoint") ?? location.origin;
       window.apiEndpoint = normalizePath(apiEndpoint);
@@ -321,7 +325,7 @@ function safeStringify(object) {
     </div>
     <div id="error-footer">
       <code>
-        Powered by Lyrio<br>
+        LibreOJ Open Source Project<br>
         (version <%= gitCommitInfo.hash.slice(0, 10) %>)
       </code>
     </div>

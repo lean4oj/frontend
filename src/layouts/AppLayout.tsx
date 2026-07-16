@@ -184,7 +184,7 @@ let AppLayout: React.FC<React.PropsWithChildren> = props => {
       <Segment vertical className={className}>
         <Container textAlign="center">
           <EmojiRenderer>
-            <div>{window.siteName} Powered by LibreOJ</div>
+            <div>{window.copyrightNotice}</div>
           </EmojiRenderer>
           <div id={style.footerVersion} className="monospace">
             <a href="https://github.com/lean4oj/frontend">
