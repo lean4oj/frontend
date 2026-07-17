@@ -38,6 +38,7 @@ return {
   request_error: {
     400: "無効なリクエストです。",
     401: "認証に失敗しました。ページを更新してもう一度お試しください。",
+    403: "人間による認証に失敗しました。もう一度お試しください。",
     429: "リクエストが多すぎます。しばらく待ってからもう一度お試しください。",
     500: "サーバーエラーです。しばらく待ってからもう一度お試しください。",
     502: "サーバーに接続できませんでした。しばらく待ってからもう一度お試しください。",
@@ -45,9 +46,5 @@ return {
     504: "サーバーへの接続がタイムアウトしました。しばらく待ってからもう一度お試しください。",
     unknown: "リクエストエラー：{text}"
   },
-  confirm_navigation: "このページを離れてもよろしいですか？変更内容は保存されません。",
-  recaptcha: {
-    copyright:
-      'このサイトはreCAPTCHAによって保護されており、Googleの<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer noopener">プライバシーポリシー</a>と<a href="https://policies.google.com/terms" target="_blank" rel="noreferrer noopener">利用規約</a>が適用されます。'
-  }
+  confirm_navigation: "このページを離れてもよろしいですか？変更内容は保存されません。"
 };

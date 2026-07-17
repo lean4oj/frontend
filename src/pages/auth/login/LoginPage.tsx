@@ -14,7 +14,8 @@ import {
   useDialog,
   useLocalizer,
   useLoginOrRegisterNavigation,
-  useRecaptcha,
+  CaptchaAction,
+  useCaptcha,
   useNavigationChecked
 } from "@/utils/hooks";
 import { isValidEmail as isEmail, isValidUsername } from "@/utils/validators";
@@ -42,7 +43,7 @@ let LoginPage: React.FC = () => {
     appState.enterNewPage(_(".title"));
   }, [appState.locale]);
 
-  const recaptcha = useRecaptcha();
+  const captcha = useCaptcha(CaptchaAction.Login);
 
   const [formError, setFormError] = useState<{ type: "usernameOrEmail" | "password"; message: string }>({
     type: null,
@@ -194,14 +195,18 @@ let LoginPage: React.FC = () => {
       setError("password", _(".empty_password"));
     } else {
       // Send login request
-      const { requestError, response } = await api.auth.login(
+      const { requestCancelled, requestError, response } = await api.auth.login(
         {
           [isEmail(usernameOrEmail) ? "email" : "identifier"]: usernameOrEmail,
           password: new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(password))).toBase64({ omitPadding: true }),
         },
-        recaptcha("Login")
+        captcha
       );
 
+      if (requestCancelled) {
+        setPending(false);
+        return;
+      }
       if (requestError) toast.error(requestError(_));
       else if (response.error && response.error !== "USER_NOT_MIGRATED") handleCommonError(response.error);
       else {
@@ -285,8 +290,6 @@ let LoginPage: React.FC = () => {
                 readOnly={pending}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
               />
-
-            {recaptcha.getCopyrightMessage(style.recaptchaCopyright)}
 
             <Button
               className={successMessage && style.successButton}

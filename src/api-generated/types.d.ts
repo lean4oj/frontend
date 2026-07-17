@@ -431,6 +431,10 @@ declare namespace ApiTypes {
     permissionSetPublic?: boolean;
     permissionDelete?: boolean;
   }
+  export interface GetTencentCaptchaAppIdResponseDto {
+    appId?: string;
+    encryptedAppId?: string;
+  }
   export interface GetUserDetailRequestDto {
     userId?: string;
     username?: string;
@@ -646,8 +650,8 @@ declare namespace ApiTypes {
     discussionRepliesMore: number;
   }
   export interface PreferenceConfigSecurity {
-    recaptchaEnabled: boolean;
-    recaptchaKey: string;
+    captchaEnabled: boolean;
+    turnstileSiteKey?: string;
     requireEmailVerification: boolean;
     allowUserChangeUsername: boolean;
     allowEveryoneCreateProblem: boolean;

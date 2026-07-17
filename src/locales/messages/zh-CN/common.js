@@ -38,6 +38,7 @@ return {
   request_error: {
     400: "无效的请求。",
     401: "验证失败，请刷新后重试。",
+    403: "人机验证失败，请重试。",
     429: "请求过于频繁，请稍后重试。",
     500: "服务器错误，请稍后重试。",
     502: "无法连接到服务器，请稍后重试。",
@@ -45,9 +46,5 @@ return {
     504: "连接服务器超时，请稍后重试。",
     unknown: "请求出错：{text}"
   },
-  confirm_navigation: "确定要离开当前页面吗？您的修改将不被保存。",
-  recaptcha: {
-    copyright:
-      '本网站受reCAPTCHA和Google的保护，适用<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer noopener">隐私政策</a>和<a href="https://policies.google.com/terms" target="_blank" rel="noreferrer noopener">服务条款</a>。'
-  }
+  confirm_navigation: "确定要离开当前页面吗？您的修改将不被保存。"
 };

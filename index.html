@@ -63,7 +63,7 @@ function safeStringify(object) {
       window.siteName = siteName;
 
       // Specify the copyright notice in the same way.
-      var copyrightNotice = localStorage.getItem("copyrightNotice") ?? "🄯 2026 Lean4OJ, Powered by LibreOJ.";
+      var copyrightNotice = localStorage.getItem("copyrightNotice") ?? `🄯 2026 ${siteName}, Powered by LibreOJ`;
       window.copyrightNotice = copyrightNotice;
 
       // Specify the API endpoint in the same way.

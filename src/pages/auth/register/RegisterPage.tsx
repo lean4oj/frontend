@@ -13,7 +13,8 @@ import {
   useLocalizer,
   useFieldCheck,
   useLoginOrRegisterNavigation,
-  useRecaptcha,
+  CaptchaAction,
+  useCaptcha,
   useNavigationChecked
 } from "@/utils/hooks";
 import toast from "@/utils/toast";
@@ -47,7 +48,8 @@ let RegisterPage: React.FC = () => {
     appState.enterNewPage(_(".title"));
   }, [appState.locale]);
 
-  const recaptcha = useRecaptcha();
+  const registerCaptcha = useCaptcha(CaptchaAction.Register);
+  const emailVerificationCaptcha = useCaptcha(CaptchaAction.SendEmailVerificationCode);
 
   const [successMessage, setSuccessMessage] = useState<string>(null);
 
@@ -180,7 +182,7 @@ let RegisterPage: React.FC = () => {
       refRetypePasswordInput.current.focus();
       refRetypePasswordInput.current.select();
     } else {
-      const { requestError, response } = await api.auth.register(
+      const { requestCancelled, requestError, response } = await api.auth.register(
         {
           username,
           identifier,
@@ -188,9 +190,13 @@ let RegisterPage: React.FC = () => {
           emailVerificationCode,
           password: new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(password))).toBase64({ omitPadding: true }),
         },
-        recaptcha("Register")
+        registerCaptcha
       );
 
+      if (requestCancelled) {
+        setRegisterPending(false);
+        return;
+      }
       if (requestError) toast.error(requestError(_));
       else if (response.error) {
         switch (response.error) {
@@ -254,14 +260,18 @@ let RegisterPage: React.FC = () => {
       refEmailInput.current.focus();
       refEmailInput.current.select();
     } else {
-      const { requestError, response } = await api.auth.sendEmailVerificationCode(
+      const { requestCancelled, requestError, response } = await api.auth.sendEmailVerificationCode(
         {
           email: email,
           type: "Register",
           locale: appState.locale
         },
-        recaptcha("SendEmailVerifactionCode_Register")
+        emailVerificationCaptcha
       );
+      if (requestCancelled) {
+        setSendEmailVerificationCodePending(false);
+        return;
+      }
       if (requestError) toast.error(requestError(_));
       else if (response.error) toast.error(_(`.errors.${response.error}`, { errorMessage: response.errorMessage }));
       else {
@@ -442,8 +452,6 @@ let RegisterPage: React.FC = () => {
                   onSubmit();
                 })}
               />
-
-            {recaptcha.getCopyrightMessage(style.recaptchaCopyright)}
 
             <Button
               className={successMessage && style.successButton}
