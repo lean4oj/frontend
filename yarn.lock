@@ -463,10 +463,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/noto-serif@npm:^5.2.9":
-  version: 5.2.9
-  resolution: "@fontsource/noto-serif@npm:5.2.9"
-  checksum: 10c0/a98d78dd56319969af1f31f2f202f6ac9713db609dd92c9f15ed0e3555b09028f08ee022a859fbec45f87e98b4fe8ed9372d2ed8a182a8bfbcdd74839034a286
+"@fontsource/noto-serif@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/noto-serif@npm:5.3.0"
+  checksum: 10c0/9cdeee904b206078cb1402a6e37072fb043d059748f03b19222ea22302bc939638716e9a0194432c79213bc7063d6790c08e0ad4b399b62ce0f65f9214cba803
   languageName: node
   linkType: hard
 
@@ -669,7 +669,7 @@ __metadata:
     "@fontsource/inconsolata": "npm:^5.2.8"
     "@fontsource/jetbrains-mono": "npm:^5.2.8"
     "@fontsource/noto-sans": "npm:^5.2.10"
-    "@fontsource/noto-serif": "npm:^5.2.9"
+    "@fontsource/noto-serif": "npm:^5.3.0"
     "@fontsource/nunito-sans": "npm:^5.2.7"
     "@fontsource/open-sans": "npm:^5.2.7"
     "@fontsource/pt-mono": "npm:^5.2.8"
@@ -746,7 +746,6 @@ __metadata:
     react-chartjs-2: "npm:^5.3.1"
     react-countdown: "npm:^3.0.0-beta.0"
     react-dom: "npm:^18.3.1"
-    react-google-recaptcha-v3: "npm:^1.11.0"
     react-helmet-async: "npm:^3.0.0"
     react-intl: "npm:^10.1.17"
     react-navi: "patch:react-navi@npm%3A^0.15.0#./.yarn/patches/react-navi-npm-0.15.0-51a95f8cdd.patch"
@@ -758,6 +757,7 @@ __metadata:
     string-replace-to-array: "npm:^2.1.1"
     svgo: "npm:^4.0.2"
     timeago.js: "npm:^4.0.2"
+    turnstile-types: "npm:^1.2.3"
     typeface-lato: "npm:^1.1.13"
     typeface-saira: "npm:^1.1.13"
     typescript: "npm:^7.0.2"
@@ -4214,18 +4214,6 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"react-google-recaptcha-v3@npm:^1.11.0":
-  version: 1.11.0
-  resolution: "react-google-recaptcha-v3@npm:1.11.0"
-  dependencies:
-    hoist-non-react-statics: "npm:^3.3.2"
-  peerDependencies:
-    react: ^16.3 || ^17.0 || ^18.0 || ^19.0
-    react-dom: ^17.0 || ^18.0 || ^19.0
-  checksum: 10c0/8c14d4aae702cb4be150ec15794842947473c1fd8d9c65545fb17566beb6033982f418a4a2dea0b4e5b73c28cb3a7312f5ab2c32e45c6a4d4e115b2a6193a86b
-  languageName: node
-  linkType: hard
-
 "react-helmet-async@npm:^3.0.0":
   version: 3.0.0
   resolution: "react-helmet-async@npm:3.0.0"
@@ -4970,6 +4958,13 @@ hack-font@source-foundry/Hack:
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
+  languageName: node
+  linkType: hard
+
+"turnstile-types@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "turnstile-types@npm:1.2.3"
+  checksum: 10c0/24002535bfb1716052758d1d1bdc587ddcf69290fbde2fcd19f9076b3ac10aa9b5438b1c38720da625ff090a5b4bea75708447931c9d2a0d7de5217f32cf3b2c
   languageName: node
   linkType: hard
 
