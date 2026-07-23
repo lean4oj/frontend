@@ -9,7 +9,7 @@ import style from "./UserEdit.module.less";
 import api from "@/api";
 import { appState } from "@/appState";
 import toast from "@/utils/toast";
-import { CaptchaAction, useLocalizer, useFieldCheckSimple, useAsyncCallbackPending, useCaptcha } from "@/utils/hooks";
+import { useLocalizer, useFieldCheckSimple, useAsyncCallbackPending } from "@/utils/hooks";
 import { isValidEmail as isEmail, isValidPassword, stripInvalidCharactersInEmailVerificationCode } from "@/utils/validators";
 import { RouteError } from "@/AppRouter";
 import formatDateTime from "@/utils/formatDateTime";
@@ -45,8 +45,6 @@ const SecurityView: React.FC<SecurityViewProps> = props => {
   useEffect(() => {
     appState.enterNewPage(`${_(`.title`)} - ${props.meta.username}`, null, false);
   }, [appState.locale, props.meta]);
-
-  const captcha = useCaptcha(CaptchaAction.SendEmailVerificationCode);
 
   const hasPrivilege = appState.currentUser?.isAdmin || appState.currentUserPrivileges.includes("ManageUser");
 
@@ -118,15 +116,11 @@ const SecurityView: React.FC<SecurityViewProps> = props => {
   const [sendEmailVerificationCodePending, onSendEmailVerificationCode] = useAsyncCallbackPending(async () => {
     if (emailInvalid || email.toLowerCase() === appState.currentUser.email.toLowerCase()) {
     } else {
-      const { requestCancelled, requestError, response } = await api.auth.sendEmailVerificationCode(
-        {
-          email: email,
-          type: "ChangeEmail",
-          locale: appState.locale
-        },
-        captcha
-      );
-      if (requestCancelled) return;
+      const { requestError, response } = await api.auth.sendEmailVerificationCode({
+        email: email,
+        type: "ChangeEmail",
+        locale: appState.locale
+      });
       if (requestError) toast.error(requestError(_));
       else if (response.error === "DUPLICATE_EMAIL") setDuplicateEmail(true);
       else if (response.error)

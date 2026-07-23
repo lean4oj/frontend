@@ -428,122 +428,122 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/dm-mono@npm:^5.2.7":
-  version: 5.2.7
-  resolution: "@fontsource/dm-mono@npm:5.2.7"
-  checksum: 10c0/028843c26545e86ad01219786daabe18386ed5e19ebefd6bc00fd799f8dc33df0c3d679fe942bf9355696d21903459282d97cd671ee8b2e05cd876560f9bb441
+"@fontsource/dm-mono@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/dm-mono@npm:5.3.0"
+  checksum: 10c0/785424fe3a610ba8dd58e5a6c7b5f9f5f50cdc9419873ac97522ac611aa803b6d2a9de52835593a9b7b76fb721ee87d4d6d959344a8cb4b67353465f681c347f
   languageName: node
   linkType: hard
 
-"@fontsource/fira-code@npm:^5.2.7":
-  version: 5.2.7
-  resolution: "@fontsource/fira-code@npm:5.2.7"
-  checksum: 10c0/389d1356def9018da529bf6055af9d41d6f6ae9ee2ff804a9b0e3bd2f8cf2754967e2b4a25e267d21215278849fb13711b9fe9573c051a1e191ad737e55f125f
+"@fontsource/fira-code@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/fira-code@npm:5.3.0"
+  checksum: 10c0/402416a8a645b4f7e5be72f223626a68c0a60fd836d5f7e8b840a07ed83637663abe70e8d05f88602225248df90bbd733807dab1e819aab65557e9fbdafed8d4
   languageName: node
   linkType: hard
 
-"@fontsource/inconsolata@npm:^5.2.8":
-  version: 5.2.8
-  resolution: "@fontsource/inconsolata@npm:5.2.8"
-  checksum: 10c0/2d5788a41bc60d7d00e5ba75689241a5146a4f60a3ec79d14dd2a0a5aa1ec2e697aa6aed3d1c0564208d32916aea588535f16a57f7a775b554d7f9adb03ad64a
+"@fontsource/inconsolata@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/inconsolata@npm:5.3.0"
+  checksum: 10c0/09eab874b1e28ab5696507682d2e3fc3e05f52bad591edab83183fd5ef8c8af8e6bc4c66923d406be0e9effb0b157be33a029e4bea757ca31373b5bf98184ba2
   languageName: node
   linkType: hard
 
-"@fontsource/jetbrains-mono@npm:^5.2.8":
-  version: 5.2.8
-  resolution: "@fontsource/jetbrains-mono@npm:5.2.8"
-  checksum: 10c0/a51a1ad9cc847ccb3f5986d00b49fcd0eb2061200eb9caf215f968d658806e96e0ee305ab45df3d167f62223e45935cb7e89f984e7fb88fbe6928855a20e044e
+"@fontsource/jetbrains-mono@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/jetbrains-mono@npm:5.3.0"
+  checksum: 10c0/1351b2350e893f5da39559ed90ff0e5e60bcc876b1f40531ad081ad4bf2f3cda3fa9e8940364aef5a7430ae3140685c9cd4819c36d8ad62bcd3fa37e3cc66b1d
   languageName: node
   linkType: hard
 
-"@fontsource/noto-sans@npm:^5.2.10":
-  version: 5.2.10
-  resolution: "@fontsource/noto-sans@npm:5.2.10"
-  checksum: 10c0/1b8405b8ace4703a86e018f5e139c4f48292dfc3d0d912c098c24d02653dfeb72d1659b20c92bda3461d42a2fb102e40a4505742d3f8622373789131c0b3d276
+"@fontsource/noto-sans@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/noto-sans@npm:5.3.0"
+  checksum: 10c0/f99578be5946a643235a3fc7bbf028226951267ec429fe428c8402ba2831a0b9dbba25c208adafbe7852dedf9710cf53d31a82de2af6aa63c16a51fce8aef4b1
   languageName: node
   linkType: hard
 
-"@fontsource/noto-serif@npm:^5.2.9":
-  version: 5.2.9
-  resolution: "@fontsource/noto-serif@npm:5.2.9"
-  checksum: 10c0/a98d78dd56319969af1f31f2f202f6ac9713db609dd92c9f15ed0e3555b09028f08ee022a859fbec45f87e98b4fe8ed9372d2ed8a182a8bfbcdd74839034a286
+"@fontsource/noto-serif@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/noto-serif@npm:5.3.0"
+  checksum: 10c0/9cdeee904b206078cb1402a6e37072fb043d059748f03b19222ea22302bc939638716e9a0194432c79213bc7063d6790c08e0ad4b399b62ce0f65f9214cba803
   languageName: node
   linkType: hard
 
-"@fontsource/nunito-sans@npm:^5.2.7":
-  version: 5.2.7
-  resolution: "@fontsource/nunito-sans@npm:5.2.7"
-  checksum: 10c0/949e762a5980257aad57575c076c85ebf85a2ce8172bfab00e8170ca30681b4ae8995a109ac2f73d44926d4e041b2ee316ec68ef636b0a891fa48e8441cf1ea7
+"@fontsource/nunito-sans@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/nunito-sans@npm:5.3.0"
+  checksum: 10c0/a5952f27dd7e7c5511d6e9d0223348be476556324d9cf6a0bf5ebb03aba56b2bcadb47d04b09edc34bf6a5edda3c031360253256f247d89fdbea437c5f1a2c95
   languageName: node
   linkType: hard
 
-"@fontsource/open-sans@npm:^5.2.7":
-  version: 5.2.7
-  resolution: "@fontsource/open-sans@npm:5.2.7"
-  checksum: 10c0/6f104ec67506992a58afc47d1820f895bd50462dfc69d12740bd0c7d68f60d513e6ddccff73c4b308239c92558b6587f7054d3243882eda6e5f7f7be3babd09a
+"@fontsource/open-sans@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/open-sans@npm:5.3.0"
+  checksum: 10c0/c52a583617187cb731d2606b7f22337168db055df7600f79ad42a37d44764065ff1fe060069467c43a086296f43a6ffc0328dd2c8031c459bfb60d253f2522d6
   languageName: node
   linkType: hard
 
-"@fontsource/pt-mono@npm:^5.2.8":
-  version: 5.2.8
-  resolution: "@fontsource/pt-mono@npm:5.2.8"
-  checksum: 10c0/05335a3df7fa5d862ab21770080268d2c1897ff9b0effaf7d4e2cee575d6f29c8e0f322b38d316e5dab8c0db2b7b1f491f47015060cc19db5e442e2916376b6d
+"@fontsource/pt-mono@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/pt-mono@npm:5.3.0"
+  checksum: 10c0/477fa461e7d78351656750ab30f31dbd84cab383631bf587d6b1d640d38619ce710475497b5254f0364cf408ad6aff45b734e6d7fe7522f028663709ba4b31ca
   languageName: node
   linkType: hard
 
-"@fontsource/pt-sans@npm:^5.2.8":
-  version: 5.2.8
-  resolution: "@fontsource/pt-sans@npm:5.2.8"
-  checksum: 10c0/5fd8a6825cf99c7b3f4ef758ad7153d15cb002e68b104e8c8efdef00615740637acd9015b581c259d6f6efddcea138bd2d7567f84bf68621d424b18ea7a27f50
+"@fontsource/pt-sans@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/pt-sans@npm:5.3.0"
+  checksum: 10c0/71c8a1d3e0790c32c5fb14db340fa833d3b1de012626dc41060dd7d1486cb59bf5916c64e994d5a5e52e40cf7e89406860d856a1e0b3d4c0a2702b375bb63e53
   languageName: node
   linkType: hard
 
-"@fontsource/roboto-mono@npm:^5.2.9":
-  version: 5.2.9
-  resolution: "@fontsource/roboto-mono@npm:5.2.9"
-  checksum: 10c0/869d8481e9c8b767fdb327f3013c2fdaa772f74fa4f3592c9bd3ee0c9050033b8af536e412d0b131bcbae281537ac7390ee53d5e2ea19e1e383a20f523f9eda4
+"@fontsource/roboto-mono@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/roboto-mono@npm:5.3.0"
+  checksum: 10c0/f76e6273b1019a6420fcb8ed284d14ebc8b307469d98dbcf8497d1d4eec03f5786414064176cc018a67089dc5e9e85b68770ddb5e56d71ecb8b8b1dfd92cd4e9
   languageName: node
   linkType: hard
 
-"@fontsource/roboto-slab@npm:^5.2.8":
-  version: 5.2.8
-  resolution: "@fontsource/roboto-slab@npm:5.2.8"
-  checksum: 10c0/dd3de463b692f72a4e0cac2b84bdcdc569cff8cdc068a4e54f651299d8fca62c69bdbaf6e30c7d7d1ff407bba8d837ac9d5d8816c565491e028e00014304ceec
+"@fontsource/roboto-slab@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/roboto-slab@npm:5.3.0"
+  checksum: 10c0/cbf5b593f8003b2e83cc280352a3a2e8979bb97eb0e4630a96e1bf976e22bf5697eb997277e984b566b993d4938a841e0468bb6f6c80f0f0367a2d15fdf489e5
   languageName: node
   linkType: hard
 
-"@fontsource/roboto@npm:^5.2.10":
-  version: 5.2.10
-  resolution: "@fontsource/roboto@npm:5.2.10"
-  checksum: 10c0/abadfcaefbe2196bbd36d9258b336063f721894a3624a9639da00792583c565bfd0748ef978f91a38c3c0de8d247615c9be92a763184c085c630fa43f04b1cd9
+"@fontsource/roboto@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/roboto@npm:5.3.0"
+  checksum: 10c0/68420d2c669ba05f0ea466343151c6d2efff85b05cedbf0f990c58635d86035cae5e7c4904db9abc7b9fd21c5ad179788243ec9dff0c30dfab90679ae2d226f9
   languageName: node
   linkType: hard
 
-"@fontsource/source-code-pro@npm:^5.2.7":
-  version: 5.2.7
-  resolution: "@fontsource/source-code-pro@npm:5.2.7"
-  checksum: 10c0/bc661c628352579d773dab6de9280522d55e8af9ff4fc74ac4c03cd0845755e9b89944bf898b66372ebf0fb1f09a875167dff7111a013087ae1bd8cef852383d
+"@fontsource/source-code-pro@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/source-code-pro@npm:5.3.0"
+  checksum: 10c0/38ad2539254232f72310494ad3c5c0ae4f17d169b23aa87c0746b0d6d677992e9fa721a7f5b570754bfc35adf9335fbf1535bb7b62bb87cfd52c2b0757ca5909
   languageName: node
   linkType: hard
 
-"@fontsource/source-serif-pro@npm:^5.2.5":
-  version: 5.2.5
-  resolution: "@fontsource/source-serif-pro@npm:5.2.5"
-  checksum: 10c0/40bfd9d0c673c96d8e84be9f6d32a53088f7a1519d612eadb5a9ffd8ec35f0553bc28f74c001beaaa07e7e2402e02545c8f6cbeb995e0f0e74a9efce5577ae1a
+"@fontsource/source-serif-pro@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/source-serif-pro@npm:5.3.0"
+  checksum: 10c0/322a588bd8498512161c95ad96a5bd22ef7bc36549903b26fda86a295caac3c5122395a692e001030dcc838a7c009880a7d6db7a96ff838afea15b0bbcf5769d
   languageName: node
   linkType: hard
 
-"@fontsource/ubuntu-mono@npm:^5.2.8":
-  version: 5.2.8
-  resolution: "@fontsource/ubuntu-mono@npm:5.2.8"
-  checksum: 10c0/0c03e2f0c5dc4365acd08fc53853e6222fbd741e72fe034000b5fe1d0570840d62c9dd9e16029746edb9513bf1875f5b6173ed716327d1da544a581a52a45827
+"@fontsource/ubuntu-mono@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/ubuntu-mono@npm:5.3.0"
+  checksum: 10c0/b2d7e7f009788366fd7c9f76c49fc3f13e1c32dae449ebcc86850f987f656c8c0acc8d778075017486301439f115d18112f08fa4b31cef15a819fac6c8cd37b0
   languageName: node
   linkType: hard
 
-"@fontsource/zilla-slab@npm:^5.2.8":
-  version: 5.2.8
-  resolution: "@fontsource/zilla-slab@npm:5.2.8"
-  checksum: 10c0/ac2d5c01e9c41bce87cffb349ebf6aa98c9d2e15427ea04cf44fa9df25e3fbc50ccaf296d5ce0a9fd1e81a2f9cde3a5ff9a758969fd7b9c332a437c6d11f7a7e
+"@fontsource/zilla-slab@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/zilla-slab@npm:5.3.0"
+  checksum: 10c0/de9e11d85036ad87445cb1c777334c49b94bbde47239563e6a49e4324f03a47b8ad13c5754287e727ab27a7fdfabceaa79288438ea3fbf724deff601c1d9c5d0
   languageName: node
   linkType: hard
 
@@ -664,23 +664,23 @@ __metadata:
   dependencies:
     "@esbuild-plugins/node-modules-polyfill": "npm:^0.2.2"
     "@esm-bundle/markdown-it": "npm:^13.0.1"
-    "@fontsource/dm-mono": "npm:^5.2.7"
-    "@fontsource/fira-code": "npm:^5.2.7"
-    "@fontsource/inconsolata": "npm:^5.2.8"
-    "@fontsource/jetbrains-mono": "npm:^5.2.8"
-    "@fontsource/noto-sans": "npm:^5.2.10"
-    "@fontsource/noto-serif": "npm:^5.2.9"
-    "@fontsource/nunito-sans": "npm:^5.2.7"
-    "@fontsource/open-sans": "npm:^5.2.7"
-    "@fontsource/pt-mono": "npm:^5.2.8"
-    "@fontsource/pt-sans": "npm:^5.2.8"
-    "@fontsource/roboto": "npm:^5.2.10"
-    "@fontsource/roboto-mono": "npm:^5.2.9"
-    "@fontsource/roboto-slab": "npm:^5.2.8"
-    "@fontsource/source-code-pro": "npm:^5.2.7"
-    "@fontsource/source-serif-pro": "npm:^5.2.5"
-    "@fontsource/ubuntu-mono": "npm:^5.2.8"
-    "@fontsource/zilla-slab": "npm:^5.2.8"
+    "@fontsource/dm-mono": "npm:^5.3.0"
+    "@fontsource/fira-code": "npm:^5.3.0"
+    "@fontsource/inconsolata": "npm:^5.3.0"
+    "@fontsource/jetbrains-mono": "npm:^5.3.0"
+    "@fontsource/noto-sans": "npm:^5.3.0"
+    "@fontsource/noto-serif": "npm:^5.3.0"
+    "@fontsource/nunito-sans": "npm:^5.3.0"
+    "@fontsource/open-sans": "npm:^5.3.0"
+    "@fontsource/pt-mono": "npm:^5.3.0"
+    "@fontsource/pt-sans": "npm:^5.3.0"
+    "@fontsource/roboto": "npm:^5.3.0"
+    "@fontsource/roboto-mono": "npm:^5.3.0"
+    "@fontsource/roboto-slab": "npm:^5.3.0"
+    "@fontsource/source-code-pro": "npm:^5.3.0"
+    "@fontsource/source-serif-pro": "npm:^5.3.0"
+    "@fontsource/ubuntu-mono": "npm:^5.3.0"
+    "@fontsource/zilla-slab": "npm:^5.3.0"
     "@hackmd/markdown-it-task-lists": "npm:^2.1.4"
     "@mathjax/src": "npm:^4.1.3"
     "@microsoft/fetch-event-source": "npm:^2.0.1"
@@ -723,7 +723,7 @@ __metadata:
     immutability-helper: "npm:^3.1.1"
     js-yaml: "npm:^5.2.1"
     jsondiffpatch: "npm:^0.7.6"
-    less: "npm:^4.6.7"
+    less: "npm:^4.7.0"
     lodash: "npm:lodash-es@^4.18.1"
     markdown-it-math-loose: "patch:markdown-it-math-loose@npm%3A^4.1.1#./.yarn/patches/markdown-it-math-loose-npm-4.1.1-a5a4144c49.patch"
     markdown-it-mentions: "patch:markdown-it-mentions@npm%3A^1.0.0#./.yarn/patches/markdown-it-mentions-npm-1.0.0-450125626c.patch"
@@ -733,7 +733,7 @@ __metadata:
     mobx-react-lite: "npm:^4.1.1"
     mobx-utils: "npm:^6.1.1"
     monaco-ace-tokenizer: "npm:^0.2.3"
-    monaco-editor: "npm:^0.55.1"
+    monaco-editor: "npm:^0.56.0"
     monaco-themes: "npm:^0.4.8"
     navi: "npm:^0.15.0"
     noty: "npm:3.2.0-beta"
@@ -746,18 +746,18 @@ __metadata:
     react-chartjs-2: "npm:^5.3.1"
     react-countdown: "npm:^3.0.0-beta.0"
     react-dom: "npm:^18.3.1"
-    react-google-recaptcha-v3: "npm:^1.11.0"
     react-helmet-async: "npm:^3.0.0"
-    react-intl: "npm:^10.1.17"
+    react-intl: "npm:^10.1.18"
     react-navi: "patch:react-navi@npm%3A^0.15.0#./.yarn/patches/react-navi-npm-0.15.0-51a95f8cdd.patch"
     react-textarea-autosize: "npm:^8.5.9"
-    sass: "npm:^1.101.0"
+    sass: "npm:^1.101.3"
     semantic-ui-react: "npm:^3.0.0-beta.2"
     sf-mono-webfont: "npm:^1.0.0"
     streamsaver: "npm:^2.0.6"
     string-replace-to-array: "npm:^2.1.1"
     svgo: "npm:^4.0.2"
     timeago.js: "npm:^4.0.2"
+    turnstile-types: "npm:^1.2.3"
     typeface-lato: "npm:^1.1.13"
     typeface-saira: "npm:^1.1.13"
     typescript: "npm:^7.0.2"
@@ -843,119 +843,111 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/watcher-android-arm64@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-android-arm64@npm:2.5.6"
+"@parcel/watcher-android-arm64@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@parcel/watcher-android-arm64@npm:2.6.0"
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
 
-"@parcel/watcher-darwin-arm64@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-darwin-arm64@npm:2.5.6"
+"@parcel/watcher-darwin-arm64@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@parcel/watcher-darwin-arm64@npm:2.6.0"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@parcel/watcher-darwin-x64@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-darwin-x64@npm:2.5.6"
+"@parcel/watcher-darwin-x64@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@parcel/watcher-darwin-x64@npm:2.6.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@parcel/watcher-freebsd-x64@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-freebsd-x64@npm:2.5.6"
+"@parcel/watcher-freebsd-x64@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@parcel/watcher-freebsd-x64@npm:2.6.0"
   conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
 
-"@parcel/watcher-linux-arm-glibc@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-linux-arm-glibc@npm:2.5.6"
+"@parcel/watcher-linux-arm-glibc@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@parcel/watcher-linux-arm-glibc@npm:2.6.0"
   conditions: os=linux & cpu=arm & libc=glibc
   languageName: node
   linkType: hard
 
-"@parcel/watcher-linux-arm-musl@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-linux-arm-musl@npm:2.5.6"
+"@parcel/watcher-linux-arm-musl@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@parcel/watcher-linux-arm-musl@npm:2.6.0"
   conditions: os=linux & cpu=arm & libc=musl
   languageName: node
   linkType: hard
 
-"@parcel/watcher-linux-arm64-glibc@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-linux-arm64-glibc@npm:2.5.6"
+"@parcel/watcher-linux-arm64-glibc@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@parcel/watcher-linux-arm64-glibc@npm:2.6.0"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@parcel/watcher-linux-arm64-musl@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-linux-arm64-musl@npm:2.5.6"
+"@parcel/watcher-linux-arm64-musl@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@parcel/watcher-linux-arm64-musl@npm:2.6.0"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@parcel/watcher-linux-x64-glibc@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-linux-x64-glibc@npm:2.5.6"
+"@parcel/watcher-linux-x64-glibc@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@parcel/watcher-linux-x64-glibc@npm:2.6.0"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@parcel/watcher-linux-x64-musl@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-linux-x64-musl@npm:2.5.6"
+"@parcel/watcher-linux-x64-musl@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@parcel/watcher-linux-x64-musl@npm:2.6.0"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@parcel/watcher-win32-arm64@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-win32-arm64@npm:2.5.6"
+"@parcel/watcher-win32-arm64@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@parcel/watcher-win32-arm64@npm:2.6.0"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@parcel/watcher-win32-ia32@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-win32-ia32@npm:2.5.6"
-  conditions: os=win32 & cpu=ia32
-  languageName: node
-  linkType: hard
-
-"@parcel/watcher-win32-x64@npm:2.5.6":
-  version: 2.5.6
-  resolution: "@parcel/watcher-win32-x64@npm:2.5.6"
+"@parcel/watcher-win32-x64@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@parcel/watcher-win32-x64@npm:2.6.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
 "@parcel/watcher@npm:^2.4.1":
-  version: 2.5.6
-  resolution: "@parcel/watcher@npm:2.5.6"
+  version: 2.6.0
+  resolution: "@parcel/watcher@npm:2.6.0"
   dependencies:
-    "@parcel/watcher-android-arm64": "npm:2.5.6"
-    "@parcel/watcher-darwin-arm64": "npm:2.5.6"
-    "@parcel/watcher-darwin-x64": "npm:2.5.6"
-    "@parcel/watcher-freebsd-x64": "npm:2.5.6"
-    "@parcel/watcher-linux-arm-glibc": "npm:2.5.6"
-    "@parcel/watcher-linux-arm-musl": "npm:2.5.6"
-    "@parcel/watcher-linux-arm64-glibc": "npm:2.5.6"
-    "@parcel/watcher-linux-arm64-musl": "npm:2.5.6"
-    "@parcel/watcher-linux-x64-glibc": "npm:2.5.6"
-    "@parcel/watcher-linux-x64-musl": "npm:2.5.6"
-    "@parcel/watcher-win32-arm64": "npm:2.5.6"
-    "@parcel/watcher-win32-ia32": "npm:2.5.6"
-    "@parcel/watcher-win32-x64": "npm:2.5.6"
+    "@parcel/watcher-android-arm64": "npm:2.6.0"
+    "@parcel/watcher-darwin-arm64": "npm:2.6.0"
+    "@parcel/watcher-darwin-x64": "npm:2.6.0"
+    "@parcel/watcher-freebsd-x64": "npm:2.6.0"
+    "@parcel/watcher-linux-arm-glibc": "npm:2.6.0"
+    "@parcel/watcher-linux-arm-musl": "npm:2.6.0"
+    "@parcel/watcher-linux-arm64-glibc": "npm:2.6.0"
+    "@parcel/watcher-linux-arm64-musl": "npm:2.6.0"
+    "@parcel/watcher-linux-x64-glibc": "npm:2.6.0"
+    "@parcel/watcher-linux-x64-musl": "npm:2.6.0"
+    "@parcel/watcher-win32-arm64": "npm:2.6.0"
+    "@parcel/watcher-win32-x64": "npm:2.6.0"
     detect-libc: "npm:^2.0.3"
     is-glob: "npm:^4.0.3"
     node-addon-api: "npm:^7.0.0"
     node-gyp: "npm:latest"
-    picomatch: "npm:^4.0.3"
+    picomatch: "npm:^4.0.4"
   dependenciesMeta:
     "@parcel/watcher-android-arm64":
       optional: true
@@ -979,11 +971,9 @@ __metadata:
       optional: true
     "@parcel/watcher-win32-arm64":
       optional: true
-    "@parcel/watcher-win32-ia32":
-      optional: true
     "@parcel/watcher-win32-x64":
       optional: true
-  checksum: 10c0/1e1d91f92e94e4640089a7cead243b2b81ca9aa8e1c862a97a25f589e84fbf1ad93abeb503f325c43a8c0e024ae0e74b48ec42c1cd84e8e423a3a87d25ded4f2
+  checksum: 10c0/0d6799bdf7d59a1ab5e4a79859035f387a66078586d9543eef0b9bd01c9d61cebe3b64eb96f0bd1f8bf50f07ed7266a1628604b66dc63025a3cee19be2e60d65
   languageName: node
   linkType: hard
 
@@ -1147,106 +1137,106 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.15.43":
-  version: 1.15.43
-  resolution: "@swc/core-darwin-arm64@npm:1.15.43"
+"@swc/core-darwin-arm64@npm:1.15.46":
+  version: 1.15.46
+  resolution: "@swc/core-darwin-arm64@npm:1.15.46"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.15.43":
-  version: 1.15.43
-  resolution: "@swc/core-darwin-x64@npm:1.15.43"
+"@swc/core-darwin-x64@npm:1.15.46":
+  version: 1.15.46
+  resolution: "@swc/core-darwin-x64@npm:1.15.46"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.15.43":
-  version: 1.15.43
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.15.43"
+"@swc/core-linux-arm-gnueabihf@npm:1.15.46":
+  version: 1.15.46
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.15.46"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.15.43":
-  version: 1.15.43
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.15.43"
+"@swc/core-linux-arm64-gnu@npm:1.15.46":
+  version: 1.15.46
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.15.46"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.15.43":
-  version: 1.15.43
-  resolution: "@swc/core-linux-arm64-musl@npm:1.15.43"
+"@swc/core-linux-arm64-musl@npm:1.15.46":
+  version: 1.15.46
+  resolution: "@swc/core-linux-arm64-musl@npm:1.15.46"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-linux-ppc64-gnu@npm:1.15.43":
-  version: 1.15.43
-  resolution: "@swc/core-linux-ppc64-gnu@npm:1.15.43"
+"@swc/core-linux-ppc64-gnu@npm:1.15.46":
+  version: 1.15.46
+  resolution: "@swc/core-linux-ppc64-gnu@npm:1.15.46"
   conditions: os=linux & cpu=ppc64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-s390x-gnu@npm:1.15.43":
-  version: 1.15.43
-  resolution: "@swc/core-linux-s390x-gnu@npm:1.15.43"
+"@swc/core-linux-s390x-gnu@npm:1.15.46":
+  version: 1.15.46
+  resolution: "@swc/core-linux-s390x-gnu@npm:1.15.46"
   conditions: os=linux & cpu=s390x & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.15.43":
-  version: 1.15.43
-  resolution: "@swc/core-linux-x64-gnu@npm:1.15.43"
+"@swc/core-linux-x64-gnu@npm:1.15.46":
+  version: 1.15.46
+  resolution: "@swc/core-linux-x64-gnu@npm:1.15.46"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.15.43":
-  version: 1.15.43
-  resolution: "@swc/core-linux-x64-musl@npm:1.15.43"
+"@swc/core-linux-x64-musl@npm:1.15.46":
+  version: 1.15.46
+  resolution: "@swc/core-linux-x64-musl@npm:1.15.46"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.15.43":
-  version: 1.15.43
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.15.43"
+"@swc/core-win32-arm64-msvc@npm:1.15.46":
+  version: 1.15.46
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.15.46"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.15.43":
-  version: 1.15.43
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.15.43"
+"@swc/core-win32-ia32-msvc@npm:1.15.46":
+  version: 1.15.46
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.15.46"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.15.43":
-  version: 1.15.43
-  resolution: "@swc/core-win32-x64-msvc@npm:1.15.43"
+"@swc/core-win32-x64-msvc@npm:1.15.46":
+  version: 1.15.46
+  resolution: "@swc/core-win32-x64-msvc@npm:1.15.46"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
 "@swc/core@npm:^1.2.145":
-  version: 1.15.43
-  resolution: "@swc/core@npm:1.15.43"
+  version: 1.15.46
+  resolution: "@swc/core@npm:1.15.46"
   dependencies:
-    "@swc/core-darwin-arm64": "npm:1.15.43"
-    "@swc/core-darwin-x64": "npm:1.15.43"
-    "@swc/core-linux-arm-gnueabihf": "npm:1.15.43"
-    "@swc/core-linux-arm64-gnu": "npm:1.15.43"
-    "@swc/core-linux-arm64-musl": "npm:1.15.43"
-    "@swc/core-linux-ppc64-gnu": "npm:1.15.43"
-    "@swc/core-linux-s390x-gnu": "npm:1.15.43"
-    "@swc/core-linux-x64-gnu": "npm:1.15.43"
-    "@swc/core-linux-x64-musl": "npm:1.15.43"
-    "@swc/core-win32-arm64-msvc": "npm:1.15.43"
-    "@swc/core-win32-ia32-msvc": "npm:1.15.43"
-    "@swc/core-win32-x64-msvc": "npm:1.15.43"
+    "@swc/core-darwin-arm64": "npm:1.15.46"
+    "@swc/core-darwin-x64": "npm:1.15.46"
+    "@swc/core-linux-arm-gnueabihf": "npm:1.15.46"
+    "@swc/core-linux-arm64-gnu": "npm:1.15.46"
+    "@swc/core-linux-arm64-musl": "npm:1.15.46"
+    "@swc/core-linux-ppc64-gnu": "npm:1.15.46"
+    "@swc/core-linux-s390x-gnu": "npm:1.15.46"
+    "@swc/core-linux-x64-gnu": "npm:1.15.46"
+    "@swc/core-linux-x64-musl": "npm:1.15.46"
+    "@swc/core-win32-arm64-msvc": "npm:1.15.46"
+    "@swc/core-win32-ia32-msvc": "npm:1.15.46"
+    "@swc/core-win32-x64-msvc": "npm:1.15.46"
     "@swc/counter": "npm:^0.1.3"
     "@swc/types": "npm:^0.1.27"
   peerDependencies:
@@ -1279,7 +1269,7 @@ __metadata:
   peerDependenciesMeta:
     "@swc/helpers":
       optional: true
-  checksum: 10c0/ed586746b5a3ce104bf8137a01dace430c9ed7a4f8741cbc1e6b69e6bd15db94d2b90fc35270e95f6eb73c0fd18e0bbd6a6b08987edef27d88da6105998a8c34
+  checksum: 10c0/70cab177b55c69ba6fea493267a4f31fd28c5a078893810d26ed3a84238dc8e23b875697b9f6494efc34c76b8280f6935345a3d89ed2b4848a9efcc17e1f802f
   languageName: node
   linkType: hard
 
@@ -1821,11 +1811,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.10.42":
-  version: 2.10.43
-  resolution: "baseline-browser-mapping@npm:2.10.43"
+  version: 2.10.44
+  resolution: "baseline-browser-mapping@npm:2.10.44"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/08a9e585fe0b1672a0a41026579d41debbaff2c1ceffc9efe510b47713b9d78296846d7a86f0d74d8f64af0088fdebd715f5ea6cb88d6fe1d57f8fafa686b3b5
+  checksum: 10c0/6bc796f22dc6332f683320f1d06bcb603c13d0d32f060b1ab5945dc567ee7f4b945a3d6c1692eaf68c43c561650bbc699241eeab154390a66f7a7c547b54e3a9
   languageName: node
   linkType: hard
 
@@ -2245,6 +2235,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"debug@npm:2":
+  version: 2.6.9
+  resolution: "debug@npm:2.6.9"
+  dependencies:
+    ms: "npm:2.0.0"
+  checksum: 10c0/121908fb839f7801180b69a7e218a40b5a0b718813b886b7d6bdb82001b931c938e2941d1e4450f33a1b1df1da653f5f7a0440c197f29fbf8a6e9d45ff6ef589
+  languageName: node
+  linkType: hard
+
+"debug@npm:^3.2.6":
+  version: 3.2.7
+  resolution: "debug@npm:3.2.7"
+  dependencies:
+    ms: "npm:^2.1.1"
+  checksum: 10c0/37d96ae42cbc71c14844d2ae3ba55adf462ec89fd3a999459dec3833944cd999af6007ff29c780f1c61153bcaaf2c842d1e4ce1ec621e4fc4923244942e4a02a
+  languageName: node
+  linkType: hard
+
 "debug@npm:^4.1.0, debug@npm:^4.3.1":
   version: 4.4.3
   resolution: "debug@npm:4.4.3"
@@ -2286,9 +2294,9 @@ __metadata:
   linkType: hard
 
 "devalue@npm:^5.1.1":
-  version: 5.8.1
-  resolution: "devalue@npm:5.8.1"
-  checksum: 10c0/fad0c5aeb615e0ddea3385923389991652b285cd2adcd84e10f07a930f735127d94621751f7ef5249a7fe2c7c666ec7c02bb95c3901da337c91f45ef4da18dea
+  version: 5.8.2
+  resolution: "devalue@npm:5.8.2"
+  checksum: 10c0/bba684bba39cbe95b973645e7685eca90acb2a4e2d8d0377979592bc7e5c65d09e95c45b4232ebb5953ce34ec55e6ed0edd0ea57b249f294685be9b58a32ad9b
   languageName: node
   linkType: hard
 
@@ -2346,15 +2354,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dompurify@npm:3.2.7":
-  version: 3.2.7
-  resolution: "dompurify@npm:3.2.7"
+"dompurify@npm:3.4.8":
+  version: 3.4.8
+  resolution: "dompurify@npm:3.4.8"
   dependencies:
     "@types/trusted-types": "npm:^2.0.7"
   dependenciesMeta:
     "@types/trusted-types":
       optional: true
-  checksum: 10c0/d41bb31a72f1acdf9b84c56723c549924b05d92a39a15bd8c40bec9007ff80d5fccf844bc53ee12af5b69044f9a7ce24a1e71c267a4f49cf38711379ed8c1363
+  checksum: 10c0/8f56a53d0ac80c76068772c9b72721f31fad68cac64a528e2420699ce2bd26b3516e29a5a7bd2205c2732d7114b9859998bf922d20cdb9361c4a05dab8352570
   languageName: node
   linkType: hard
 
@@ -2407,9 +2415,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.389":
-  version: 1.5.392
-  resolution: "electron-to-chromium@npm:1.5.392"
-  checksum: 10c0/13b691fb97ef02f6c3da6fecb530d667a2c72c951aaca2c5c13271074d6e2f9a9bb23c84939a6b9274fef1611247f3a7affba7b3961d0bdc0324d59f97046269
+  version: 1.5.393
+  resolution: "electron-to-chromium@npm:1.5.393"
+  checksum: 10c0/d8ef05aa8511bafb6b60506683dddbb968829f966af2aec582f06c208dc3598d7c5fc68b69ea2303befde1177637c19e53065a0fb7f47ca09c4928436c5768e7
   languageName: node
   linkType: hard
 
@@ -2973,21 +2981,21 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
+"iconv-lite@npm:^0.4.4":
+  version: 0.4.24
+  resolution: "iconv-lite@npm:0.4.24"
+  dependencies:
+    safer-buffer: "npm:>= 2.1.2 < 3"
+  checksum: 10c0/c6886a24cc00f2a059767440ec1bc00d334a89f250db8e0f7feb4961c8727118457e27c495ba94d082e51d3baca378726cd110aaf7ded8b9bbfd6a44760cf1d4
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:^0.6.3":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
   dependencies:
     safer-buffer: "npm:>= 2.1.2 < 3.0.0"
   checksum: 10c0/98102bc66b33fcf5ac044099d1257ba0b7ad5e3ccd3221f34dd508ab4070edff183276221684e1e0555b145fce0850c9f7d2b60a9fcac50fbb4ea0d6e845a3b1
-  languageName: node
-  linkType: hard
-
-"image-size@npm:~0.5.0":
-  version: 0.5.5
-  resolution: "image-size@npm:0.5.5"
-  bin:
-    image-size: bin/image-size.js
-  checksum: 10c0/655204163af06732f483a9fe7cce9dff4a29b7b2e88f5c957a5852e8143fa750f5e54b1955a2ca83de99c5220dbd680002d0d4e09140b01433520f4d5a0b1f4c
   languageName: node
   linkType: hard
 
@@ -3250,25 +3258,23 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"less@npm:^4.6.7":
-  version: 4.6.7
-  resolution: "less@npm:4.6.7"
+"less@npm:^4.7.0":
+  version: 4.7.0
+  resolution: "less@npm:4.7.0"
   dependencies:
     copy-anything: "npm:^3.0.5"
     errno: "npm:^0.1.1"
     graceful-fs: "npm:^4.1.2"
-    image-size: "npm:~0.5.0"
     make-dir: "npm:^5.1.0"
     mime: "npm:^1.4.1"
     needle: "npm:^3.1.0"
     parse-node-version: "npm:^1.0.1"
+    probe-image-size: "npm:^7.2.3"
     source-map: "npm:~0.6.0"
   dependenciesMeta:
     errno:
       optional: true
     graceful-fs:
-      optional: true
-    image-size:
       optional: true
     make-dir:
       optional: true
@@ -3276,107 +3282,109 @@ hack-font@source-foundry/Hack:
       optional: true
     needle:
       optional: true
+    probe-image-size:
+      optional: true
     source-map:
       optional: true
   bin:
     lessc: bin/lessc
-  checksum: 10c0/be31940c38d4212d323595f56330b171cf93facd6d27a0c88c347554775ff923fd577c56d9fced6252033acc0d15cb72afab62b5b68cbd1629162829baae973e
+  checksum: 10c0/bdb2c4d3530a190b6e5f6fec7b25e542af65c84fb0a826eded299faaf6fccd68b3e4348e3a90fc3375d5b6794d5963bb057fd20cc0e9176cfd42fd3d11ecb684
   languageName: node
   linkType: hard
 
-"lightningcss-android-arm64@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-android-arm64@npm:1.32.0"
+"lightningcss-android-arm64@npm:1.33.0":
+  version: 1.33.0
+  resolution: "lightningcss-android-arm64@npm:1.33.0"
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
 
-"lightningcss-darwin-arm64@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-darwin-arm64@npm:1.32.0"
+"lightningcss-darwin-arm64@npm:1.33.0":
+  version: 1.33.0
+  resolution: "lightningcss-darwin-arm64@npm:1.33.0"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"lightningcss-darwin-x64@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-darwin-x64@npm:1.32.0"
+"lightningcss-darwin-x64@npm:1.33.0":
+  version: 1.33.0
+  resolution: "lightningcss-darwin-x64@npm:1.33.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"lightningcss-freebsd-x64@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-freebsd-x64@npm:1.32.0"
+"lightningcss-freebsd-x64@npm:1.33.0":
+  version: 1.33.0
+  resolution: "lightningcss-freebsd-x64@npm:1.33.0"
   conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
 
-"lightningcss-linux-arm-gnueabihf@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-linux-arm-gnueabihf@npm:1.32.0"
+"lightningcss-linux-arm-gnueabihf@npm:1.33.0":
+  version: 1.33.0
+  resolution: "lightningcss-linux-arm-gnueabihf@npm:1.33.0"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"lightningcss-linux-arm64-gnu@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-linux-arm64-gnu@npm:1.32.0"
+"lightningcss-linux-arm64-gnu@npm:1.33.0":
+  version: 1.33.0
+  resolution: "lightningcss-linux-arm64-gnu@npm:1.33.0"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"lightningcss-linux-arm64-musl@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-linux-arm64-musl@npm:1.32.0"
+"lightningcss-linux-arm64-musl@npm:1.33.0":
+  version: 1.33.0
+  resolution: "lightningcss-linux-arm64-musl@npm:1.33.0"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"lightningcss-linux-x64-gnu@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-linux-x64-gnu@npm:1.32.0"
+"lightningcss-linux-x64-gnu@npm:1.33.0":
+  version: 1.33.0
+  resolution: "lightningcss-linux-x64-gnu@npm:1.33.0"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"lightningcss-linux-x64-musl@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-linux-x64-musl@npm:1.32.0"
+"lightningcss-linux-x64-musl@npm:1.33.0":
+  version: 1.33.0
+  resolution: "lightningcss-linux-x64-musl@npm:1.33.0"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"lightningcss-win32-arm64-msvc@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-win32-arm64-msvc@npm:1.32.0"
+"lightningcss-win32-arm64-msvc@npm:1.33.0":
+  version: 1.33.0
+  resolution: "lightningcss-win32-arm64-msvc@npm:1.33.0"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"lightningcss-win32-x64-msvc@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-win32-x64-msvc@npm:1.32.0"
+"lightningcss-win32-x64-msvc@npm:1.33.0":
+  version: 1.33.0
+  resolution: "lightningcss-win32-x64-msvc@npm:1.33.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
 "lightningcss@npm:^1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss@npm:1.32.0"
+  version: 1.33.0
+  resolution: "lightningcss@npm:1.33.0"
   dependencies:
     detect-libc: "npm:^2.0.3"
-    lightningcss-android-arm64: "npm:1.32.0"
-    lightningcss-darwin-arm64: "npm:1.32.0"
-    lightningcss-darwin-x64: "npm:1.32.0"
-    lightningcss-freebsd-x64: "npm:1.32.0"
-    lightningcss-linux-arm-gnueabihf: "npm:1.32.0"
-    lightningcss-linux-arm64-gnu: "npm:1.32.0"
-    lightningcss-linux-arm64-musl: "npm:1.32.0"
-    lightningcss-linux-x64-gnu: "npm:1.32.0"
-    lightningcss-linux-x64-musl: "npm:1.32.0"
-    lightningcss-win32-arm64-msvc: "npm:1.32.0"
-    lightningcss-win32-x64-msvc: "npm:1.32.0"
+    lightningcss-android-arm64: "npm:1.33.0"
+    lightningcss-darwin-arm64: "npm:1.33.0"
+    lightningcss-darwin-x64: "npm:1.33.0"
+    lightningcss-freebsd-x64: "npm:1.33.0"
+    lightningcss-linux-arm-gnueabihf: "npm:1.33.0"
+    lightningcss-linux-arm64-gnu: "npm:1.33.0"
+    lightningcss-linux-arm64-musl: "npm:1.33.0"
+    lightningcss-linux-x64-gnu: "npm:1.33.0"
+    lightningcss-linux-x64-musl: "npm:1.33.0"
+    lightningcss-win32-arm64-msvc: "npm:1.33.0"
+    lightningcss-win32-x64-msvc: "npm:1.33.0"
   dependenciesMeta:
     lightningcss-android-arm64:
       optional: true
@@ -3400,7 +3408,7 @@ hack-font@source-foundry/Hack:
       optional: true
     lightningcss-win32-x64-msvc:
       optional: true
-  checksum: 10c0/70945bd55097af46fc9fab7f5ed09cd5869d85940a2acab7ee06d0117004a1d68155708a2d462531cea2fc3c67aefc9333a7068c80b0b78dd404c16838809e03
+  checksum: 10c0/ce1f8279fbae636dbf37fa6e7385d5f98ed881d72af3362f24afbd4685e19c1fcdfecf17e5dd77f2ebee3d0c23ade276230d85842d07292229a2cffba8ff20a3
   languageName: node
   linkType: hard
 
@@ -3424,6 +3432,13 @@ hack-font@source-foundry/Hack:
   version: 4.18.1
   resolution: "lodash-es@npm:4.18.1"
   checksum: 10c0/35d4dcf87ef07f8d090f409447575800108057e360b445f590d0d25d09e3d1e33a163d2fc100d4d072b0f901d5e2fc533cd7c4bfd8eeb38a06abec693823c8b8
+  languageName: node
+  linkType: hard
+
+"lodash.merge@npm:^4.6.2":
+  version: 4.6.2
+  resolution: "lodash.merge@npm:4.6.2"
+  checksum: 10c0/402fa16a1edd7538de5b5903a90228aa48eb5533986ba7fa26606a49db2572bf414ff73a2c9f5d5fd36b31c46a5d5c7e1527749c07cbcf965ccff5fbdf32c506
   languageName: node
   linkType: hard
 
@@ -3722,13 +3737,13 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"monaco-editor@npm:^0.55.1":
-  version: 0.55.1
-  resolution: "monaco-editor@npm:0.55.1"
+"monaco-editor@npm:^0.56.0":
+  version: 0.56.0
+  resolution: "monaco-editor@npm:0.56.0"
   dependencies:
-    dompurify: "npm:3.2.7"
+    dompurify: "npm:3.4.8"
     marked: "npm:14.0.0"
-  checksum: 10c0/c1a0cf887657b42c8996518bc5ee96bbd39c977f862d2a2b2018427c45f14b0dd25d1452278202056f6b1ead97981282ccacd7d7ad918d8f0ef084159f974a25
+  checksum: 10c0/8ed728880042c5a1f42040f955e017b798fc1602fc59ef7a1f0e4da8f354e928b32cc0dba93ff677c538a37a542be3898210f9d1801f339e3c0f65f9ad3dc73e
   languageName: node
   linkType: hard
 
@@ -3741,14 +3756,21 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"ms@npm:^2.1.3":
+"ms@npm:2.0.0":
+  version: 2.0.0
+  resolution: "ms@npm:2.0.0"
+  checksum: 10c0/f8fda810b39fd7255bbdc451c46286e549794fcc700dc9cd1d25658bbc4dc2563a5de6fe7c60f798a16a60c6ceb53f033cb353f493f0cf63e5199b702943159d
+  languageName: node
+  linkType: hard
+
+"ms@npm:^2.1.1, ms@npm:^2.1.3":
   version: 2.1.3
   resolution: "ms@npm:2.1.3"
   checksum: 10c0/d924b57e7312b3b63ad21fc5b3dc0af5e78d61a1fc7cfb5457edaf26326bf62be5307cc87ffb6862ef1c2b33b0233cdb5d4f01c4c958cc0d660948b65a287a48
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.12":
+"nanoid@npm:^3.3.16":
   version: 3.3.16
   resolution: "nanoid@npm:3.3.16"
   bin:
@@ -3763,6 +3785,19 @@ hack-font@source-foundry/Hack:
   dependencies:
     history: "npm:^4.9.0"
   checksum: 10c0/d5a43fc60cd5f17d1f13604159d8178372802b40624a59e45bddf0764a1f3f7b9b77e3718152fa9b1c097c2f3befbfff732cd7c33f8e6ca073ac8cc8bf942167
+  languageName: node
+  linkType: hard
+
+"needle@npm:^2.5.2":
+  version: 2.9.1
+  resolution: "needle@npm:2.9.1"
+  dependencies:
+    debug: "npm:^3.2.6"
+    iconv-lite: "npm:^0.4.4"
+    sax: "npm:^1.2.4"
+  bin:
+    needle: ./bin/needle
+  checksum: 10c0/65a7eaeaf4ca3410de492957474592af9838e02875273d9232ff6cff331393c58a95e48c592bd9a05f575e5bb9b08543d6cfd19eb96595dbd3d7da2c5fe1accb
   languageName: node
   linkType: hard
 
@@ -4059,7 +4094,7 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^4.0.3, picomatch@npm:^4.0.4, picomatch@npm:^4.0.5":
+"picomatch@npm:^4.0.4, picomatch@npm:^4.0.5":
   version: 4.0.5
   resolution: "picomatch@npm:4.0.5"
   checksum: 10c0/947bc6b6e1ff1e6c5aaf95b107a0839d12802f4f7b867663f67d47accba939ca1cb582cf99dfc30438efa1c4648ac5990967e783e8929c36b03e8440704ef1bd
@@ -4074,13 +4109,13 @@ hack-font@source-foundry/Hack:
   linkType: hard
 
 "postcss@npm:^8.5.17":
-  version: 8.5.19
-  resolution: "postcss@npm:8.5.19"
+  version: 8.5.20
+  resolution: "postcss@npm:8.5.20"
   dependencies:
-    nanoid: "npm:^3.3.12"
+    nanoid: "npm:^3.3.16"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
-  checksum: 10c0/302af9e4dfa8cce4f43af1798576b3a77ab7b23abac5522328c6c7a830d49b31281cba9d6071e478e6970a05ef82346d1570b8fbffae912f26a4f1a1a07f0a44
+  checksum: 10c0/9c7a0e32c77ac54c5613f974e6ccc97d4a70fdb3bf242617f3fb4d652e5c62a37c86c589e6e7a2d1e7120f80bc169cdf673482b88bd75020d2a44899fa569c13
   languageName: node
   linkType: hard
 
@@ -4097,6 +4132,17 @@ hack-font@source-foundry/Hack:
   version: 1.30.0
   resolution: "prismjs@npm:1.30.0"
   checksum: 10c0/f56205bfd58ef71ccfcbcb691fd0eb84adc96c6ff21b0b69fc6fdcf02be42d6ef972ba4aed60466310de3d67733f6a746f89f2fb79c00bf217406d465b3e8f23
+  languageName: node
+  linkType: hard
+
+"probe-image-size@npm:^7.2.3":
+  version: 7.3.0
+  resolution: "probe-image-size@npm:7.3.0"
+  dependencies:
+    lodash.merge: "npm:^4.6.2"
+    needle: "npm:^2.5.2"
+    stream-parser: "npm:~0.3.1"
+  checksum: 10c0/92a1c11fbb6149c0122852a179a54d9edda9f7a5084e837aa529d30b7a213120771356e72547bb18a4e183c8896b83b53380b232ed0a97594d2d80c97cf9a127
   languageName: node
   linkType: hard
 
@@ -4214,18 +4260,6 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"react-google-recaptcha-v3@npm:^1.11.0":
-  version: 1.11.0
-  resolution: "react-google-recaptcha-v3@npm:1.11.0"
-  dependencies:
-    hoist-non-react-statics: "npm:^3.3.2"
-  peerDependencies:
-    react: ^16.3 || ^17.0 || ^18.0 || ^19.0
-    react-dom: ^17.0 || ^18.0 || ^19.0
-  checksum: 10c0/8c14d4aae702cb4be150ec15794842947473c1fd8d9c65545fb17566beb6033982f418a4a2dea0b4e5b73c28cb3a7312f5ab2c32e45c6a4d4e115b2a6193a86b
-  languageName: node
-  linkType: hard
-
 "react-helmet-async@npm:^3.0.0":
   version: 3.0.0
   resolution: "react-helmet-async@npm:3.0.0"
@@ -4239,9 +4273,9 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"react-intl@npm:^10.1.17":
-  version: 10.1.17
-  resolution: "react-intl@npm:10.1.17"
+"react-intl@npm:^10.1.18":
+  version: 10.1.18
+  resolution: "react-intl@npm:10.1.18"
   dependencies:
     "@formatjs/icu-messageformat-parser": "npm:3.5.15"
     "@formatjs/intl": "npm:4.1.17"
@@ -4249,7 +4283,7 @@ hack-font@source-foundry/Hack:
   peerDependencies:
     "@types/react": ">=18.0.0"
     react: ">=18.0.0"
-  checksum: 10c0/1f8ee780c0e5c70b08d99f4770ed5f503ca50de56858ad8d706a8af7ec555be01bb20a971b120ff23a7b9aa41f4466c7de21140ef040a6fb44d5c546ab15fed4
+  checksum: 10c0/6f9a4dc5628aa63f3e84c73078b279c1e04925fb5ed72072f83648e4ee4d71cc6cc7af151976d7191ac21e30d9cbef543a96211a6f7de1de762832fd43f64e30
   languageName: node
   linkType: hard
 
@@ -4561,16 +4595,16 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"safer-buffer@npm:>= 2.1.2 < 3.0.0":
+"safer-buffer@npm:>= 2.1.2 < 3, safer-buffer@npm:>= 2.1.2 < 3.0.0":
   version: 2.1.2
   resolution: "safer-buffer@npm:2.1.2"
   checksum: 10c0/7e3c8b2e88a1841c9671094bbaeebd94448111dd90a81a1f606f3f67708a6ec57763b3b47f06da09fc6054193e0e6709e77325415dc8422b04497a8070fa02d4
   languageName: node
   linkType: hard
 
-"sass@npm:^1.101.0":
-  version: 1.101.0
-  resolution: "sass@npm:1.101.0"
+"sass@npm:^1.101.3":
+  version: 1.101.3
+  resolution: "sass@npm:1.101.3"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^5.0.0"
@@ -4581,7 +4615,7 @@ hack-font@source-foundry/Hack:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10c0/1fbbcef2f767dec4d97773a2a084f4e1ef2e4abecf574e08743e52237069f1129a6b43b07b5c23aa3bcbf395509e40db758d9748a07940da227aa1626329a74d
+  checksum: 10c0/a1ae0d12511f7bb3b49bc0bc3c126093078b0c901608b5f45c03dfec82b4afdef2887f4699188e818b0ce159c5f6eee297282a387e19a264f4dd41437329e1b8
   languageName: node
   linkType: hard
 
@@ -4811,6 +4845,15 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
+"stream-parser@npm:~0.3.1":
+  version: 0.3.1
+  resolution: "stream-parser@npm:0.3.1"
+  dependencies:
+    debug: "npm:2"
+  checksum: 10c0/585508801423bd6c53f6dda9d78e4b743a08ab72e8e2680431fa855ef950e59c849ec2838f2a00c59af655ff8463e90f660f9169a816e63a3ca159cf713bae5c
+  languageName: node
+  linkType: hard
+
 "streamsaver@npm:^2.0.6":
   version: 2.0.6
   resolution: "streamsaver@npm:2.0.6"
@@ -4970,6 +5013,13 @@ hack-font@source-foundry/Hack:
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
+  languageName: node
+  linkType: hard
+
+"turnstile-types@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "turnstile-types@npm:1.2.3"
+  checksum: 10c0/24002535bfb1716052758d1d1bdc587ddcf69290fbde2fcd19f9076b3ac10aa9b5438b1c38720da625ff090a5b4bea75708447931c9d2a0d7de5217f32cf3b2c
   languageName: node
   linkType: hard
 
@@ -5157,9 +5207,9 @@ hack-font@source-foundry/Hack:
   linkType: hard
 
 "undici@npm:^8.4.1":
-  version: 8.7.0
-  resolution: "undici@npm:8.7.0"
-  checksum: 10c0/b7e5ecb4de82fa4f905011a77544fe7ba4da06f27167ff99313a7ae2869f3cb233d676dcd085533bc69f36989bc40871f5ae6ea6e4c9b91db92616b9e91b579d
+  version: 8.8.0
+  resolution: "undici@npm:8.8.0"
+  checksum: 10c0/6ee51e6b814b67e212b19349c38657be988d878ca669ccf2ad33f0ebbb0d83e851aa57554b6ce3c6668a9a4df3010fb6a6af7bd28692ade911083ef376a3a75d
   languageName: node
   linkType: hard
 
