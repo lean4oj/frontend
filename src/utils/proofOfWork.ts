@@ -11,11 +11,23 @@ interface WorkerResult {
   response: string;
 }
 
-const createWorker = (): Worker => new Worker(new URL("./workers/proofOfWorkWebCrypto.worker.ts", import.meta.url), { type: "module" });
+type ProofOfWorkWorkerConstructor = new () => Worker;
+
+let workerConstructorPromise: Promise<ProofOfWorkWorkerConstructor> | undefined;
+
+// Inline workers create page-origin blob URLs because production JavaScript is served from a separate CDN:
+// https://developer.mozilla.org/en-US/docs/Web/API/Worker/Worker#security
+const getWorkerConstructor = (): Promise<ProofOfWorkWorkerConstructor> => {
+  if (!workerConstructorPromise) {
+    workerConstructorPromise = import("./workers/proofOfWork.worker?worker&inline").then(module => module.default);
+  }
+  return workerConstructorPromise;
+};
 
 export const solveProofOfWork = async (
   challenge: ApiTypes.IssueProofOfWorkChallengeResponseDto
 ): Promise<ProofOfWorkResult> => {
+  const WorkerConstructor = await getWorkerConstructor();
   const threads = Math.trunc(Math.max((navigator.hardwareConcurrency || 1) / 2, 1));
   const workers: Worker[] = [];
   let abort: (error: Error) => void;
@@ -38,7 +50,7 @@ export const solveProofOfWork = async (
       window.addEventListener("pagehide", onPageHide, { once: true });
 
       for (let index = 0; index < threads; index += 1) {
-        const worker = createWorker();
+        const worker = new WorkerConstructor();
         worker.onmessage = event => finish(() => resolve(event.data as WorkerResult));
         worker.onerror = event => finish(() => reject(event));
         worker.postMessage({
