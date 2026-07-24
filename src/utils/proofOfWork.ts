@@ -19,7 +19,7 @@ let workerConstructorPromise: Promise<ProofOfWorkWorkerConstructor> | undefined;
 // https://developer.mozilla.org/en-US/docs/Web/API/Worker/Worker#security
 const getWorkerConstructor = (): Promise<ProofOfWorkWorkerConstructor> => {
   if (!workerConstructorPromise) {
-    workerConstructorPromise = import("./workers/proofOfWork.worker?worker&inline").then(module => module.default);
+    workerConstructorPromise = import("./workers/proofOfWork.worker?worker").then(module => module.default);
   }
   return workerConstructorPromise;
 };

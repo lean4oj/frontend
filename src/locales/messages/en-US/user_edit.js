@@ -235,7 +235,7 @@ return {
       },
       SkipRecaptcha: {
         name: "Skip human verification",
-        notes: "Submit protected requests without human verification. Useful for robots and virtual judges."
+        notes: "Submit protected requests without human verification or proof of work. Useful for robots and virtual judges."
       }
     },
     admin_only: "Only admins can change user's privileges.",
