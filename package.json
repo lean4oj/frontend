@@ -90,7 +90,7 @@
     "react-intl": "^10.1.18",
     "react-navi": "patch:react-navi@npm%3A^0.15.0#./.yarn/patches/react-navi-npm-0.15.0-51a95f8cdd.patch",
     "react-textarea-autosize": "^8.5.9",
-    "sass": "^1.101.7",
+    "sass": "^1.102.0",
     "semantic-ui-react": "^3.0.0-beta.2",
     "sf-mono-webfont": "^1.0.0",
     "streamsaver": "^2.0.6",
