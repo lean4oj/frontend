@@ -723,7 +723,7 @@ __metadata:
     immutability-helper: "npm:^3.1.1"
     js-yaml: "npm:^5.2.2"
     jsondiffpatch: "npm:^0.7.6"
-    less: "npm:^4.8.0"
+    less: "npm:^4.8.1"
     lodash: "npm:lodash-es@^4.18.1"
     markdown-it-math-loose: "patch:markdown-it-math-loose@npm%3A^4.1.1#./.yarn/patches/markdown-it-math-loose-npm-4.1.1-a5a4144c49.patch"
     markdown-it-mentions: "patch:markdown-it-mentions@npm%3A^1.0.0#./.yarn/patches/markdown-it-mentions-npm-1.0.0-450125626c.patch"
@@ -3167,9 +3167,9 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"less@npm:^4.8.0":
-  version: 4.8.0
-  resolution: "less@npm:4.8.0"
+"less@npm:^4.8.1":
+  version: 4.8.1
+  resolution: "less@npm:4.8.1"
   dependencies:
     copy-anything: "npm:^3.0.5"
     errno: "npm:^0.1.1"
@@ -3197,7 +3197,7 @@ hack-font@source-foundry/Hack:
       optional: true
   bin:
     lessc: bin/lessc
-  checksum: 10c0/ecc8196a582cd5b977af5c86176b70a7bd23a41feb43e01491b6c3a4260a7afe5e59557c875a5fdf4490ec15c77812a78154c4515dae07ce83e1da9d9574b496
+  checksum: 10c0/41fbad950e9d5110bd86c94726a57eb771e2dfc6eb82aa687dd153f9f463c8707cb3b4e89144d1617bbf026ff7dc57cea7e7a33dfbe959565c9cc35a9d480808
   languageName: node
   linkType: hard
 
