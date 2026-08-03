@@ -730,7 +730,7 @@ __metadata:
     markdown-it-merge-cells: "npm:^2.0.0"
     mobx: "npm:^6.16.1"
     mobx-persist: "npm:^0.4.1"
-    mobx-react-lite: "npm:^4.1.1"
+    mobx-react-lite: "npm:^5.0.0"
     mobx-utils: "npm:^6.1.1"
     monaco-ace-tokenizer: "npm:^0.2.3"
     monaco-editor: "npm:^0.56.0"
@@ -3604,20 +3604,13 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"mobx-react-lite@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "mobx-react-lite@npm:4.1.1"
-  dependencies:
-    use-sync-external-store: "npm:^1.4.0"
+"mobx-react-lite@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "mobx-react-lite@npm:5.0.0"
   peerDependencies:
-    mobx: ^6.9.0
-    react: ^16.8.0 || ^17 || ^18 || ^19
-  peerDependenciesMeta:
-    react-dom:
-      optional: true
-    react-native:
-      optional: true
-  checksum: 10c0/296b29487dc9fae7b7dd8eb39454d980fcfe59bf4c160ac911faa55469f9ebe2953661efca588f6d7929a2b071f234c7c4d717beaf5819d548be9b58c39874f1
+    mobx: ^7.0.0
+    react: ^18 || ^19
+  checksum: 10c0/8948e7b221c35cefae0b6981a4e45c8a2ae105765c48ffd94264801d5443aac41c08f92772c52f2fdfe5c0a0a64e3b8ceb863f9de317b83de25474c571fc03ed
   languageName: node
   linkType: hard
 
@@ -5116,15 +5109,6 @@ hack-font@source-foundry/Hack:
     "@types/react":
       optional: true
   checksum: 10c0/067c648814ad0c1f1e89d2d0e496254b05c4bed6a34e23045b4413824222aab08fd803c59a42852acc16830c17567d03f8c90af0a62be2f4e4b931454d079798
-  languageName: node
-  linkType: hard
-
-"use-sync-external-store@npm:^1.4.0":
-  version: 1.6.0
-  resolution: "use-sync-external-store@npm:1.6.0"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/35e1179f872a53227bdf8a827f7911da4c37c0f4091c29b76b1e32473d1670ebe7bcd880b808b7549ba9a5605c233350f800ffab963ee4a4ee346ee983b6019b
   languageName: node
   linkType: hard
 
