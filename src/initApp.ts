@@ -17,10 +17,6 @@ const SESSION_SWR_INFO_KEY = "session-swr";
 const SESSION_SWR_INFO_VERSION = 1;
 const SESSION_SWR_INFO_VALID_FOR = 7 * 24 * 60 * 60 * 1000;
 
-// MobX 7 enables strict mode by default; keep the MobX 6 behavior
-// of allowing state changes outside actions.
-configure({ enforceActions: "never" });
-
 function applySessionInfo(sessionInfo: ApiTypes.GetSessionInfoResponseDto) {
   appState.currentUser = sessionInfo.userMeta;
   appState.currentUserJoinedGroupsCount = sessionInfo.joinedGroupsCount;
