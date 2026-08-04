@@ -20,21 +20,38 @@ export const browserDefaultLocale = getBrowserLocale();
 
 export class AppState {
   constructor() {
-    makeObservable(this);
+    makeObservable(this, {
+      title: observable,
+      responsiveLayout: observable,
+      activeNavButton: observable,
+      localLocale: observable,
+      locale: computed,
+      contentLocale: computed,
+      browserPreferredTheme: observable,
+      temporaryThemeOverride: observable,
+      theme: computed,
+      appLogoThemed: computed,
+      showTagsInProblemSet: observable,
+      token: observable,
+      logout: observable,
+      currentUser: observable,
+      currentUserJoinedGroupsCount: observable,
+      currentUserPrivileges: observable,
+      userPreference: observable,
+      serverPreference: observable,
+      serverVersion: observable
+    });
     this.initializationThemeDetection();
   }
 
   /* Begin current page info */
 
   // The current page's title
-  @observable
   title: string = "";
 
   // Some pages doesn't support responsive layout, set this to false to display PC page on mobile
-  @observable
   responsiveLayout: boolean = true;
 
-  @observable
   activeNavButton: NavButtonName;
 
   enterNewPage(title: string, activeNavButton: NavButtonName = null, responsiveLayout: boolean = true) {
@@ -49,10 +66,8 @@ export class AppState {
 
   // The locale set by user on the page footer, saved in current browser
   @persist
-  @observable
   localLocale: Locale = null;
 
-  @computed
   get locale(): Locale {
     if (this.localLocale && this.localLocale === (this.userPreference.locale?.system || browserDefaultLocale)) {
       setTimeout(() => (this.localLocale = null), 0);
@@ -60,7 +75,6 @@ export class AppState {
     return this.localLocale || (this.userPreference.locale?.system as Locale) || browserDefaultLocale;
   }
 
-  @computed
   get contentLocale(): Locale {
     return (this.userPreference.locale?.content as Locale) || this.locale;
   }
@@ -80,20 +94,16 @@ export class AppState {
     else mediaQueryList.addListener(onChange);
   }
 
-  @observable
   browserPreferredTheme: string;
 
   // This is set if the user change theme but not saved yet
-  @observable
   temporaryThemeOverride?: string;
 
-  @computed
   get theme(): string {
     const themeSelector = (this.temporaryThemeOverride ?? this.userPreference?.theme) || "auto";
     return themeSelector !== "auto" && themeSelector in themeList ? themeSelector : this.browserPreferredTheme;
   }
 
-  @computed
   get appLogoThemed(): { src: string; style: React.CSSProperties } {
     const logoSelector = this.serverPreference.misc.appLogoForTheme[this.theme] || "original";
     const logoUrlSelector =
@@ -118,26 +128,20 @@ export class AppState {
 
   // TODO: move it out of global app state
   @persist
-  @observable
   showTagsInProblemSet: boolean = false;
 
   /* Begin session info */
 
   @persist
-  @observable
   token: string = "";
 
   @persist
-  @observable
   logout = false;
 
-  @observable
   currentUser: ApiTypes.UserMetaDto = null;
 
-  @observable
   currentUserJoinedGroupsCount: number = 0;
 
-  @observable
   currentUserPrivileges: ApiTypes.GetSessionInfoResponseDto["userPrivileges"] = [];
 
   currentUserHasPrivilege = computedFn(function (
@@ -147,17 +151,14 @@ export class AppState {
     return this.currentUser && (this.currentUser.isAdmin || this.currentUserPrivileges.includes(privilege));
   });
 
-  @observable
   userPreference: ApiTypes.UserPreferenceDto = {};
 
   /* End session info */
 
   /* Begin server info */
 
-  @observable
   serverPreference: ApiTypes.PreferenceConfig = null;
 
-  @observable
   serverVersion: ApiTypes.ServerVersionDto = null;
 
   /* End server info */

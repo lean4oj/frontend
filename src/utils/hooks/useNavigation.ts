@@ -7,10 +7,9 @@ import { useLocalizer } from "./useLocalizer";
 
 class ConfirmNavigationState {
   constructor() {
-    makeObservable(this);
+    makeObservable(this, { count: observable });
   }
 
-  @observable
   count = 0;
 }
 
