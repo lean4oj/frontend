@@ -658,7 +658,7 @@ __metadata:
     "@microsoft/fetch-event-source": "npm:^2.0.1"
     "@monaco-editor/react": "npm:^4.8.0-rc.3"
     "@rolldown/plugin-node-polyfills": "patch:@rolldown/plugin-node-polyfills@npm%3A^1.0.3#./.yarn/patches/@rolldown-plugin-node-polyfills-npm-1.0.3-c505d53f2e.patch"
-    "@tanem/react-nprogress": "npm:^7.1.0"
+    "@tanem/react-nprogress": "npm:^7.1.1"
     "@twemoji/api": "patch:@twemoji/api@npm%3A^17.0.3#./.yarn/patches/@twemoji-api-npm-17.0.3-7df772cadf.patch"
     "@types/blueimp-md5": "npm:^2.18.2"
     "@types/chart.js": "npm:^4.0.1"
@@ -1238,13 +1238,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanem/react-nprogress@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@tanem/react-nprogress@npm:7.1.0"
+"@tanem/react-nprogress@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "@tanem/react-nprogress@npm:7.1.1"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/4e8c7afde08377e027814bcd444284add012db6758e86c173b834f2fcd737bce72bfc695b162da6b256730c06373919595fe896d637bb4ba88545709dbd58180
+  checksum: 10c0/e5444b261edf06e67ff6005fb9d0af98ce99dcaaa86c66b590fdabb2dbaf4b930ecb6128751792b2821db360fd29d3fd4f9b9fb9ad941f25b06e047a32897d70
   languageName: node
   linkType: hard
 
