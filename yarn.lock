@@ -732,7 +732,7 @@ __metadata:
     turnstile-types: "npm:^1.2.3"
     typeface-lato: "npm:^1.1.13"
     typeface-saira: "npm:^1.1.13"
-    typescript: "npm:^7.1.0-dev.20260807.1"
+    typescript: "npm:^7.1.0-dev.20260809.1"
     ua-parser-js: "npm:^2.0.10"
     use-debounce: "npm:^10.1.1"
     validator: "npm:^13.15.35"
@@ -1446,51 +1446,51 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript/typescript-darwin-arm64@npm:7.1.0-dev.20260807.1":
-  version: 7.1.0-dev.20260807.1
-  resolution: "@typescript/typescript-darwin-arm64@npm:7.1.0-dev.20260807.1"
+"@typescript/typescript-darwin-arm64@npm:7.1.0-dev.20260809.1":
+  version: 7.1.0-dev.20260809.1
+  resolution: "@typescript/typescript-darwin-arm64@npm:7.1.0-dev.20260809.1"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@typescript/typescript-darwin-x64@npm:7.1.0-dev.20260807.1":
-  version: 7.1.0-dev.20260807.1
-  resolution: "@typescript/typescript-darwin-x64@npm:7.1.0-dev.20260807.1"
+"@typescript/typescript-darwin-x64@npm:7.1.0-dev.20260809.1":
+  version: 7.1.0-dev.20260809.1
+  resolution: "@typescript/typescript-darwin-x64@npm:7.1.0-dev.20260809.1"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@typescript/typescript-linux-arm64@npm:7.1.0-dev.20260807.1":
-  version: 7.1.0-dev.20260807.1
-  resolution: "@typescript/typescript-linux-arm64@npm:7.1.0-dev.20260807.1"
+"@typescript/typescript-linux-arm64@npm:7.1.0-dev.20260809.1":
+  version: 7.1.0-dev.20260809.1
+  resolution: "@typescript/typescript-linux-arm64@npm:7.1.0-dev.20260809.1"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@typescript/typescript-linux-arm@npm:7.1.0-dev.20260807.1":
-  version: 7.1.0-dev.20260807.1
-  resolution: "@typescript/typescript-linux-arm@npm:7.1.0-dev.20260807.1"
+"@typescript/typescript-linux-arm@npm:7.1.0-dev.20260809.1":
+  version: 7.1.0-dev.20260809.1
+  resolution: "@typescript/typescript-linux-arm@npm:7.1.0-dev.20260809.1"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@typescript/typescript-linux-x64@npm:7.1.0-dev.20260807.1":
-  version: 7.1.0-dev.20260807.1
-  resolution: "@typescript/typescript-linux-x64@npm:7.1.0-dev.20260807.1"
+"@typescript/typescript-linux-x64@npm:7.1.0-dev.20260809.1":
+  version: 7.1.0-dev.20260809.1
+  resolution: "@typescript/typescript-linux-x64@npm:7.1.0-dev.20260809.1"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@typescript/typescript-win32-arm64@npm:7.1.0-dev.20260807.1":
-  version: 7.1.0-dev.20260807.1
-  resolution: "@typescript/typescript-win32-arm64@npm:7.1.0-dev.20260807.1"
+"@typescript/typescript-win32-arm64@npm:7.1.0-dev.20260809.1":
+  version: 7.1.0-dev.20260809.1
+  resolution: "@typescript/typescript-win32-arm64@npm:7.1.0-dev.20260809.1"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@typescript/typescript-win32-x64@npm:7.1.0-dev.20260807.1":
-  version: 7.1.0-dev.20260807.1
-  resolution: "@typescript/typescript-win32-x64@npm:7.1.0-dev.20260807.1"
+"@typescript/typescript-win32-x64@npm:7.1.0-dev.20260809.1":
+  version: 7.1.0-dev.20260809.1
+  resolution: "@typescript/typescript-win32-x64@npm:7.1.0-dev.20260809.1"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -4864,17 +4864,17 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"typescript@npm:^7.1.0-dev.20260807.1":
-  version: 7.1.0-dev.20260807.1
-  resolution: "typescript@npm:7.1.0-dev.20260807.1"
+"typescript@npm:^7.1.0-dev.20260809.1":
+  version: 7.1.0-dev.20260809.1
+  resolution: "typescript@npm:7.1.0-dev.20260809.1"
   dependencies:
-    "@typescript/typescript-darwin-arm64": "npm:7.1.0-dev.20260807.1"
-    "@typescript/typescript-darwin-x64": "npm:7.1.0-dev.20260807.1"
-    "@typescript/typescript-linux-arm": "npm:7.1.0-dev.20260807.1"
-    "@typescript/typescript-linux-arm64": "npm:7.1.0-dev.20260807.1"
-    "@typescript/typescript-linux-x64": "npm:7.1.0-dev.20260807.1"
-    "@typescript/typescript-win32-arm64": "npm:7.1.0-dev.20260807.1"
-    "@typescript/typescript-win32-x64": "npm:7.1.0-dev.20260807.1"
+    "@typescript/typescript-darwin-arm64": "npm:7.1.0-dev.20260809.1"
+    "@typescript/typescript-darwin-x64": "npm:7.1.0-dev.20260809.1"
+    "@typescript/typescript-linux-arm": "npm:7.1.0-dev.20260809.1"
+    "@typescript/typescript-linux-arm64": "npm:7.1.0-dev.20260809.1"
+    "@typescript/typescript-linux-x64": "npm:7.1.0-dev.20260809.1"
+    "@typescript/typescript-win32-arm64": "npm:7.1.0-dev.20260809.1"
+    "@typescript/typescript-win32-x64": "npm:7.1.0-dev.20260809.1"
   dependenciesMeta:
     "@typescript/typescript-darwin-arm64":
       optional: true
@@ -4892,21 +4892,21 @@ hack-font@source-foundry/Hack:
       optional: true
   bin:
     tsc: bin/tsc
-  checksum: 10c0/60ad52cdf6a806acd979f3ada01c1d03bd87c05c51450c195a64ddd19a06766f8a49561aa4f95a96920f2421b2b0754d89c11f90eea5a7b224cc19ec7038a7bb
+  checksum: 10c0/fcb57ea7fe82f54731af3f6157b6d55ddc4719b4e717418f1149835789ceaa8cb21776a5fd37c0f8378f49d65086c19745d6152e16ac1df74b4d838551846b7e
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^7.1.0-dev.20260807.1#optional!builtin<compat/typescript>":
-  version: 7.1.0-dev.20260807.1
-  resolution: "typescript@patch:typescript@npm%3A7.1.0-dev.20260807.1#optional!builtin<compat/typescript>::version=7.1.0-dev.20260807.1&hash=3bafbf"
+"typescript@patch:typescript@npm%3A^7.1.0-dev.20260809.1#optional!builtin<compat/typescript>":
+  version: 7.1.0-dev.20260809.1
+  resolution: "typescript@patch:typescript@npm%3A7.1.0-dev.20260809.1#optional!builtin<compat/typescript>::version=7.1.0-dev.20260809.1&hash=3bafbf"
   dependencies:
-    "@typescript/typescript-darwin-arm64": "npm:7.1.0-dev.20260807.1"
-    "@typescript/typescript-darwin-x64": "npm:7.1.0-dev.20260807.1"
-    "@typescript/typescript-linux-arm": "npm:7.1.0-dev.20260807.1"
-    "@typescript/typescript-linux-arm64": "npm:7.1.0-dev.20260807.1"
-    "@typescript/typescript-linux-x64": "npm:7.1.0-dev.20260807.1"
-    "@typescript/typescript-win32-arm64": "npm:7.1.0-dev.20260807.1"
-    "@typescript/typescript-win32-x64": "npm:7.1.0-dev.20260807.1"
+    "@typescript/typescript-darwin-arm64": "npm:7.1.0-dev.20260809.1"
+    "@typescript/typescript-darwin-x64": "npm:7.1.0-dev.20260809.1"
+    "@typescript/typescript-linux-arm": "npm:7.1.0-dev.20260809.1"
+    "@typescript/typescript-linux-arm64": "npm:7.1.0-dev.20260809.1"
+    "@typescript/typescript-linux-x64": "npm:7.1.0-dev.20260809.1"
+    "@typescript/typescript-win32-arm64": "npm:7.1.0-dev.20260809.1"
+    "@typescript/typescript-win32-x64": "npm:7.1.0-dev.20260809.1"
   dependenciesMeta:
     "@typescript/typescript-darwin-arm64":
       optional: true
@@ -4924,7 +4924,7 @@ hack-font@source-foundry/Hack:
       optional: true
   bin:
     tsc: bin/tsc
-  checksum: 10c0/76beb83be3b5393dfca96ebfc0bc156f44bcc9f449cb97e374bee3aaacff220cb3bad5f462da1855ba228b73bbb90e4c8cf127aa1c508ce0dace5d516fc9ff2b
+  checksum: 10c0/228db77baffb4f4e8cf6ed6a261415eb53cc2152c40721473698ab9fb2bfa9160dd85a2116a0d1f607f05751105180a8d614081ec543168adf4bc73814095884
   languageName: node
   linkType: hard
 
