@@ -34,7 +34,7 @@ export const solveProofOfWork = async (
   const onPageHide = () => abort(new DOMException("Page closed while calculating proof of work", "AbortError"));
   const expirationTimeout = setTimeout(
     () => abort(new DOMException("Proof-of-work challenge expired", "TimeoutError")),
-    Math.max(challenge.expiresAt - Date.now(), 0)
+    Math.min(Math.max(challenge.expiresAt - Date.now(), 0), 2147483647),
   );
 
   try {
