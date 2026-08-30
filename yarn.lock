@@ -673,7 +673,7 @@ __metadata:
     "@types/object-path": "npm:^0.11.4"
     "@types/prismjs": "npm:^1.26.6"
     "@types/react": "npm:^19.2.18"
-    "@types/react-dom": "npm:^19.2.4"
+    "@types/react-dom": "npm:^19.2.5"
     "@types/streamsaver": "npm:^2.0.5"
     "@types/svgo": "npm:^3.0.0"
     "@types/ua-parser-js": "npm:^0.7.39"
@@ -717,7 +717,7 @@ __metadata:
     react: "npm:^18.3.1"
     react-chartjs-2: "npm:^5.3.1"
     react-countdown: "npm:^3.0.0-beta.0"
-    react-dom: "npm:^18.3.1"
+    react-dom: "npm:^19.2.8"
     react-helmet-async: "npm:^3.0.0"
     react-intl: "npm:^10.1.22"
     react-navi: "patch:react-navi@npm%3A^0.15.0#./.yarn/patches/react-navi-npm-0.15.0-51a95f8cdd.patch"
@@ -1391,12 +1391,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19.2.4":
-  version: 19.2.4
-  resolution: "@types/react-dom@npm:19.2.4"
+"@types/react-dom@npm:^19.2.5":
+  version: 19.2.5
+  resolution: "@types/react-dom@npm:19.2.5"
   peerDependencies:
     "@types/react": ^19.2.0
-  checksum: 10c0/b7d854ce17bb51a3a067168268a90f0123d10dc490f63f1ff5409f07ac715febeb8f5b7b473404a9d437106571e0312fc2937a945634d590abfc9aa46a14b01b
+  checksum: 10c0/7a59467b043debf392d109daa1ba672e791f20ce6f24ae81fb54715f890f8119d24967e61e3644b6307428603b695b7d59e69eaf531bd1963a74a6cb462f5f49
   languageName: node
   linkType: hard
 
@@ -4071,15 +4071,14 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.3.1":
-  version: 18.3.1
-  resolution: "react-dom@npm:18.3.1"
+"react-dom@npm:^19.2.8":
+  version: 19.2.8
+  resolution: "react-dom@npm:19.2.8"
   dependencies:
-    loose-envify: "npm:^1.1.0"
-    scheduler: "npm:^0.23.2"
+    scheduler: "npm:^0.27.0"
   peerDependencies:
-    react: ^18.3.1
-  checksum: 10c0/a752496c1941f958f2e8ac56239172296fcddce1365ce45222d04a1947e0cc5547df3e8447f855a81d6d39f008d7c32eab43db3712077f09e3f67c4874973e85
+    react: ^19.2.8
+  checksum: 10c0/41ba2247b76f687fcfe5bbc99f514d6b851d8c8041c2f5ded36ed05bd7fdc5208cacbac9de51e3e6633e77f96f44cec9f0d4a5a55184dba4e00738f224439134
   languageName: node
   linkType: hard
 
@@ -4453,12 +4452,10 @@ hack-font@source-foundry/Hack:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.23.2":
-  version: 0.23.2
-  resolution: "scheduler@npm:0.23.2"
-  dependencies:
-    loose-envify: "npm:^1.1.0"
-  checksum: 10c0/26383305e249651d4c58e6705d5f8425f153211aef95f15161c151f7b8de885f24751b377e4a0b3dd42cce09aad3f87a61dab7636859c0d89b7daf1a1e2a5c78
+"scheduler@npm:^0.27.0":
+  version: 0.27.0
+  resolution: "scheduler@npm:0.27.0"
+  checksum: 10c0/4f03048cb05a3c8fddc45813052251eca00688f413a3cee236d984a161da28db28ba71bd11e7a3dd02f7af84ab28d39fb311431d3b3772fed557945beb00c452
   languageName: node
   linkType: hard
 
