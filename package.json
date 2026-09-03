@@ -100,7 +100,7 @@
     "turnstile-types": "^1.2.3",
     "typeface-lato": "^1.1.13",
     "typeface-saira": "^1.1.13",
-    "typescript": "^7.1.0-dev.20260830.1",
+    "typescript": "^7.1.0-dev.20260831.1",
     "ua-parser-js": "^2.0.10",
     "use-debounce": "^10.1.1",
     "validator": "^13.15.35",
